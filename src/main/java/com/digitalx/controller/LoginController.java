@@ -1,0 +1,102 @@
+package com.digitalx.controller;
+
+import com.digitalx.domain.BaseResponse;
+import com.digitalx.domain.MenuEntity;
+import com.digitalx.domain.UserAuthInfo;
+import com.digitalx.domain.UserEntity;
+import com.digitalx.jwt.JwtUtils;
+import com.digitalx.service.UserService;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authc.*;
+import org.apache.shiro.subject.Subject;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import javax.servlet.ServletResponse;
+import javax.servlet.http.HttpServletResponse;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+/**
+ * @author pengjunlee
+ * @create 2019-09-03 9:27
+ */
+@RequestMapping("/api")
+@RestController
+public class LoginController {
+
+    @Autowired
+    private UserService userService;
+
+    @PostMapping(value = "/login")
+    public Object userLogin(@RequestBody Map<String, String> bodyMap, ServletResponse response) {
+
+
+        String userName = bodyMap.get("name");
+        String password = bodyMap.get("password");
+
+        UserAuthInfo userInfo = new UserAuthInfo();
+        userInfo.setName("用户"+userName);
+
+        List<MenuEntity> menus=new ArrayList<>();
+        MenuEntity menu1 = new MenuEntity();
+        menu1.setTitle("首页");
+        menu1.setPath("/home");
+        menu1.setIcon("el-icon-s-home");
+        menus.add(menu1);
+        userInfo.setMenus(menus);
+
+        // 获取当前用户主体
+        Subject subject = SecurityUtils.getSubject();
+        // 将用户名和密码封装成 UsernamePasswordToken 对象
+        UsernamePasswordToken token = new UsernamePasswordToken(userName,password);
+
+        String msg = null;
+        boolean loginSuccess = false;
+        try {
+            subject.login(token);
+            msg = "登录成功。";
+            loginSuccess = true;
+        } catch (UnknownAccountException uae) { // 账号不存在
+            msg = "用户名与密码不匹配！";
+        } catch (IncorrectCredentialsException ice) { // 账号与密码不匹配
+            msg = "用户名与密码不匹配！";
+        } catch (LockedAccountException lae) { // 账号已被锁定
+            msg = "该账户已被锁定！";
+        } catch (AuthenticationException ae) { // 其他身份验证异常
+            msg = "登录异常，请联系管理员！";
+        }
+
+        BaseResponse<Object> ret = new BaseResponse<Object>();
+
+        if (loginSuccess) {
+            // 若登录成功，签发 JWT token
+            String jwtToken = JwtUtils.sign(userName, JwtUtils.SECRET);
+            // 将签发的 JWT token 设置到 HttpServletResponse 的 Header 中
+            ((HttpServletResponse) response).setHeader(JwtUtils.AUTH_HEADER, jwtToken);
+            // 封装响应
+            UserAuthInfo userAuth = userService.getUserAuthByName(userName);
+            Map<String,Object> data = new HashMap<>();
+            data.put("user",userAuth);
+            ret.setData(data);
+            ret.setCode(0);
+            ret.setMsg(msg);
+            return ret;
+        } else {
+            ret.setCode(401);
+            ret.setMsg(msg);
+            return ret;
+        }
+
+    }
+
+    @GetMapping("/logout")
+    public Object logout() {
+        BaseResponse<Object> ret = new BaseResponse<Object>();
+        ret.setCode(0);
+        ret.setMsg("退出登录");
+        return ret;
+    }
+}
