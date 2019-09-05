@@ -1,20 +1,14 @@
-package com.digitalx.shiro;
+package com.digitalx.config.shiro;
 
 import com.digitalx.domain.UserEntity;
 import com.digitalx.service.UserService;
 import com.digitalx.utils.ApplicationContextUtil;
-import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.apache.shiro.util.ByteSource;
-
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
 
 /**
  * 同时开启身份验证和权限验证，需要继承 AuthorizingRealm

@@ -1,4 +1,4 @@
-package com.digitalx.shiro;
+package com.digitalx.config.shiro;
 
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationInfo;

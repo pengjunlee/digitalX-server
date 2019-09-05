@@ -1,8 +1,7 @@
-package com.digitalx.jwt;
+package com.digitalx.config.jwt;
 
 import com.digitalx.domain.UserEntity;
 import com.digitalx.service.UserService;
-import com.digitalx.shiro.ShiroRealm;
 import com.digitalx.utils.ApplicationContextUtil;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.*;
@@ -10,8 +9,6 @@ import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
-
-import java.util.Set;
 
 /**
  * JwtRealm 只负责校验 JwtToken

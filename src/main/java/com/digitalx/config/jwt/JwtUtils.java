@@ -1,4 +1,4 @@
-package com.digitalx.jwt;
+package com.digitalx.config.jwt;
 
 import java.util.Calendar;
 import java.util.Date;

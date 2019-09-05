@@ -1,4 +1,4 @@
-package com.digitalx.jwt;
+package com.digitalx.config.jwt;
 
 import org.apache.shiro.authc.AuthenticationToken;
 /**

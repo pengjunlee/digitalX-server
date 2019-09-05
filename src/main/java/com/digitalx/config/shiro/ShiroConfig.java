@@ -1,8 +1,8 @@
-package com.digitalx.shiro;
+package com.digitalx.config.shiro;
 
-import com.digitalx.jwt.JwtCredentialsMatcher;
-import com.digitalx.jwt.JwtFilter;
-import com.digitalx.jwt.JwtRealm;
+import com.digitalx.config.jwt.JwtCredentialsMatcher;
+import com.digitalx.config.jwt.JwtFilter;
+import com.digitalx.config.jwt.JwtRealm;
 import org.apache.shiro.authc.credential.CredentialsMatcher;
 import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
 import org.apache.shiro.authc.pam.AuthenticationStrategy;
