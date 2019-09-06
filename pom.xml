@@ -91,11 +91,6 @@
             <artifactId>mybatis-spring-boot-starter</artifactId>
             <version>1.2.0</version>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-configuration-processor</artifactId>
-            <optional>true</optional>
-        </dependency>
         <!-- 接下来一个 lombok 依赖 -->
         <dependency>
             <groupId>org.projectlombok</groupId>

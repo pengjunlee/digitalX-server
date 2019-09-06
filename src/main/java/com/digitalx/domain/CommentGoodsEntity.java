@@ -7,7 +7,7 @@ import java.util.List;
  * @author pengjunlee
  * @create 2019-09-03 14:48
  */
-public class RateGoodsEntity implements Serializable {
+public class CommentGoodsEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
@@ -18,6 +18,8 @@ public class RateGoodsEntity implements Serializable {
     private String shop;
 
     private String imgUrl;
+
+    private String goodsNum;
 
     public Long getId() {
         return id;
@@ -49,5 +51,13 @@ public class RateGoodsEntity implements Serializable {
 
     public void setImgUrl(String imgUrl) {
         this.imgUrl = imgUrl;
+    }
+
+    public String getGoodsNum() {
+        return goodsNum;
+    }
+
+    public void setGoodsNum(String goodsNum) {
+        this.goodsNum = goodsNum;
     }
 }

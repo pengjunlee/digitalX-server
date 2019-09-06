@@ -95,8 +95,8 @@ public class ShiroConfig {
         shiroFilterFactoryBean.setFilters(filterMap);
 
         LinkedHashMap<String, String> filterChainDefinitionMap = new LinkedHashMap<String, String>();
-        filterChainDefinitionMap.put("/api/login", "anon"); // 可匿名访问
-        filterChainDefinitionMap.put("/api/logout", "logout"); // 退出登录
+        filterChainDefinitionMap.put("/api/v1/login", "anon"); // 可匿名访问
+        filterChainDefinitionMap.put("/api/v1/logout", "logout"); // 退出登录
         filterChainDefinitionMap.put("/**", "jwtFilter,authc"); // 需登录才能访问
         shiroFilterFactoryBean.setFilterChainDefinitionMap(filterChainDefinitionMap);
         return shiroFilterFactoryBean;

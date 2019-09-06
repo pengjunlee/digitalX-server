@@ -1,7 +1,6 @@
 package com.digitalx.service.mapper;
 
-import com.digitalx.domain.MenuEntity;
-import com.digitalx.domain.RateGoodsEntity;
+import com.digitalx.domain.CommentGoodsEntity;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
@@ -11,7 +10,7 @@ import java.util.List;
  * @create 2019-09-03 17:13
  */
 @Mapper
-public interface RateMapper {
+public interface CommentMapper {
 
-    List<RateGoodsEntity> listRateGoods();
+    List<CommentGoodsEntity> listCommentGoods();
 }

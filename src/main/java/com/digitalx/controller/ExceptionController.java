@@ -15,6 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 @RestControllerAdvice
 
 public class ExceptionController {
+
     // 捕捉shiro的异常
     @ExceptionHandler(ShiroException.class)
     public Object handleShiroException(ShiroException e) {
@@ -28,7 +29,7 @@ public class ExceptionController {
     @ExceptionHandler(Exception.class)
     public Object globalException(HttpServletRequest request, Throwable ex) {
         BaseResponse<Object> ret = new BaseResponse<Object>();
-        ret.setCode(401);
+        ret.setCode(500);
         ret.setMsg(ex.getMessage());
         return ret;
     }

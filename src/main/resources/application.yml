@@ -3,7 +3,7 @@ spring:
     url: jdbc:mysql://172.16.250.233:3306/digitalx_dev?useUnicode=true&characterEncoding=utf-8&useSSL=false
     username: root
     password: 123456
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     platform: mysql
     type: com.alibaba.druid.pool.DruidDataSource
     # 下面为连接池的补充设置，应用到上面所有数据源中
@@ -30,8 +30,13 @@ spring:
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
     # 合并多个DruidDataSource的监控数据
     #useGlobalDataSourceStat: true
+  ### 配置Mongodb
+  data:
+    mongodb:
+      uri: mongodb://172.16.250.238:27017/test
 mybatis:
   configuration:
     map-underscore-to-camel-case: true
   mapper-locations: mybatis/**/*Mapper.xml
   typeAliasesPackage: com.digitalx.**.domain
+

@@ -1,9 +1,8 @@
 package com.digitalx.controller;
 
-import com.digitalx.domain.BaseResponse;
-import com.digitalx.domain.MenuEntity;
-import com.digitalx.domain.UserAuthInfo;
 import com.digitalx.config.jwt.JwtUtils;
+import com.digitalx.domain.BaseResponse;
+import com.digitalx.domain.UserAuthInfo;
 import com.digitalx.service.UserService;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.*;
@@ -13,16 +12,14 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletResponse;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 /**
  * @author pengjunlee
  * @create 2019-09-03 9:27
  */
-@RequestMapping("/api")
+@RequestMapping("/api/v1")
 @RestController
 public class LoginController {
 
@@ -32,25 +29,14 @@ public class LoginController {
     @PostMapping(value = "/login")
     public Object userLogin(@RequestBody Map<String, String> bodyMap, ServletResponse response) {
 
-
+        // 获取用户名和密码
         String userName = bodyMap.get("name");
         String password = bodyMap.get("password");
-
-        UserAuthInfo userInfo = new UserAuthInfo();
-        userInfo.setName("用户"+userName);
-
-        List<MenuEntity> menus=new ArrayList<>();
-        MenuEntity menu1 = new MenuEntity();
-        menu1.setTitle("首页");
-        menu1.setPath("/home");
-        menu1.setIcon("el-icon-s-home");
-        menus.add(menu1);
-        userInfo.setMenus(menus);
 
         // 获取当前用户主体
         Subject subject = SecurityUtils.getSubject();
         // 将用户名和密码封装成 UsernamePasswordToken 对象
-        UsernamePasswordToken token = new UsernamePasswordToken(userName,password);
+        UsernamePasswordToken token = new UsernamePasswordToken(userName, password);
 
         String msg = null;
         boolean loginSuccess = false;
@@ -77,9 +63,9 @@ public class LoginController {
             ((HttpServletResponse) response).setHeader(JwtUtils.AUTH_HEADER, jwtToken);
             // 封装响应
             UserAuthInfo userAuth = userService.getUserAuthByName(userName);
-            Map<String,Object> data = new HashMap<>();
-            data.put("user",userAuth);
-            ret.setData(data);
+            Map<String, Object> dataMap = new HashMap<>();
+            dataMap.put("user", userAuth);
+            ret.setData(dataMap);
             ret.setCode(0);
             ret.setMsg(msg);
             return ret;
