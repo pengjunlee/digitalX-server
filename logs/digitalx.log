@@ -1,0 +1,1549 @@
+2019-09-10 09:33:56  INFO DefaultTestContextBootstrapper:308 : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.digitalx.DigitalxTest], using DelegatingSmartContextLoader
+2019-09-10 09:33:56  INFO AbstractContextLoader:264 : Could not detect default resource locations for test class [com.digitalx.DigitalxTest]: no resource found for suffixes {-context.xml}.
+2019-09-10 09:33:56  INFO AnnotationConfigContextLoaderUtils:83 : Could not detect default configuration classes for test class [com.digitalx.DigitalxTest]: DigitalxTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-09-10 09:33:56  INFO DefaultTestContextBootstrapper:248 : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-09-10 09:33:56  INFO DefaultTestContextBootstrapper:177 : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@71a794e5, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@76329302, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5e25a92e, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4df828d7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@b59d31, org.springframework.test.context.transaction.TransactionalTestExecutionListener@62fdb4a6, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@11e21d0e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1dd02175, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@31206beb, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3e77a1ed, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3ffcd140, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@23bb8443]
+2019-09-10 09:33:56 ERROR TestContextManager:250 : Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4df828d7] to prepare test instance [com.digitalx.DigitalxTest@198b6731]
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'com.digitalx.DigitalxTest': Unsatisfied dependency expressed through field 'commentService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.digitalx.service.CommentService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:391)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:119)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.digitalx.service.CommentService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1658)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1217)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 30 more
+2019-09-10 09:33:56 ERROR TestContextManager:250 : Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4df828d7] to prepare test instance [com.digitalx.DigitalxTest@2925bf5b]
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'com.digitalx.DigitalxTest': Unsatisfied dependency expressed through field 'commentService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.digitalx.service.CommentService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:391)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:119)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.digitalx.service.CommentService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1658)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1217)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 30 more
+2019-09-10 09:33:56  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.BidirectionalMaximumMatching
+2019-09-10 09:33:56  INFO WordConfTools:88 : 开始加载配置文件
+2019-09-10 09:33:56  INFO WordConfTools:128 : 加载配置文件：word.conf
+2019-09-10 09:33:56  INFO WordConfTools:128 : 加载配置文件：word.local.conf
+2019-09-10 09:33:56  INFO WordConfTools:94 : 配置文件加载完毕，耗时2 毫秒，配置项数目：33
+2019-09-10 09:33:56  INFO WordConfTools:95 : 配置信息：
+2019-09-10 09:33:56  INFO WordConfTools:98 : 1、auto.detect=true
+2019-09-10 09:33:56  INFO WordConfTools:98 : 2、bigram.double.array.trie.size=5300000
+2019-09-10 09:33:56  INFO WordConfTools:98 : 3、bigram.path=classpath:bigram.txt
+2019-09-10 09:33:56  INFO WordConfTools:98 : 4、dic.class=org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-10 09:33:56  INFO WordConfTools:98 : 5、dic.dump.path=
+2019-09-10 09:33:56  INFO WordConfTools:98 : 6、dic.path=classpath:dic.txt,classpath:custom_dic.txt
+2019-09-10 09:33:56  INFO WordConfTools:98 : 7、dictionary.trie.index.size=24000
+2019-09-10 09:33:56  INFO WordConfTools:98 : 8、double.array.dictionary.trie.size=2600000
+2019-09-10 09:33:56  INFO WordConfTools:98 : 9、intercept.length=16
+2019-09-10 09:33:56  INFO WordConfTools:98 : 10、keep.punctuation=false
+2019-09-10 09:33:56  INFO WordConfTools:98 : 11、keep.whitespace=false
+2019-09-10 09:33:56  INFO WordConfTools:98 : 12、ngram=bigram
+2019-09-10 09:33:56  INFO WordConfTools:98 : 13、parallel.seg=true
+2019-09-10 09:33:56  INFO WordConfTools:98 : 14、part.of.speech.des.path=classpath:part_of_speech_des.txt
+2019-09-10 09:33:56  INFO WordConfTools:98 : 15、part.of.speech.dic.path=classpath:part_of_speech_dic.txt
+2019-09-10 09:33:56  INFO WordConfTools:98 : 16、person.name.recognize=true
+2019-09-10 09:33:56  INFO WordConfTools:98 : 17、punctuation.path=classpath:punctuation.txt
+2019-09-10 09:33:56  INFO WordConfTools:98 : 18、quantifier.path=classpath:quantifier.txt
+2019-09-10 09:33:56  INFO WordConfTools:98 : 19、recognition.tool.enabled=true
+2019-09-10 09:33:56  INFO WordConfTools:98 : 20、redis.host=localhost
+2019-09-10 09:33:56  INFO WordConfTools:98 : 21、redis.port=6379
+2019-09-10 09:33:56  INFO WordConfTools:98 : 22、stopwords.path=classpath:stopwords.txt,classpath:custom_stopwords_dic.txt
+2019-09-10 09:33:56  INFO WordConfTools:98 : 23、surname.path=classpath:surname.txt
+2019-09-10 09:33:56  INFO WordConfTools:98 : 24、tagging.antonym=false
+2019-09-10 09:33:56  INFO WordConfTools:98 : 25、tagging.pinyin.acronym=false
+2019-09-10 09:33:56  INFO WordConfTools:98 : 26、tagging.pinyin.full=false
+2019-09-10 09:33:56  INFO WordConfTools:98 : 27、tagging.synonym=false
+2019-09-10 09:33:56  INFO WordConfTools:98 : 28、trigram.double.array.trie.size=9800000
+2019-09-10 09:33:56  INFO WordConfTools:98 : 29、trigram.path=classpath:trigram.txt
+2019-09-10 09:33:56  INFO WordConfTools:98 : 30、word.antonym.path=classpath:word_antonym.txt
+2019-09-10 09:33:56  INFO WordConfTools:98 : 31、word.refine.combine.max.length=3
+2019-09-10 09:33:56  INFO WordConfTools:98 : 32、word.refine.path=classpath:word_refine.txt
+2019-09-10 09:33:56  INFO WordConfTools:98 : 33、word.synonym.path=classpath:word_synonym.txt
+2019-09-10 09:33:56  INFO DictionaryFactory:72 : dic.class=org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-10 09:33:56  INFO DoubleArrayDictionaryTrie:69 : 初始化词典：org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-10 09:33:56  INFO AutoDetector:78 : 开始加载资源
+2019-09-10 09:33:56  INFO AutoDetector:79 : classpath:dic.txt,classpath:custom_dic.txt,classpath:punctuation.txt,classpath:part_of_speech_dic.txt,classpath:word_synonym.txt,classpath:word_antonym.txt
+2019-09-10 09:33:56  INFO AutoDetector:116 : 类路径资源：dic.txt
+2019-09-10 09:33:56  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/dic.txt
+2019-09-10 09:33:56  INFO AutoDetector:350 : 加载资源：classpath:dic.txt
+2019-09-10 09:33:57  INFO AutoDetector:116 : 类路径资源：custom_dic.txt
+2019-09-10 09:33:57  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/custom_dic.txt
+2019-09-10 09:33:57  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\custom_dic.txt
+2019-09-10 09:33:57  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\custom_dic.txt
+2019-09-10 09:33:57  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-10 09:33:57  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-10 09:33:57  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-10 09:33:57  INFO AutoDetector:116 : 类路径资源：punctuation.txt
+2019-09-10 09:33:57  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/punctuation.txt
+2019-09-10 09:33:57  INFO AutoDetector:350 : 加载资源：classpath:punctuation.txt
+2019-09-10 09:33:57  INFO AutoDetector:116 : 类路径资源：part_of_speech_dic.txt
+2019-09-10 09:33:57  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/part_of_speech_dic.txt
+2019-09-10 09:33:57  INFO AutoDetector:350 : 加载资源：classpath:part_of_speech_dic.txt
+2019-09-10 09:33:57  INFO AutoDetector:116 : 类路径资源：word_synonym.txt
+2019-09-10 09:33:57  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_synonym.txt
+2019-09-10 09:33:57  INFO AutoDetector:350 : 加载资源：classpath:word_synonym.txt
+2019-09-10 09:33:57  INFO AutoDetector:116 : 类路径资源：word_antonym.txt
+2019-09-10 09:33:57  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_antonym.txt
+2019-09-10 09:33:57  INFO AutoDetector:350 : 加载资源：classpath:word_antonym.txt
+2019-09-10 09:33:57  INFO AutoDetector:99 : 加载资源 1091314 行
+2019-09-10 09:33:57  INFO DictionaryFactory:92 : 初始化词典
+2019-09-10 09:33:57  INFO AutoDetector:78 : 开始加载资源
+2019-09-10 09:33:57  INFO AutoDetector:79 : classpath:surname.txt
+2019-09-10 09:33:57  INFO AutoDetector:116 : 类路径资源：surname.txt
+2019-09-10 09:33:57  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/surname.txt
+2019-09-10 09:33:57  INFO AutoDetector:350 : 加载资源：classpath:surname.txt
+2019-09-10 09:33:57  INFO AutoDetector:99 : 加载资源 508 行
+2019-09-10 09:33:57  INFO PersonName:61 : 初始化百家姓
+2019-09-10 09:33:57  INFO PersonName:74 : 百家姓初始化完毕，单姓个数：446，复姓个数：60
+2019-09-10 09:33:57  INFO AutoDetector:104 : 完成加载资源，耗时1 毫秒
+2019-09-10 09:33:57  INFO DictionaryFactory:101 : 将 60 个复姓加入词典
+2019-09-10 09:34:07  INFO DictionaryFactory:139 : 词数目：677848，词典最大词长：16
+2019-09-10 09:34:07  INFO DictionaryFactory:142 : 词长  1 的词数为：47
+2019-09-10 09:34:07  INFO DictionaryFactory:142 : 词长  2 的词数为：213335
+2019-09-10 09:34:07  INFO DictionaryFactory:142 : 词长  3 的词数为：289751
+2019-09-10 09:34:07  INFO DictionaryFactory:142 : 词长  4 的词数为：158965
+2019-09-10 09:34:07  INFO DictionaryFactory:142 : 词长  5 的词数为：6139
+2019-09-10 09:34:07  INFO DictionaryFactory:142 : 词长  6 的词数为：3746
+2019-09-10 09:34:07  INFO DictionaryFactory:142 : 词长  7 的词数为：2205
+2019-09-10 09:34:07  INFO DictionaryFactory:142 : 词长  8 的词数为：1321
+2019-09-10 09:34:07  INFO DictionaryFactory:142 : 词长  9 的词数为：797
+2019-09-10 09:34:07  INFO DictionaryFactory:144 : 词长 10 的词数为：632
+2019-09-10 09:34:07  INFO DictionaryFactory:144 : 词长 11 的词数为：312
+2019-09-10 09:34:07  INFO DictionaryFactory:144 : 词长 12 的词数为：282
+2019-09-10 09:34:07  INFO DictionaryFactory:144 : 词长 13 的词数为：124
+2019-09-10 09:34:07  INFO DictionaryFactory:144 : 词长 14 的词数为：116
+2019-09-10 09:34:07  INFO DictionaryFactory:144 : 词长 15 的词数为：51
+2019-09-10 09:34:07  INFO DictionaryFactory:144 : 词长 16 的词数为：25
+2019-09-10 09:34:07  INFO DictionaryFactory:147 : 词典平均词长：3.0032012
+2019-09-10 09:34:07  INFO DictionaryFactory:122 : 词典初始化完毕，耗时：10742 毫秒
+2019-09-10 09:34:07  INFO AutoDetector:104 : 完成加载资源，耗时11030 毫秒
+2019-09-10 09:34:07  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.MaximumMatching
+2019-09-10 09:34:07  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.ReverseMaximumMatching
+2019-09-10 09:34:07  INFO AutoDetector:78 : 开始加载资源
+2019-09-10 09:34:07  INFO AutoDetector:79 : classpath:punctuation.txt
+2019-09-10 09:34:07  INFO AutoDetector:116 : 类路径资源：punctuation.txt
+2019-09-10 09:34:07  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/punctuation.txt
+2019-09-10 09:34:07  INFO AutoDetector:350 : 加载资源：classpath:punctuation.txt
+2019-09-10 09:34:07  INFO AutoDetector:99 : 加载资源 48 行
+2019-09-10 09:34:07  INFO Punctuation:55 : 初始化标点符号
+2019-09-10 09:34:07  INFO Punctuation:80 : 标点符号初始化完毕，标点符号个数：52
+2019-09-10 09:34:07  INFO AutoDetector:104 : 完成加载资源，耗时1 毫秒
+2019-09-10 09:34:08  INFO AutoDetector:78 : 开始加载资源
+2019-09-10 09:34:08  INFO AutoDetector:79 : classpath:quantifier.txt
+2019-09-10 09:34:08  INFO AutoDetector:116 : 类路径资源：quantifier.txt
+2019-09-10 09:34:08  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/quantifier.txt
+2019-09-10 09:34:08  INFO AutoDetector:350 : 加载资源：classpath:quantifier.txt
+2019-09-10 09:34:08  INFO AutoDetector:99 : 加载资源 164 行
+2019-09-10 09:34:08  INFO Quantifier:52 : 初始化数量词
+2019-09-10 09:34:08  INFO Quantifier:65 : 数量词初始化完毕，数量词个数：164
+2019-09-10 09:34:08  INFO AutoDetector:104 : 完成加载资源，耗时1 毫秒
+2019-09-10 09:34:08  INFO AutoDetector:78 : 开始加载资源
+2019-09-10 09:34:08  INFO AutoDetector:79 : classpath:bigram.txt
+2019-09-10 09:34:08  INFO AutoDetector:116 : 类路径资源：bigram.txt
+2019-09-10 09:34:08  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/bigram.txt
+2019-09-10 09:34:08  INFO AutoDetector:350 : 加载资源：classpath:bigram.txt
+2019-09-10 09:34:08  INFO AutoDetector:99 : 加载资源 1519443 行
+2019-09-10 09:34:08  INFO Bigram:52 : 初始化bigram
+2019-09-10 09:34:32  INFO Bigram:63 : bigram初始化完毕，bigram数据条数：1519443
+2019-09-10 09:34:32  INFO AutoDetector:104 : 完成加载资源，耗时24960 毫秒
+2019-09-10 09:34:32  INFO AutoDetector:78 : 开始加载资源
+2019-09-10 09:34:32  INFO AutoDetector:79 : classpath:stopwords.txt,classpath:custom_stopwords_dic.txt
+2019-09-10 09:34:32  INFO AutoDetector:116 : 类路径资源：stopwords.txt
+2019-09-10 09:34:32  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/stopwords.txt
+2019-09-10 09:34:32  INFO AutoDetector:350 : 加载资源：classpath:stopwords.txt
+2019-09-10 09:34:32  INFO AutoDetector:116 : 类路径资源：custom_stopwords_dic.txt
+2019-09-10 09:34:32  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/custom_stopwords_dic.txt
+2019-09-10 09:34:32  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\custom_stopwords_dic.txt
+2019-09-10 09:34:32  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\custom_stopwords_dic.txt
+2019-09-10 09:34:32  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-10 09:34:32  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-10 09:34:32  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-10 09:34:32  INFO AutoDetector:99 : 加载资源 1482 行
+2019-09-10 09:34:32  INFO StopWord:64 : 初始化停用词
+2019-09-10 09:34:32  INFO StopWord:70 : 停用词初始化完毕，停用词个数：1482
+2019-09-10 09:34:32  INFO AutoDetector:104 : 完成加载资源，耗时4 毫秒
+2019-09-10 09:34:32  INFO AutoDetector:78 : 开始加载资源
+2019-09-10 09:34:32  INFO AutoDetector:79 : classpath:word_refine.txt
+2019-09-10 09:34:32  INFO AutoDetector:116 : 类路径资源：word_refine.txt
+2019-09-10 09:34:32  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/word_refine.txt
+2019-09-10 09:34:32  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\word_refine.txt
+2019-09-10 09:34:32  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\word_refine.txt
+2019-09-10 09:34:32  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-10 09:34:32  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-10 09:34:32  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-10 09:34:32  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_refine.txt
+2019-09-10 09:34:32  INFO AutoDetector:350 : 加载资源：classpath:word_refine.txt
+2019-09-10 09:34:32  INFO AutoDetector:99 : 加载资源 2 行
+2019-09-10 09:34:32  INFO WordRefiner:55 : 初始化WordRefiner
+2019-09-10 09:34:32  INFO WordRefiner:66 : WordRefiner初始化完毕，数据条数：2
+2019-09-10 09:34:32  INFO AutoDetector:104 : 完成加载资源，耗时4 毫秒
+2019-09-10 09:34:32  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.MaxNgramScore
+2019-09-10 11:33:55  INFO SpringBootTestContextBootstrapper:308 : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.digitalx.RedisTest], using SpringBootContextLoader
+2019-09-10 11:33:55  INFO AbstractContextLoader:264 : Could not detect default resource locations for test class [com.digitalx.RedisTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-09-10 11:33:55  INFO AnnotationConfigContextLoaderUtils:83 : Could not detect default configuration classes for test class [com.digitalx.RedisTest]: RedisTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-09-10 11:33:56  INFO SpringBootTestContextBootstrapper:235 : Found @SpringBootConfiguration com.digitalx.DigitalXApplication for test class com.digitalx.RedisTest
+2019-09-10 11:33:56  INFO SpringBootTestContextBootstrapper:248 : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-09-10 11:33:56  INFO SpringBootTestContextBootstrapper:177 : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@f5ac9e4, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@123ef382, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@dbf57b3, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@384ad17b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@61862a7f, org.springframework.test.context.transaction.TransactionalTestExecutionListener@441772e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7334aada, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1d9b7cce, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4d9e68d0, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@42e99e4a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@14dd9eb7, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@52e6fdee]
+2019-09-10 11:33:56 ERROR TestContextManager:250 : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@f5ac9e4] to prepare test instance [com.digitalx.RedisTest@587e5365]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: java.lang.IllegalArgumentException: LoggerFactory is not a Logback LoggerContext but Logback is on the classpath. Either remove Logback or the competing implementation (class org.slf4j.impl.Log4jLoggerFactory loaded from file:/C:/Users/pjli/.m2/repository/org/slf4j/slf4j-log4j12/1.7.26/slf4j-log4j12-1.7.26.jar). If you are using WebLogic you will need to add 'org.slf4j' to prefer-application-packages in WEB-INF/weblogic.xml: org.slf4j.impl.Log4jLoggerFactory
+	at org.springframework.util.Assert.instanceCheckFailed(Assert.java:655)
+	at org.springframework.util.Assert.isInstanceOf(Assert.java:555)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.getLoggerContext(LogbackLoggingSystem.java:280)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.beforeInitialize(LogbackLoggingSystem.java:104)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationStartingEvent(LoggingApplicationListener.java:219)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:200)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.starting(EventPublishingRunListener.java:70)
+	at org.springframework.boot.SpringApplicationRunListeners.starting(SpringApplicationRunListeners.java:47)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	... 24 more
+2019-09-10 11:34:36  INFO DefaultTestContextBootstrapper:308 : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.digitalx.DigitalxTest], using DelegatingSmartContextLoader
+2019-09-10 11:34:36  INFO AbstractContextLoader:264 : Could not detect default resource locations for test class [com.digitalx.DigitalxTest]: no resource found for suffixes {-context.xml}.
+2019-09-10 11:34:36  INFO AnnotationConfigContextLoaderUtils:83 : Could not detect default configuration classes for test class [com.digitalx.DigitalxTest]: DigitalxTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-09-10 11:34:36  INFO DefaultTestContextBootstrapper:248 : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-09-10 11:34:36  INFO DefaultTestContextBootstrapper:177 : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@62fdb4a6, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@11e21d0e, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1dd02175, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@31206beb, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3e77a1ed, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3ffcd140, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@23bb8443, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1176dcec, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@120d6fe6, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4ba2ca36, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3444d69d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1372ed45]
+2019-09-10 11:34:37 ERROR TestContextManager:250 : Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@31206beb] to prepare test instance [com.digitalx.DigitalxTest@4d1c00d0]
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'com.digitalx.DigitalxTest': Unsatisfied dependency expressed through field 'commentService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.digitalx.service.CommentService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:391)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:119)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.digitalx.service.CommentService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1658)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1217)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 30 more
+2019-09-10 11:34:37 ERROR TestContextManager:250 : Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@31206beb] to prepare test instance [com.digitalx.DigitalxTest@6ad82709]
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'com.digitalx.DigitalxTest': Unsatisfied dependency expressed through field 'commentService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.digitalx.service.CommentService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:391)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:119)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.digitalx.service.CommentService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1658)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1217)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 30 more
+2019-09-10 11:34:37  INFO SpringBootTestContextBootstrapper:308 : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.digitalx.RedisTest], using SpringBootContextLoader
+2019-09-10 11:34:37  INFO AbstractContextLoader:264 : Could not detect default resource locations for test class [com.digitalx.RedisTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-09-10 11:34:37  INFO AnnotationConfigContextLoaderUtils:83 : Could not detect default configuration classes for test class [com.digitalx.RedisTest]: RedisTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-09-10 11:34:37  INFO SpringBootTestContextBootstrapper:235 : Found @SpringBootConfiguration com.digitalx.DigitalXApplication for test class com.digitalx.RedisTest
+2019-09-10 11:34:37  INFO SpringBootTestContextBootstrapper:248 : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-09-10 11:34:37  INFO SpringBootTestContextBootstrapper:177 : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@78e4deb0, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6e9175d8, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7d0b7e3c, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@15bb5034, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4b741d6d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2eae8e6e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@8f2ef19, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@470734c3, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2cf3d63b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7674f035, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@69e153c5, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@173ed316]
+2019-09-10 11:34:37 ERROR TestContextManager:250 : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@78e4deb0] to prepare test instance [com.digitalx.RedisTest@aba625]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.lang.IllegalArgumentException: LoggerFactory is not a Logback LoggerContext but Logback is on the classpath. Either remove Logback or the competing implementation (class org.slf4j.impl.Log4jLoggerFactory loaded from file:/C:/Users/pjli/.m2/repository/org/slf4j/slf4j-log4j12/1.7.26/slf4j-log4j12-1.7.26.jar). If you are using WebLogic you will need to add 'org.slf4j' to prefer-application-packages in WEB-INF/weblogic.xml: org.slf4j.impl.Log4jLoggerFactory
+	at org.springframework.util.Assert.instanceCheckFailed(Assert.java:655)
+	at org.springframework.util.Assert.isInstanceOf(Assert.java:555)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.getLoggerContext(LogbackLoggingSystem.java:280)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.beforeInitialize(LogbackLoggingSystem.java:104)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationStartingEvent(LoggingApplicationListener.java:219)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:200)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.starting(EventPublishingRunListener.java:70)
+	at org.springframework.boot.SpringApplicationRunListeners.starting(SpringApplicationRunListeners.java:47)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	... 27 more
+2019-09-10 11:34:37  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.BidirectionalMaximumMatching
+2019-09-10 11:34:37  INFO WordConfTools:88 : 开始加载配置文件
+2019-09-10 11:34:37  INFO WordConfTools:128 : 加载配置文件：word.conf
+2019-09-10 11:34:37  INFO WordConfTools:128 : 加载配置文件：word.local.conf
+2019-09-10 11:34:37  INFO WordConfTools:94 : 配置文件加载完毕，耗时13 毫秒，配置项数目：33
+2019-09-10 11:34:37  INFO WordConfTools:95 : 配置信息：
+2019-09-10 11:34:37  INFO WordConfTools:98 : 1、auto.detect=true
+2019-09-10 11:34:37  INFO WordConfTools:98 : 2、bigram.double.array.trie.size=5300000
+2019-09-10 11:34:37  INFO WordConfTools:98 : 3、bigram.path=classpath:bigram.txt
+2019-09-10 11:34:37  INFO WordConfTools:98 : 4、dic.class=org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-10 11:34:37  INFO WordConfTools:98 : 5、dic.dump.path=
+2019-09-10 11:34:37  INFO WordConfTools:98 : 6、dic.path=classpath:dic.txt,classpath:custom_dic.txt
+2019-09-10 11:34:37  INFO WordConfTools:98 : 7、dictionary.trie.index.size=24000
+2019-09-10 11:34:37  INFO WordConfTools:98 : 8、double.array.dictionary.trie.size=2600000
+2019-09-10 11:34:37  INFO WordConfTools:98 : 9、intercept.length=16
+2019-09-10 11:34:37  INFO WordConfTools:98 : 10、keep.punctuation=false
+2019-09-10 11:34:37  INFO WordConfTools:98 : 11、keep.whitespace=false
+2019-09-10 11:34:37  INFO WordConfTools:98 : 12、ngram=bigram
+2019-09-10 11:34:37  INFO WordConfTools:98 : 13、parallel.seg=true
+2019-09-10 11:34:37  INFO WordConfTools:98 : 14、part.of.speech.des.path=classpath:part_of_speech_des.txt
+2019-09-10 11:34:37  INFO WordConfTools:98 : 15、part.of.speech.dic.path=classpath:part_of_speech_dic.txt
+2019-09-10 11:34:37  INFO WordConfTools:98 : 16、person.name.recognize=true
+2019-09-10 11:34:37  INFO WordConfTools:98 : 17、punctuation.path=classpath:punctuation.txt
+2019-09-10 11:34:37  INFO WordConfTools:98 : 18、quantifier.path=classpath:quantifier.txt
+2019-09-10 11:34:37  INFO WordConfTools:98 : 19、recognition.tool.enabled=true
+2019-09-10 11:34:37  INFO WordConfTools:98 : 20、redis.host=localhost
+2019-09-10 11:34:37  INFO WordConfTools:98 : 21、redis.port=6379
+2019-09-10 11:34:37  INFO WordConfTools:98 : 22、stopwords.path=classpath:stopwords.txt,classpath:custom_stopwords_dic.txt
+2019-09-10 11:34:37  INFO WordConfTools:98 : 23、surname.path=classpath:surname.txt
+2019-09-10 11:34:37  INFO WordConfTools:98 : 24、tagging.antonym=false
+2019-09-10 11:34:37  INFO WordConfTools:98 : 25、tagging.pinyin.acronym=false
+2019-09-10 11:34:37  INFO WordConfTools:98 : 26、tagging.pinyin.full=false
+2019-09-10 11:34:37  INFO WordConfTools:98 : 27、tagging.synonym=false
+2019-09-10 11:34:37  INFO WordConfTools:98 : 28、trigram.double.array.trie.size=9800000
+2019-09-10 11:34:37  INFO WordConfTools:98 : 29、trigram.path=classpath:trigram.txt
+2019-09-10 11:34:37  INFO WordConfTools:98 : 30、word.antonym.path=classpath:word_antonym.txt
+2019-09-10 11:34:37  INFO WordConfTools:98 : 31、word.refine.combine.max.length=3
+2019-09-10 11:34:37  INFO WordConfTools:98 : 32、word.refine.path=classpath:word_refine.txt
+2019-09-10 11:34:37  INFO WordConfTools:98 : 33、word.synonym.path=classpath:word_synonym.txt
+2019-09-10 11:34:37  INFO DictionaryFactory:72 : dic.class=org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-10 11:34:37  INFO DoubleArrayDictionaryTrie:69 : 初始化词典：org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-10 11:34:37  INFO AutoDetector:78 : 开始加载资源
+2019-09-10 11:34:37  INFO AutoDetector:79 : classpath:dic.txt,classpath:custom_dic.txt,classpath:punctuation.txt,classpath:part_of_speech_dic.txt,classpath:word_synonym.txt,classpath:word_antonym.txt
+2019-09-10 11:34:37  INFO AutoDetector:116 : 类路径资源：dic.txt
+2019-09-10 11:34:37  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/dic.txt
+2019-09-10 11:34:37  INFO AutoDetector:350 : 加载资源：classpath:dic.txt
+2019-09-10 11:34:37  INFO AutoDetector:116 : 类路径资源：custom_dic.txt
+2019-09-10 11:34:37  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/custom_dic.txt
+2019-09-10 11:34:37  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\custom_dic.txt
+2019-09-10 11:34:37  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\custom_dic.txt
+2019-09-10 11:34:37  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-10 11:34:37  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-10 11:34:37  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-10 11:34:37  INFO AutoDetector:116 : 类路径资源：punctuation.txt
+2019-09-10 11:34:37  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/punctuation.txt
+2019-09-10 11:34:37  INFO AutoDetector:350 : 加载资源：classpath:punctuation.txt
+2019-09-10 11:34:37  INFO AutoDetector:116 : 类路径资源：part_of_speech_dic.txt
+2019-09-10 11:34:37  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/part_of_speech_dic.txt
+2019-09-10 11:34:37  INFO AutoDetector:350 : 加载资源：classpath:part_of_speech_dic.txt
+2019-09-10 11:34:37  INFO AutoDetector:116 : 类路径资源：word_synonym.txt
+2019-09-10 11:34:37  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_synonym.txt
+2019-09-10 11:34:37  INFO AutoDetector:350 : 加载资源：classpath:word_synonym.txt
+2019-09-10 11:34:37  INFO AutoDetector:116 : 类路径资源：word_antonym.txt
+2019-09-10 11:34:37  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_antonym.txt
+2019-09-10 11:34:37  INFO AutoDetector:350 : 加载资源：classpath:word_antonym.txt
+2019-09-10 11:34:37  INFO AutoDetector:99 : 加载资源 1091314 行
+2019-09-10 11:34:37  INFO DictionaryFactory:92 : 初始化词典
+2019-09-10 11:34:37  INFO AutoDetector:78 : 开始加载资源
+2019-09-10 11:34:37  INFO AutoDetector:79 : classpath:surname.txt
+2019-09-10 11:34:37  INFO AutoDetector:116 : 类路径资源：surname.txt
+2019-09-10 11:34:37  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/surname.txt
+2019-09-10 11:34:37  INFO AutoDetector:350 : 加载资源：classpath:surname.txt
+2019-09-10 11:34:37  INFO AutoDetector:99 : 加载资源 508 行
+2019-09-10 11:34:37  INFO PersonName:61 : 初始化百家姓
+2019-09-10 11:34:37  INFO PersonName:74 : 百家姓初始化完毕，单姓个数：446，复姓个数：60
+2019-09-10 11:34:37  INFO AutoDetector:104 : 完成加载资源，耗时2 毫秒
+2019-09-10 11:34:37  INFO DictionaryFactory:101 : 将 60 个复姓加入词典
+2019-09-10 11:34:47  INFO DictionaryFactory:139 : 词数目：677848，词典最大词长：16
+2019-09-10 11:34:47  INFO DictionaryFactory:142 : 词长  1 的词数为：47
+2019-09-10 11:34:47  INFO DictionaryFactory:142 : 词长  2 的词数为：213335
+2019-09-10 11:34:47  INFO DictionaryFactory:142 : 词长  3 的词数为：289751
+2019-09-10 11:34:47  INFO DictionaryFactory:142 : 词长  4 的词数为：158965
+2019-09-10 11:34:47  INFO DictionaryFactory:142 : 词长  5 的词数为：6139
+2019-09-10 11:34:47  INFO DictionaryFactory:142 : 词长  6 的词数为：3746
+2019-09-10 11:34:47  INFO DictionaryFactory:142 : 词长  7 的词数为：2205
+2019-09-10 11:34:47  INFO DictionaryFactory:142 : 词长  8 的词数为：1321
+2019-09-10 11:34:47  INFO DictionaryFactory:142 : 词长  9 的词数为：797
+2019-09-10 11:34:47  INFO DictionaryFactory:144 : 词长 10 的词数为：632
+2019-09-10 11:34:47  INFO DictionaryFactory:144 : 词长 11 的词数为：312
+2019-09-10 11:34:47  INFO DictionaryFactory:144 : 词长 12 的词数为：282
+2019-09-10 11:34:47  INFO DictionaryFactory:144 : 词长 13 的词数为：124
+2019-09-10 11:34:47  INFO DictionaryFactory:144 : 词长 14 的词数为：116
+2019-09-10 11:34:47  INFO DictionaryFactory:144 : 词长 15 的词数为：51
+2019-09-10 11:34:47  INFO DictionaryFactory:144 : 词长 16 的词数为：25
+2019-09-10 11:34:47  INFO DictionaryFactory:147 : 词典平均词长：3.0032012
+2019-09-10 11:34:47  INFO DictionaryFactory:122 : 词典初始化完毕，耗时：10313 毫秒
+2019-09-10 11:34:47  INFO AutoDetector:104 : 完成加载资源，耗时10604 毫秒
+2019-09-10 11:34:47  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.MaximumMatching
+2019-09-10 11:34:47  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.ReverseMaximumMatching
+2019-09-10 11:34:47  INFO AutoDetector:78 : 开始加载资源
+2019-09-10 11:34:47  INFO AutoDetector:79 : classpath:punctuation.txt
+2019-09-10 11:34:47  INFO AutoDetector:116 : 类路径资源：punctuation.txt
+2019-09-10 11:34:47  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/punctuation.txt
+2019-09-10 11:34:47  INFO AutoDetector:350 : 加载资源：classpath:punctuation.txt
+2019-09-10 11:34:47  INFO AutoDetector:99 : 加载资源 48 行
+2019-09-10 11:34:47  INFO Punctuation:55 : 初始化标点符号
+2019-09-10 11:34:47  INFO Punctuation:80 : 标点符号初始化完毕，标点符号个数：52
+2019-09-10 11:34:47  INFO AutoDetector:104 : 完成加载资源，耗时1 毫秒
+2019-09-10 11:34:47  INFO AutoDetector:78 : 开始加载资源
+2019-09-10 11:34:47  INFO AutoDetector:79 : classpath:quantifier.txt
+2019-09-10 11:34:47  INFO AutoDetector:116 : 类路径资源：quantifier.txt
+2019-09-10 11:34:47  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/quantifier.txt
+2019-09-10 11:34:47  INFO AutoDetector:350 : 加载资源：classpath:quantifier.txt
+2019-09-10 11:34:47  INFO AutoDetector:99 : 加载资源 164 行
+2019-09-10 11:34:47  INFO Quantifier:52 : 初始化数量词
+2019-09-10 11:34:47  INFO Quantifier:65 : 数量词初始化完毕，数量词个数：164
+2019-09-10 11:34:47  INFO AutoDetector:104 : 完成加载资源，耗时1 毫秒
+2019-09-10 11:34:47  INFO AutoDetector:78 : 开始加载资源
+2019-09-10 11:34:47  INFO AutoDetector:79 : classpath:bigram.txt
+2019-09-10 11:34:47  INFO AutoDetector:116 : 类路径资源：bigram.txt
+2019-09-10 11:34:47  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/bigram.txt
+2019-09-10 11:34:47  INFO AutoDetector:350 : 加载资源：classpath:bigram.txt
+2019-09-10 11:34:48  INFO AutoDetector:99 : 加载资源 1519443 行
+2019-09-10 11:34:48  INFO Bigram:52 : 初始化bigram
+2019-09-10 11:35:12  INFO Bigram:63 : bigram初始化完毕，bigram数据条数：1519443
+2019-09-10 11:35:12  INFO AutoDetector:104 : 完成加载资源，耗时24589 毫秒
+2019-09-10 11:35:12  INFO AutoDetector:78 : 开始加载资源
+2019-09-10 11:35:12  INFO AutoDetector:79 : classpath:stopwords.txt,classpath:custom_stopwords_dic.txt
+2019-09-10 11:35:12  INFO AutoDetector:116 : 类路径资源：stopwords.txt
+2019-09-10 11:35:12  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/stopwords.txt
+2019-09-10 11:35:12  INFO AutoDetector:350 : 加载资源：classpath:stopwords.txt
+2019-09-10 11:35:12  INFO AutoDetector:116 : 类路径资源：custom_stopwords_dic.txt
+2019-09-10 11:35:12  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/custom_stopwords_dic.txt
+2019-09-10 11:35:12  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\custom_stopwords_dic.txt
+2019-09-10 11:35:12  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\custom_stopwords_dic.txt
+2019-09-10 11:35:12  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-10 11:35:12  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-10 11:35:12  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-10 11:35:12  INFO AutoDetector:99 : 加载资源 1482 行
+2019-09-10 11:35:12  INFO StopWord:64 : 初始化停用词
+2019-09-10 11:35:12  INFO StopWord:70 : 停用词初始化完毕，停用词个数：1482
+2019-09-10 11:35:12  INFO AutoDetector:104 : 完成加载资源，耗时4 毫秒
+2019-09-10 11:35:12  INFO AutoDetector:78 : 开始加载资源
+2019-09-10 11:35:12  INFO AutoDetector:79 : classpath:word_refine.txt
+2019-09-10 11:35:12  INFO AutoDetector:116 : 类路径资源：word_refine.txt
+2019-09-10 11:35:12  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/word_refine.txt
+2019-09-10 11:35:12  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\word_refine.txt
+2019-09-10 11:35:12  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\word_refine.txt
+2019-09-10 11:35:12  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-10 11:35:12  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-10 11:35:12  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-10 11:35:12  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_refine.txt
+2019-09-10 11:35:12  INFO AutoDetector:350 : 加载资源：classpath:word_refine.txt
+2019-09-10 11:35:12  INFO AutoDetector:99 : 加载资源 2 行
+2019-09-10 11:35:12  INFO WordRefiner:55 : 初始化WordRefiner
+2019-09-10 11:35:12  INFO WordRefiner:66 : WordRefiner初始化完毕，数据条数：2
+2019-09-10 11:35:12  INFO AutoDetector:104 : 完成加载资源，耗时6 毫秒
+2019-09-10 11:35:12  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.MaxNgramScore
+2019-09-10 11:38:46  INFO DefaultTestContextBootstrapper:308 : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.digitalx.DigitalxTest], using DelegatingSmartContextLoader
+2019-09-10 11:38:46  INFO AbstractContextLoader:264 : Could not detect default resource locations for test class [com.digitalx.DigitalxTest]: no resource found for suffixes {-context.xml}.
+2019-09-10 11:38:46  INFO AnnotationConfigContextLoaderUtils:83 : Could not detect default configuration classes for test class [com.digitalx.DigitalxTest]: DigitalxTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-09-10 11:38:46  INFO DefaultTestContextBootstrapper:248 : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-09-10 11:38:46  INFO DefaultTestContextBootstrapper:177 : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@62fdb4a6, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@11e21d0e, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1dd02175, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@31206beb, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3e77a1ed, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3ffcd140, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@23bb8443, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1176dcec, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@120d6fe6, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4ba2ca36, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3444d69d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1372ed45]
+2019-09-10 11:38:46 ERROR TestContextManager:250 : Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@31206beb] to prepare test instance [com.digitalx.DigitalxTest@4d1c00d0]
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'com.digitalx.DigitalxTest': Unsatisfied dependency expressed through field 'commentService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.digitalx.service.CommentService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:391)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:119)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.digitalx.service.CommentService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1658)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1217)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 30 more
+2019-09-10 11:38:46 ERROR TestContextManager:250 : Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@31206beb] to prepare test instance [com.digitalx.DigitalxTest@6ad82709]
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'com.digitalx.DigitalxTest': Unsatisfied dependency expressed through field 'commentService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.digitalx.service.CommentService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:391)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:119)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.digitalx.service.CommentService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1658)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1217)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 30 more
+2019-09-10 11:38:46  INFO SpringBootTestContextBootstrapper:308 : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.digitalx.RedisTest], using SpringBootContextLoader
+2019-09-10 11:38:46  INFO AbstractContextLoader:264 : Could not detect default resource locations for test class [com.digitalx.RedisTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-09-10 11:38:46  INFO AnnotationConfigContextLoaderUtils:83 : Could not detect default configuration classes for test class [com.digitalx.RedisTest]: RedisTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-09-10 11:38:47  INFO SpringBootTestContextBootstrapper:235 : Found @SpringBootConfiguration com.digitalx.DigitalXApplication for test class com.digitalx.RedisTest
+2019-09-10 11:38:47  INFO SpringBootTestContextBootstrapper:248 : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-09-10 11:38:47  INFO SpringBootTestContextBootstrapper:177 : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@78e4deb0, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6e9175d8, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7d0b7e3c, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@15bb5034, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4b741d6d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2eae8e6e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@8f2ef19, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@470734c3, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2cf3d63b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7674f035, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@69e153c5, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@173ed316]
+2019-09-10 11:38:47 ERROR TestContextManager:250 : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@78e4deb0] to prepare test instance [com.digitalx.RedisTest@aba625]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.lang.IllegalArgumentException: LoggerFactory is not a Logback LoggerContext but Logback is on the classpath. Either remove Logback or the competing implementation (class org.slf4j.impl.Log4jLoggerFactory loaded from file:/C:/Users/pjli/.m2/repository/org/slf4j/slf4j-log4j12/1.7.26/slf4j-log4j12-1.7.26.jar). If you are using WebLogic you will need to add 'org.slf4j' to prefer-application-packages in WEB-INF/weblogic.xml: org.slf4j.impl.Log4jLoggerFactory
+	at org.springframework.util.Assert.instanceCheckFailed(Assert.java:655)
+	at org.springframework.util.Assert.isInstanceOf(Assert.java:555)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.getLoggerContext(LogbackLoggingSystem.java:280)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.beforeInitialize(LogbackLoggingSystem.java:104)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationStartingEvent(LoggingApplicationListener.java:219)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:200)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.starting(EventPublishingRunListener.java:70)
+	at org.springframework.boot.SpringApplicationRunListeners.starting(SpringApplicationRunListeners.java:47)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	... 27 more
+2019-09-10 11:38:47  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.BidirectionalMaximumMatching
+2019-09-10 11:38:47  INFO WordConfTools:88 : 开始加载配置文件
+2019-09-10 11:38:47  INFO WordConfTools:128 : 加载配置文件：word.conf
+2019-09-10 11:38:47  INFO WordConfTools:128 : 加载配置文件：word.local.conf
+2019-09-10 11:38:47  INFO WordConfTools:94 : 配置文件加载完毕，耗时5 毫秒，配置项数目：33
+2019-09-10 11:38:47  INFO WordConfTools:95 : 配置信息：
+2019-09-10 11:38:47  INFO WordConfTools:98 : 1、auto.detect=true
+2019-09-10 11:38:47  INFO WordConfTools:98 : 2、bigram.double.array.trie.size=5300000
+2019-09-10 11:38:47  INFO WordConfTools:98 : 3、bigram.path=classpath:bigram.txt
+2019-09-10 11:38:47  INFO WordConfTools:98 : 4、dic.class=org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-10 11:38:47  INFO WordConfTools:98 : 5、dic.dump.path=
+2019-09-10 11:38:47  INFO WordConfTools:98 : 6、dic.path=classpath:dic.txt,classpath:custom_dic.txt
+2019-09-10 11:38:47  INFO WordConfTools:98 : 7、dictionary.trie.index.size=24000
+2019-09-10 11:38:47  INFO WordConfTools:98 : 8、double.array.dictionary.trie.size=2600000
+2019-09-10 11:38:47  INFO WordConfTools:98 : 9、intercept.length=16
+2019-09-10 11:38:47  INFO WordConfTools:98 : 10、keep.punctuation=false
+2019-09-10 11:38:47  INFO WordConfTools:98 : 11、keep.whitespace=false
+2019-09-10 11:38:47  INFO WordConfTools:98 : 12、ngram=bigram
+2019-09-10 11:38:47  INFO WordConfTools:98 : 13、parallel.seg=true
+2019-09-10 11:38:47  INFO WordConfTools:98 : 14、part.of.speech.des.path=classpath:part_of_speech_des.txt
+2019-09-10 11:38:47  INFO WordConfTools:98 : 15、part.of.speech.dic.path=classpath:part_of_speech_dic.txt
+2019-09-10 11:38:47  INFO WordConfTools:98 : 16、person.name.recognize=true
+2019-09-10 11:38:47  INFO WordConfTools:98 : 17、punctuation.path=classpath:punctuation.txt
+2019-09-10 11:38:47  INFO WordConfTools:98 : 18、quantifier.path=classpath:quantifier.txt
+2019-09-10 11:38:47  INFO WordConfTools:98 : 19、recognition.tool.enabled=true
+2019-09-10 11:38:47  INFO WordConfTools:98 : 20、redis.host=localhost
+2019-09-10 11:38:47  INFO WordConfTools:98 : 21、redis.port=6379
+2019-09-10 11:38:47  INFO WordConfTools:98 : 22、stopwords.path=classpath:stopwords.txt,classpath:custom_stopwords_dic.txt
+2019-09-10 11:38:47  INFO WordConfTools:98 : 23、surname.path=classpath:surname.txt
+2019-09-10 11:38:47  INFO WordConfTools:98 : 24、tagging.antonym=false
+2019-09-10 11:38:47  INFO WordConfTools:98 : 25、tagging.pinyin.acronym=false
+2019-09-10 11:38:47  INFO WordConfTools:98 : 26、tagging.pinyin.full=false
+2019-09-10 11:38:47  INFO WordConfTools:98 : 27、tagging.synonym=false
+2019-09-10 11:38:47  INFO WordConfTools:98 : 28、trigram.double.array.trie.size=9800000
+2019-09-10 11:38:47  INFO WordConfTools:98 : 29、trigram.path=classpath:trigram.txt
+2019-09-10 11:38:47  INFO WordConfTools:98 : 30、word.antonym.path=classpath:word_antonym.txt
+2019-09-10 11:38:47  INFO WordConfTools:98 : 31、word.refine.combine.max.length=3
+2019-09-10 11:38:47  INFO WordConfTools:98 : 32、word.refine.path=classpath:word_refine.txt
+2019-09-10 11:38:47  INFO WordConfTools:98 : 33、word.synonym.path=classpath:word_synonym.txt
+2019-09-10 11:38:47  INFO DictionaryFactory:72 : dic.class=org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-10 11:38:47  INFO DoubleArrayDictionaryTrie:69 : 初始化词典：org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-10 11:38:47  INFO AutoDetector:78 : 开始加载资源
+2019-09-10 11:38:47  INFO AutoDetector:79 : classpath:dic.txt,classpath:custom_dic.txt,classpath:punctuation.txt,classpath:part_of_speech_dic.txt,classpath:word_synonym.txt,classpath:word_antonym.txt
+2019-09-10 11:38:47  INFO AutoDetector:116 : 类路径资源：dic.txt
+2019-09-10 11:38:47  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/dic.txt
+2019-09-10 11:38:47  INFO AutoDetector:350 : 加载资源：classpath:dic.txt
+2019-09-10 11:38:47  INFO AutoDetector:116 : 类路径资源：custom_dic.txt
+2019-09-10 11:38:47  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/custom_dic.txt
+2019-09-10 11:38:47  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\custom_dic.txt
+2019-09-10 11:38:47  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\custom_dic.txt
+2019-09-10 11:38:47  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-10 11:38:47  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-10 11:38:47  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-10 11:38:47  INFO AutoDetector:116 : 类路径资源：punctuation.txt
+2019-09-10 11:38:47  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/punctuation.txt
+2019-09-10 11:38:47  INFO AutoDetector:350 : 加载资源：classpath:punctuation.txt
+2019-09-10 11:38:47  INFO AutoDetector:116 : 类路径资源：part_of_speech_dic.txt
+2019-09-10 11:38:47  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/part_of_speech_dic.txt
+2019-09-10 11:38:47  INFO AutoDetector:350 : 加载资源：classpath:part_of_speech_dic.txt
+2019-09-10 11:38:47  INFO AutoDetector:116 : 类路径资源：word_synonym.txt
+2019-09-10 11:38:47  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_synonym.txt
+2019-09-10 11:38:47  INFO AutoDetector:350 : 加载资源：classpath:word_synonym.txt
+2019-09-10 11:38:47  INFO AutoDetector:116 : 类路径资源：word_antonym.txt
+2019-09-10 11:38:47  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_antonym.txt
+2019-09-10 11:38:47  INFO AutoDetector:350 : 加载资源：classpath:word_antonym.txt
+2019-09-10 11:38:47  INFO AutoDetector:99 : 加载资源 1091314 行
+2019-09-10 11:38:47  INFO DictionaryFactory:92 : 初始化词典
+2019-09-10 11:38:47  INFO AutoDetector:78 : 开始加载资源
+2019-09-10 11:38:47  INFO AutoDetector:79 : classpath:surname.txt
+2019-09-10 11:38:47  INFO AutoDetector:116 : 类路径资源：surname.txt
+2019-09-10 11:38:47  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/surname.txt
+2019-09-10 11:38:47  INFO AutoDetector:350 : 加载资源：classpath:surname.txt
+2019-09-10 11:38:47  INFO AutoDetector:99 : 加载资源 508 行
+2019-09-10 11:38:47  INFO PersonName:61 : 初始化百家姓
+2019-09-10 11:38:47  INFO PersonName:74 : 百家姓初始化完毕，单姓个数：446，复姓个数：60
+2019-09-10 11:38:47  INFO AutoDetector:104 : 完成加载资源，耗时2 毫秒
+2019-09-10 11:38:47  INFO DictionaryFactory:101 : 将 60 个复姓加入词典
+2019-09-10 11:38:57  INFO DictionaryFactory:139 : 词数目：677848，词典最大词长：16
+2019-09-10 11:38:57  INFO DictionaryFactory:142 : 词长  1 的词数为：47
+2019-09-10 11:38:57  INFO DictionaryFactory:142 : 词长  2 的词数为：213335
+2019-09-10 11:38:57  INFO DictionaryFactory:142 : 词长  3 的词数为：289751
+2019-09-10 11:38:57  INFO DictionaryFactory:142 : 词长  4 的词数为：158965
+2019-09-10 11:38:57  INFO DictionaryFactory:142 : 词长  5 的词数为：6139
+2019-09-10 11:38:57  INFO DictionaryFactory:142 : 词长  6 的词数为：3746
+2019-09-10 11:38:57  INFO DictionaryFactory:142 : 词长  7 的词数为：2205
+2019-09-10 11:38:57  INFO DictionaryFactory:142 : 词长  8 的词数为：1321
+2019-09-10 11:38:57  INFO DictionaryFactory:142 : 词长  9 的词数为：797
+2019-09-10 11:38:57  INFO DictionaryFactory:144 : 词长 10 的词数为：632
+2019-09-10 11:38:57  INFO DictionaryFactory:144 : 词长 11 的词数为：312
+2019-09-10 11:38:57  INFO DictionaryFactory:144 : 词长 12 的词数为：282
+2019-09-10 11:38:57  INFO DictionaryFactory:144 : 词长 13 的词数为：124
+2019-09-10 11:38:57  INFO DictionaryFactory:144 : 词长 14 的词数为：116
+2019-09-10 11:38:57  INFO DictionaryFactory:144 : 词长 15 的词数为：51
+2019-09-10 11:38:57  INFO DictionaryFactory:144 : 词长 16 的词数为：25
+2019-09-10 11:38:57  INFO DictionaryFactory:147 : 词典平均词长：3.0032012
+2019-09-10 11:38:57  INFO DictionaryFactory:122 : 词典初始化完毕，耗时：10371 毫秒
+2019-09-10 11:38:57  INFO AutoDetector:104 : 完成加载资源，耗时10657 毫秒
+2019-09-10 11:38:57  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.MaximumMatching
+2019-09-10 11:38:57  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.ReverseMaximumMatching
+2019-09-10 11:38:57  INFO AutoDetector:78 : 开始加载资源
+2019-09-10 11:38:57  INFO AutoDetector:79 : classpath:punctuation.txt
+2019-09-10 11:38:57  INFO AutoDetector:116 : 类路径资源：punctuation.txt
+2019-09-10 11:38:57  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/punctuation.txt
+2019-09-10 11:38:57  INFO AutoDetector:350 : 加载资源：classpath:punctuation.txt
+2019-09-10 11:38:57  INFO AutoDetector:99 : 加载资源 48 行
+2019-09-10 11:38:57  INFO Punctuation:55 : 初始化标点符号
+2019-09-10 11:38:57  INFO Punctuation:80 : 标点符号初始化完毕，标点符号个数：52
+2019-09-10 11:38:57  INFO AutoDetector:104 : 完成加载资源，耗时1 毫秒
+2019-09-10 11:38:57  INFO AutoDetector:78 : 开始加载资源
+2019-09-10 11:38:57  INFO AutoDetector:79 : classpath:quantifier.txt
+2019-09-10 11:38:57  INFO AutoDetector:116 : 类路径资源：quantifier.txt
+2019-09-10 11:38:57  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/quantifier.txt
+2019-09-10 11:38:57  INFO AutoDetector:350 : 加载资源：classpath:quantifier.txt
+2019-09-10 11:38:57  INFO AutoDetector:99 : 加载资源 164 行
+2019-09-10 11:38:57  INFO Quantifier:52 : 初始化数量词
+2019-09-10 11:38:57  INFO Quantifier:65 : 数量词初始化完毕，数量词个数：164
+2019-09-10 11:38:57  INFO AutoDetector:104 : 完成加载资源，耗时2 毫秒
+2019-09-10 11:38:57  INFO AutoDetector:78 : 开始加载资源
+2019-09-10 11:38:57  INFO AutoDetector:79 : classpath:bigram.txt
+2019-09-10 11:38:57  INFO AutoDetector:116 : 类路径资源：bigram.txt
+2019-09-10 11:38:57  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/bigram.txt
+2019-09-10 11:38:57  INFO AutoDetector:350 : 加载资源：classpath:bigram.txt
+2019-09-10 11:38:58  INFO AutoDetector:99 : 加载资源 1519443 行
+2019-09-10 11:38:58  INFO Bigram:52 : 初始化bigram
+2019-09-10 11:39:22  INFO Bigram:63 : bigram初始化完毕，bigram数据条数：1519443
+2019-09-10 11:39:22  INFO AutoDetector:104 : 完成加载资源，耗时24239 毫秒
+2019-09-10 11:39:22  INFO AutoDetector:78 : 开始加载资源
+2019-09-10 11:39:22  INFO AutoDetector:79 : classpath:stopwords.txt,classpath:custom_stopwords_dic.txt
+2019-09-10 11:39:22  INFO AutoDetector:116 : 类路径资源：stopwords.txt
+2019-09-10 11:39:22  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/stopwords.txt
+2019-09-10 11:39:22  INFO AutoDetector:350 : 加载资源：classpath:stopwords.txt
+2019-09-10 11:39:22  INFO AutoDetector:116 : 类路径资源：custom_stopwords_dic.txt
+2019-09-10 11:39:22  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/custom_stopwords_dic.txt
+2019-09-10 11:39:22  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\custom_stopwords_dic.txt
+2019-09-10 11:39:22  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\custom_stopwords_dic.txt
+2019-09-10 11:39:22  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-10 11:39:22  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-10 11:39:22  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-10 11:39:22  INFO AutoDetector:99 : 加载资源 1482 行
+2019-09-10 11:39:22  INFO StopWord:64 : 初始化停用词
+2019-09-10 11:39:22  INFO StopWord:70 : 停用词初始化完毕，停用词个数：1482
+2019-09-10 11:39:22  INFO AutoDetector:104 : 完成加载资源，耗时5 毫秒
+2019-09-10 11:39:22  INFO AutoDetector:78 : 开始加载资源
+2019-09-10 11:39:22  INFO AutoDetector:79 : classpath:word_refine.txt
+2019-09-10 11:39:22  INFO AutoDetector:116 : 类路径资源：word_refine.txt
+2019-09-10 11:39:22  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/word_refine.txt
+2019-09-10 11:39:22  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\word_refine.txt
+2019-09-10 11:39:22  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\word_refine.txt
+2019-09-10 11:39:22  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-10 11:39:22  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-10 11:39:22  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-10 11:39:22  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_refine.txt
+2019-09-10 11:39:22  INFO AutoDetector:350 : 加载资源：classpath:word_refine.txt
+2019-09-10 11:39:22  INFO AutoDetector:99 : 加载资源 2 行
+2019-09-10 11:39:22  INFO WordRefiner:55 : 初始化WordRefiner
+2019-09-10 11:39:22  INFO WordRefiner:66 : WordRefiner初始化完毕，数据条数：2
+2019-09-10 11:39:22  INFO AutoDetector:104 : 完成加载资源，耗时3 毫秒
+2019-09-10 11:39:22  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.MaxNgramScore
+2019-09-10 11:40:16  INFO SpringBootTestContextBootstrapper:308 : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.digitalx.RedisTest], using SpringBootContextLoader
+2019-09-10 11:40:16  INFO AbstractContextLoader:264 : Could not detect default resource locations for test class [com.digitalx.RedisTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-09-10 11:40:16  INFO AnnotationConfigContextLoaderUtils:83 : Could not detect default configuration classes for test class [com.digitalx.RedisTest]: RedisTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-09-10 11:40:16  INFO SpringBootTestContextBootstrapper:235 : Found @SpringBootConfiguration com.digitalx.DigitalXApplication for test class com.digitalx.RedisTest
+2019-09-10 11:40:16  INFO SpringBootTestContextBootstrapper:248 : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-09-10 11:40:16  INFO SpringBootTestContextBootstrapper:177 : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5b7a5baa, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@776aec5c, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1d296da, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7c7a06ec, org.springframework.test.context.support.DirtiesContextTestExecutionListener@75d4a5c2, org.springframework.test.context.transaction.TransactionalTestExecutionListener@557caf28, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@408d971b, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6c6cb480, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3c46e67a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@c730b35, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@206a70ef, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@292b08d6]
+2019-09-10 11:40:16 ERROR TestContextManager:250 : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@5b7a5baa] to prepare test instance [com.digitalx.RedisTest@5136d012]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.lang.IllegalArgumentException: LoggerFactory is not a Logback LoggerContext but Logback is on the classpath. Either remove Logback or the competing implementation (class org.slf4j.impl.Log4jLoggerFactory loaded from file:/C:/Users/pjli/.m2/repository/org/slf4j/slf4j-log4j12/1.7.26/slf4j-log4j12-1.7.26.jar). If you are using WebLogic you will need to add 'org.slf4j' to prefer-application-packages in WEB-INF/weblogic.xml: org.slf4j.impl.Log4jLoggerFactory
+	at org.springframework.util.Assert.instanceCheckFailed(Assert.java:655)
+	at org.springframework.util.Assert.isInstanceOf(Assert.java:555)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.getLoggerContext(LogbackLoggingSystem.java:280)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.beforeInitialize(LogbackLoggingSystem.java:104)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationStartingEvent(LoggingApplicationListener.java:219)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:200)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.starting(EventPublishingRunListener.java:70)
+	at org.springframework.boot.SpringApplicationRunListeners.starting(SpringApplicationRunListeners.java:47)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	... 27 more
+2019-09-10 11:40:16  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.BidirectionalMaximumMatching
+2019-09-10 11:40:16  INFO WordConfTools:88 : 开始加载配置文件
+2019-09-10 11:40:16  INFO WordConfTools:128 : 加载配置文件：word.conf
+2019-09-10 11:40:16  INFO WordConfTools:128 : 加载配置文件：word.local.conf
+2019-09-10 11:40:16  INFO WordConfTools:94 : 配置文件加载完毕，耗时2 毫秒，配置项数目：33
+2019-09-10 11:40:16  INFO WordConfTools:95 : 配置信息：
+2019-09-10 11:40:16  INFO WordConfTools:98 : 1、auto.detect=true
+2019-09-10 11:40:16  INFO WordConfTools:98 : 2、bigram.double.array.trie.size=5300000
+2019-09-10 11:40:16  INFO WordConfTools:98 : 3、bigram.path=classpath:bigram.txt
+2019-09-10 11:40:16  INFO WordConfTools:98 : 4、dic.class=org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-10 11:40:16  INFO WordConfTools:98 : 5、dic.dump.path=
+2019-09-10 11:40:16  INFO WordConfTools:98 : 6、dic.path=classpath:dic.txt,classpath:custom_dic.txt
+2019-09-10 11:40:16  INFO WordConfTools:98 : 7、dictionary.trie.index.size=24000
+2019-09-10 11:40:16  INFO WordConfTools:98 : 8、double.array.dictionary.trie.size=2600000
+2019-09-10 11:40:16  INFO WordConfTools:98 : 9、intercept.length=16
+2019-09-10 11:40:16  INFO WordConfTools:98 : 10、keep.punctuation=false
+2019-09-10 11:40:16  INFO WordConfTools:98 : 11、keep.whitespace=false
+2019-09-10 11:40:16  INFO WordConfTools:98 : 12、ngram=bigram
+2019-09-10 11:40:16  INFO WordConfTools:98 : 13、parallel.seg=true
+2019-09-10 11:40:16  INFO WordConfTools:98 : 14、part.of.speech.des.path=classpath:part_of_speech_des.txt
+2019-09-10 11:40:16  INFO WordConfTools:98 : 15、part.of.speech.dic.path=classpath:part_of_speech_dic.txt
+2019-09-10 11:40:16  INFO WordConfTools:98 : 16、person.name.recognize=true
+2019-09-10 11:40:16  INFO WordConfTools:98 : 17、punctuation.path=classpath:punctuation.txt
+2019-09-10 11:40:16  INFO WordConfTools:98 : 18、quantifier.path=classpath:quantifier.txt
+2019-09-10 11:40:16  INFO WordConfTools:98 : 19、recognition.tool.enabled=true
+2019-09-10 11:40:16  INFO WordConfTools:98 : 20、redis.host=localhost
+2019-09-10 11:40:16  INFO WordConfTools:98 : 21、redis.port=6379
+2019-09-10 11:40:16  INFO WordConfTools:98 : 22、stopwords.path=classpath:stopwords.txt,classpath:custom_stopwords_dic.txt
+2019-09-10 11:40:16  INFO WordConfTools:98 : 23、surname.path=classpath:surname.txt
+2019-09-10 11:40:16  INFO WordConfTools:98 : 24、tagging.antonym=false
+2019-09-10 11:40:16  INFO WordConfTools:98 : 25、tagging.pinyin.acronym=false
+2019-09-10 11:40:16  INFO WordConfTools:98 : 26、tagging.pinyin.full=false
+2019-09-10 11:40:16  INFO WordConfTools:98 : 27、tagging.synonym=false
+2019-09-10 11:40:16  INFO WordConfTools:98 : 28、trigram.double.array.trie.size=9800000
+2019-09-10 11:40:16  INFO WordConfTools:98 : 29、trigram.path=classpath:trigram.txt
+2019-09-10 11:40:16  INFO WordConfTools:98 : 30、word.antonym.path=classpath:word_antonym.txt
+2019-09-10 11:40:16  INFO WordConfTools:98 : 31、word.refine.combine.max.length=3
+2019-09-10 11:40:16  INFO WordConfTools:98 : 32、word.refine.path=classpath:word_refine.txt
+2019-09-10 11:40:16  INFO WordConfTools:98 : 33、word.synonym.path=classpath:word_synonym.txt
+2019-09-10 11:40:16  INFO DictionaryFactory:72 : dic.class=org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-10 11:40:16  INFO DoubleArrayDictionaryTrie:69 : 初始化词典：org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-10 11:40:16  INFO AutoDetector:78 : 开始加载资源
+2019-09-10 11:40:16  INFO AutoDetector:79 : classpath:dic.txt,classpath:custom_dic.txt,classpath:punctuation.txt,classpath:part_of_speech_dic.txt,classpath:word_synonym.txt,classpath:word_antonym.txt
+2019-09-10 11:40:16  INFO AutoDetector:116 : 类路径资源：dic.txt
+2019-09-10 11:40:16  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/dic.txt
+2019-09-10 11:40:16  INFO AutoDetector:350 : 加载资源：classpath:dic.txt
+2019-09-10 11:40:16  INFO AutoDetector:116 : 类路径资源：custom_dic.txt
+2019-09-10 11:40:16  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/custom_dic.txt
+2019-09-10 11:40:16  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\custom_dic.txt
+2019-09-10 11:40:16  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\custom_dic.txt
+2019-09-10 11:40:16  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-10 11:40:16  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-10 11:40:16  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-10 11:40:16  INFO AutoDetector:116 : 类路径资源：punctuation.txt
+2019-09-10 11:40:16  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/punctuation.txt
+2019-09-10 11:40:16  INFO AutoDetector:350 : 加载资源：classpath:punctuation.txt
+2019-09-10 11:40:16  INFO AutoDetector:116 : 类路径资源：part_of_speech_dic.txt
+2019-09-10 11:40:16  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/part_of_speech_dic.txt
+2019-09-10 11:40:16  INFO AutoDetector:350 : 加载资源：classpath:part_of_speech_dic.txt
+2019-09-10 11:40:17  INFO AutoDetector:116 : 类路径资源：word_synonym.txt
+2019-09-10 11:40:17  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_synonym.txt
+2019-09-10 11:40:17  INFO AutoDetector:350 : 加载资源：classpath:word_synonym.txt
+2019-09-10 11:40:17  INFO AutoDetector:116 : 类路径资源：word_antonym.txt
+2019-09-10 11:40:17  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_antonym.txt
+2019-09-10 11:40:17  INFO AutoDetector:350 : 加载资源：classpath:word_antonym.txt
+2019-09-10 11:40:17  INFO AutoDetector:99 : 加载资源 1091314 行
+2019-09-10 11:40:17  INFO DictionaryFactory:92 : 初始化词典
+2019-09-10 11:40:17  INFO AutoDetector:78 : 开始加载资源
+2019-09-10 11:40:17  INFO AutoDetector:79 : classpath:surname.txt
+2019-09-10 11:40:17  INFO AutoDetector:116 : 类路径资源：surname.txt
+2019-09-10 11:40:17  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/surname.txt
+2019-09-10 11:40:17  INFO AutoDetector:350 : 加载资源：classpath:surname.txt
+2019-09-10 11:40:17  INFO AutoDetector:99 : 加载资源 508 行
+2019-09-10 11:40:17  INFO PersonName:61 : 初始化百家姓
+2019-09-10 11:40:17  INFO PersonName:74 : 百家姓初始化完毕，单姓个数：446，复姓个数：60
+2019-09-10 11:40:17  INFO AutoDetector:104 : 完成加载资源，耗时1 毫秒
+2019-09-10 11:40:17  INFO DictionaryFactory:101 : 将 60 个复姓加入词典
+2019-09-10 11:40:27  INFO DictionaryFactory:139 : 词数目：677848，词典最大词长：16
+2019-09-10 11:40:27  INFO DictionaryFactory:142 : 词长  1 的词数为：47
+2019-09-10 11:40:27  INFO DictionaryFactory:142 : 词长  2 的词数为：213335
+2019-09-10 11:40:27  INFO DictionaryFactory:142 : 词长  3 的词数为：289751
+2019-09-10 11:40:27  INFO DictionaryFactory:142 : 词长  4 的词数为：158965
+2019-09-10 11:40:27  INFO DictionaryFactory:142 : 词长  5 的词数为：6139
+2019-09-10 11:40:27  INFO DictionaryFactory:142 : 词长  6 的词数为：3746
+2019-09-10 11:40:27  INFO DictionaryFactory:142 : 词长  7 的词数为：2205
+2019-09-10 11:40:27  INFO DictionaryFactory:142 : 词长  8 的词数为：1321
+2019-09-10 11:40:27  INFO DictionaryFactory:142 : 词长  9 的词数为：797
+2019-09-10 11:40:27  INFO DictionaryFactory:144 : 词长 10 的词数为：632
+2019-09-10 11:40:27  INFO DictionaryFactory:144 : 词长 11 的词数为：312
+2019-09-10 11:40:27  INFO DictionaryFactory:144 : 词长 12 的词数为：282
+2019-09-10 11:40:27  INFO DictionaryFactory:144 : 词长 13 的词数为：124
+2019-09-10 11:40:27  INFO DictionaryFactory:144 : 词长 14 的词数为：116
+2019-09-10 11:40:27  INFO DictionaryFactory:144 : 词长 15 的词数为：51
+2019-09-10 11:40:27  INFO DictionaryFactory:144 : 词长 16 的词数为：25
+2019-09-10 11:40:27  INFO DictionaryFactory:147 : 词典平均词长：3.0032012
+2019-09-10 11:40:27  INFO DictionaryFactory:122 : 词典初始化完毕，耗时：10606 毫秒
+2019-09-10 11:40:27  INFO AutoDetector:104 : 完成加载资源，耗时10917 毫秒
+2019-09-10 11:40:27  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.MaximumMatching
+2019-09-10 11:40:27  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.ReverseMaximumMatching
+2019-09-10 11:40:27  INFO AutoDetector:78 : 开始加载资源
+2019-09-10 11:40:27  INFO AutoDetector:79 : classpath:punctuation.txt
+2019-09-10 11:40:27  INFO AutoDetector:116 : 类路径资源：punctuation.txt
+2019-09-10 11:40:27  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/punctuation.txt
+2019-09-10 11:40:27  INFO AutoDetector:350 : 加载资源：classpath:punctuation.txt
+2019-09-10 11:40:27  INFO AutoDetector:99 : 加载资源 48 行
+2019-09-10 11:40:27  INFO Punctuation:55 : 初始化标点符号
+2019-09-10 11:40:27  INFO Punctuation:80 : 标点符号初始化完毕，标点符号个数：52
+2019-09-10 11:40:27  INFO AutoDetector:104 : 完成加载资源，耗时1 毫秒
+2019-09-10 11:40:27  INFO AutoDetector:78 : 开始加载资源
+2019-09-10 11:40:27  INFO AutoDetector:79 : classpath:quantifier.txt
+2019-09-10 11:40:27  INFO AutoDetector:116 : 类路径资源：quantifier.txt
+2019-09-10 11:40:27  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/quantifier.txt
+2019-09-10 11:40:27  INFO AutoDetector:350 : 加载资源：classpath:quantifier.txt
+2019-09-10 11:40:27  INFO AutoDetector:99 : 加载资源 164 行
+2019-09-10 11:40:27  INFO Quantifier:52 : 初始化数量词
+2019-09-10 11:40:27  INFO Quantifier:65 : 数量词初始化完毕，数量词个数：164
+2019-09-10 11:40:27  INFO AutoDetector:104 : 完成加载资源，耗时2 毫秒
+2019-09-10 11:40:27  INFO AutoDetector:78 : 开始加载资源
+2019-09-10 11:40:27  INFO AutoDetector:79 : classpath:bigram.txt
+2019-09-10 11:40:27  INFO AutoDetector:116 : 类路径资源：bigram.txt
+2019-09-10 11:40:27  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/bigram.txt
+2019-09-10 11:40:27  INFO AutoDetector:350 : 加载资源：classpath:bigram.txt
+2019-09-10 11:40:27  INFO AutoDetector:99 : 加载资源 1519443 行
+2019-09-10 11:40:27  INFO Bigram:52 : 初始化bigram
+2019-09-10 11:40:52  INFO Bigram:63 : bigram初始化完毕，bigram数据条数：1519443
+2019-09-10 11:40:52  INFO AutoDetector:104 : 完成加载资源，耗时24422 毫秒
+2019-09-10 11:40:52  INFO AutoDetector:78 : 开始加载资源
+2019-09-10 11:40:52  INFO AutoDetector:79 : classpath:stopwords.txt,classpath:custom_stopwords_dic.txt
+2019-09-10 11:40:52  INFO AutoDetector:116 : 类路径资源：stopwords.txt
+2019-09-10 11:40:52  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/stopwords.txt
+2019-09-10 11:40:52  INFO AutoDetector:350 : 加载资源：classpath:stopwords.txt
+2019-09-10 11:40:52  INFO AutoDetector:116 : 类路径资源：custom_stopwords_dic.txt
+2019-09-10 11:40:52  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/custom_stopwords_dic.txt
+2019-09-10 11:40:52  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\custom_stopwords_dic.txt
+2019-09-10 11:40:52  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\custom_stopwords_dic.txt
+2019-09-10 11:40:52  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-10 11:40:52  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-10 11:40:52  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-10 11:40:52  INFO AutoDetector:99 : 加载资源 1482 行
+2019-09-10 11:40:52  INFO StopWord:64 : 初始化停用词
+2019-09-10 11:40:52  INFO StopWord:70 : 停用词初始化完毕，停用词个数：1482
+2019-09-10 11:40:52  INFO AutoDetector:104 : 完成加载资源，耗时4 毫秒
+2019-09-10 11:40:52  INFO AutoDetector:78 : 开始加载资源
+2019-09-10 11:40:52  INFO AutoDetector:79 : classpath:word_refine.txt
+2019-09-10 11:40:52  INFO AutoDetector:116 : 类路径资源：word_refine.txt
+2019-09-10 11:40:52  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/word_refine.txt
+2019-09-10 11:40:52  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\word_refine.txt
+2019-09-10 11:40:52  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\word_refine.txt
+2019-09-10 11:40:52  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-10 11:40:52  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-10 11:40:52  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-10 11:40:52  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_refine.txt
+2019-09-10 11:40:52  INFO AutoDetector:350 : 加载资源：classpath:word_refine.txt
+2019-09-10 11:40:52  INFO AutoDetector:99 : 加载资源 2 行
+2019-09-10 11:40:52  INFO WordRefiner:55 : 初始化WordRefiner
+2019-09-10 11:40:52  INFO WordRefiner:66 : WordRefiner初始化完毕，数据条数：2
+2019-09-10 11:40:52  INFO AutoDetector:104 : 完成加载资源，耗时2 毫秒
+2019-09-10 11:40:52  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.MaxNgramScore
+2019-09-10 11:42:39  INFO SpringBootTestContextBootstrapper:308 : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.digitalx.RedisTest], using SpringBootContextLoader
+2019-09-10 11:42:39  INFO AbstractContextLoader:264 : Could not detect default resource locations for test class [com.digitalx.RedisTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-09-10 11:42:39  INFO SpringBootTestContextBootstrapper:248 : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-09-10 11:42:39  INFO SpringBootTestContextBootstrapper:177 : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2f7c2f4f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6af93788, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@ef9296d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@36c88a32, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7880cdf3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5be6e01c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1c93084c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6ef888f6, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@10e92f8f, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7ce3cb8e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@78b66d36, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5223e5ee]
+2019-09-10 11:42:39 ERROR TestContextManager:250 : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@2f7c2f4f] to prepare test instance [com.digitalx.RedisTest@36ebc363]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: java.lang.IllegalArgumentException: LoggerFactory is not a Logback LoggerContext but Logback is on the classpath. Either remove Logback or the competing implementation (class org.slf4j.impl.Log4jLoggerFactory loaded from file:/C:/Users/pjli/.m2/repository/org/slf4j/slf4j-log4j12/1.7.26/slf4j-log4j12-1.7.26.jar). If you are using WebLogic you will need to add 'org.slf4j' to prefer-application-packages in WEB-INF/weblogic.xml: org.slf4j.impl.Log4jLoggerFactory
+	at org.springframework.util.Assert.instanceCheckFailed(Assert.java:655)
+	at org.springframework.util.Assert.isInstanceOf(Assert.java:555)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.getLoggerContext(LogbackLoggingSystem.java:280)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.beforeInitialize(LogbackLoggingSystem.java:104)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationStartingEvent(LoggingApplicationListener.java:219)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:200)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.starting(EventPublishingRunListener.java:70)
+	at org.springframework.boot.SpringApplicationRunListeners.starting(SpringApplicationRunListeners.java:47)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	... 24 more
+2019-09-10 11:43:45  INFO SpringBootTestContextBootstrapper:308 : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.digitalx.RedisTest], using SpringBootContextLoader
+2019-09-10 11:43:45  INFO AbstractContextLoader:264 : Could not detect default resource locations for test class [com.digitalx.RedisTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-09-10 11:43:45  INFO SpringBootTestContextBootstrapper:248 : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-09-10 11:43:45  INFO SpringBootTestContextBootstrapper:177 : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@37afeb11, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@515aebb0, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@dd8ba08, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@245b4bdc, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6c64cb25, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6ae5aa72, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@222545dc, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5c5eefef, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@16293aa2, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5158b42f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@595b007d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@72d1ad2e]
+2019-09-10 11:43:46 ERROR TestContextManager:250 : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@37afeb11] to prepare test instance [com.digitalx.RedisTest@37271612]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.lang.IllegalArgumentException: LoggerFactory is not a Logback LoggerContext but Logback is on the classpath. Either remove Logback or the competing implementation (class org.slf4j.impl.Log4jLoggerFactory loaded from file:/C:/Users/pjli/.m2/repository/org/slf4j/slf4j-log4j12/1.7.26/slf4j-log4j12-1.7.26.jar). If you are using WebLogic you will need to add 'org.slf4j' to prefer-application-packages in WEB-INF/weblogic.xml: org.slf4j.impl.Log4jLoggerFactory
+	at org.springframework.util.Assert.instanceCheckFailed(Assert.java:655)
+	at org.springframework.util.Assert.isInstanceOf(Assert.java:555)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.getLoggerContext(LogbackLoggingSystem.java:280)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.beforeInitialize(LogbackLoggingSystem.java:104)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationStartingEvent(LoggingApplicationListener.java:219)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:200)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.starting(EventPublishingRunListener.java:70)
+	at org.springframework.boot.SpringApplicationRunListeners.starting(SpringApplicationRunListeners.java:47)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	... 27 more
+2019-09-10 11:43:46  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.BidirectionalMaximumMatching
+2019-09-10 11:43:46  INFO WordConfTools:88 : 开始加载配置文件
+2019-09-10 11:43:46  INFO WordConfTools:128 : 加载配置文件：word.conf
+2019-09-10 11:43:46  INFO WordConfTools:128 : 加载配置文件：word.local.conf
+2019-09-10 11:43:46  INFO WordConfTools:94 : 配置文件加载完毕，耗时2 毫秒，配置项数目：33
+2019-09-10 11:43:46  INFO WordConfTools:95 : 配置信息：
+2019-09-10 11:43:46  INFO WordConfTools:98 : 1、auto.detect=true
+2019-09-10 11:43:46  INFO WordConfTools:98 : 2、bigram.double.array.trie.size=5300000
+2019-09-10 11:43:46  INFO WordConfTools:98 : 3、bigram.path=classpath:bigram.txt
+2019-09-10 11:43:46  INFO WordConfTools:98 : 4、dic.class=org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-10 11:43:46  INFO WordConfTools:98 : 5、dic.dump.path=
+2019-09-10 11:43:46  INFO WordConfTools:98 : 6、dic.path=classpath:dic.txt,classpath:custom_dic.txt
+2019-09-10 11:43:46  INFO WordConfTools:98 : 7、dictionary.trie.index.size=24000
+2019-09-10 11:43:46  INFO WordConfTools:98 : 8、double.array.dictionary.trie.size=2600000
+2019-09-10 11:43:46  INFO WordConfTools:98 : 9、intercept.length=16
+2019-09-10 11:43:46  INFO WordConfTools:98 : 10、keep.punctuation=false
+2019-09-10 11:43:46  INFO WordConfTools:98 : 11、keep.whitespace=false
+2019-09-10 11:43:46  INFO WordConfTools:98 : 12、ngram=bigram
+2019-09-10 11:43:46  INFO WordConfTools:98 : 13、parallel.seg=true
+2019-09-10 11:43:46  INFO WordConfTools:98 : 14、part.of.speech.des.path=classpath:part_of_speech_des.txt
+2019-09-10 11:43:46  INFO WordConfTools:98 : 15、part.of.speech.dic.path=classpath:part_of_speech_dic.txt
+2019-09-10 11:43:46  INFO WordConfTools:98 : 16、person.name.recognize=true
+2019-09-10 11:43:46  INFO WordConfTools:98 : 17、punctuation.path=classpath:punctuation.txt
+2019-09-10 11:43:46  INFO WordConfTools:98 : 18、quantifier.path=classpath:quantifier.txt
+2019-09-10 11:43:46  INFO WordConfTools:98 : 19、recognition.tool.enabled=true
+2019-09-10 11:43:46  INFO WordConfTools:98 : 20、redis.host=localhost
+2019-09-10 11:43:46  INFO WordConfTools:98 : 21、redis.port=6379
+2019-09-10 11:43:46  INFO WordConfTools:98 : 22、stopwords.path=classpath:stopwords.txt,classpath:custom_stopwords_dic.txt
+2019-09-10 11:43:46  INFO WordConfTools:98 : 23、surname.path=classpath:surname.txt
+2019-09-10 11:43:46  INFO WordConfTools:98 : 24、tagging.antonym=false
+2019-09-10 11:43:46  INFO WordConfTools:98 : 25、tagging.pinyin.acronym=false
+2019-09-10 11:43:46  INFO WordConfTools:98 : 26、tagging.pinyin.full=false
+2019-09-10 11:43:46  INFO WordConfTools:98 : 27、tagging.synonym=false
+2019-09-10 11:43:46  INFO WordConfTools:98 : 28、trigram.double.array.trie.size=9800000
+2019-09-10 11:43:46  INFO WordConfTools:98 : 29、trigram.path=classpath:trigram.txt
+2019-09-10 11:43:46  INFO WordConfTools:98 : 30、word.antonym.path=classpath:word_antonym.txt
+2019-09-10 11:43:46  INFO WordConfTools:98 : 31、word.refine.combine.max.length=3
+2019-09-10 11:43:46  INFO WordConfTools:98 : 32、word.refine.path=classpath:word_refine.txt
+2019-09-10 11:43:46  INFO WordConfTools:98 : 33、word.synonym.path=classpath:word_synonym.txt
+2019-09-10 11:43:46  INFO DictionaryFactory:72 : dic.class=org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-10 11:43:46  INFO DoubleArrayDictionaryTrie:69 : 初始化词典：org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-10 11:43:46  INFO AutoDetector:78 : 开始加载资源
+2019-09-10 11:43:46  INFO AutoDetector:79 : classpath:dic.txt,classpath:custom_dic.txt,classpath:punctuation.txt,classpath:part_of_speech_dic.txt,classpath:word_synonym.txt,classpath:word_antonym.txt
+2019-09-10 11:43:46  INFO AutoDetector:116 : 类路径资源：dic.txt
+2019-09-10 11:43:46  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/dic.txt
+2019-09-10 11:43:46  INFO AutoDetector:350 : 加载资源：classpath:dic.txt
+2019-09-10 11:43:46  INFO AutoDetector:116 : 类路径资源：custom_dic.txt
+2019-09-10 11:43:46  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/custom_dic.txt
+2019-09-10 11:43:46  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\custom_dic.txt
+2019-09-10 11:43:46  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\custom_dic.txt
+2019-09-10 11:43:46  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-10 11:43:46  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-10 11:43:46  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-10 11:43:46  INFO AutoDetector:116 : 类路径资源：punctuation.txt
+2019-09-10 11:43:46  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/punctuation.txt
+2019-09-10 11:43:46  INFO AutoDetector:350 : 加载资源：classpath:punctuation.txt
+2019-09-10 11:43:46  INFO AutoDetector:116 : 类路径资源：part_of_speech_dic.txt
+2019-09-10 11:43:46  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/part_of_speech_dic.txt
+2019-09-10 11:43:46  INFO AutoDetector:350 : 加载资源：classpath:part_of_speech_dic.txt
+2019-09-10 11:43:46  INFO AutoDetector:116 : 类路径资源：word_synonym.txt
+2019-09-10 11:43:46  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_synonym.txt
+2019-09-10 11:43:46  INFO AutoDetector:350 : 加载资源：classpath:word_synonym.txt
+2019-09-10 11:43:46  INFO AutoDetector:116 : 类路径资源：word_antonym.txt
+2019-09-10 11:43:46  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_antonym.txt
+2019-09-10 11:43:46  INFO AutoDetector:350 : 加载资源：classpath:word_antonym.txt
+2019-09-10 11:43:46  INFO AutoDetector:99 : 加载资源 1091314 行
+2019-09-10 11:43:46  INFO DictionaryFactory:92 : 初始化词典
+2019-09-10 11:43:46  INFO AutoDetector:78 : 开始加载资源
+2019-09-10 11:43:46  INFO AutoDetector:79 : classpath:surname.txt
+2019-09-10 11:43:46  INFO AutoDetector:116 : 类路径资源：surname.txt
+2019-09-10 11:43:46  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/surname.txt
+2019-09-10 11:43:46  INFO AutoDetector:350 : 加载资源：classpath:surname.txt
+2019-09-10 11:43:46  INFO AutoDetector:99 : 加载资源 508 行
+2019-09-10 11:43:46  INFO PersonName:61 : 初始化百家姓
+2019-09-10 11:43:46  INFO PersonName:74 : 百家姓初始化完毕，单姓个数：446，复姓个数：60
+2019-09-10 11:43:46  INFO AutoDetector:104 : 完成加载资源，耗时2 毫秒
+2019-09-10 11:43:46  INFO DictionaryFactory:101 : 将 60 个复姓加入词典
+2019-09-10 11:43:56  INFO DictionaryFactory:139 : 词数目：677848，词典最大词长：16
+2019-09-10 11:43:56  INFO DictionaryFactory:142 : 词长  1 的词数为：47
+2019-09-10 11:43:56  INFO DictionaryFactory:142 : 词长  2 的词数为：213335
+2019-09-10 11:43:56  INFO DictionaryFactory:142 : 词长  3 的词数为：289751
+2019-09-10 11:43:56  INFO DictionaryFactory:142 : 词长  4 的词数为：158965
+2019-09-10 11:43:56  INFO DictionaryFactory:142 : 词长  5 的词数为：6139
+2019-09-10 11:43:56  INFO DictionaryFactory:142 : 词长  6 的词数为：3746
+2019-09-10 11:43:56  INFO DictionaryFactory:142 : 词长  7 的词数为：2205
+2019-09-10 11:43:56  INFO DictionaryFactory:142 : 词长  8 的词数为：1321
+2019-09-10 11:43:56  INFO DictionaryFactory:142 : 词长  9 的词数为：797
+2019-09-10 11:43:56  INFO DictionaryFactory:144 : 词长 10 的词数为：632
+2019-09-10 11:43:56  INFO DictionaryFactory:144 : 词长 11 的词数为：312
+2019-09-10 11:43:56  INFO DictionaryFactory:144 : 词长 12 的词数为：282
+2019-09-10 11:43:56  INFO DictionaryFactory:144 : 词长 13 的词数为：124
+2019-09-10 11:43:56  INFO DictionaryFactory:144 : 词长 14 的词数为：116
+2019-09-10 11:43:56  INFO DictionaryFactory:144 : 词长 15 的词数为：51
+2019-09-10 11:43:56  INFO DictionaryFactory:144 : 词长 16 的词数为：25
+2019-09-10 11:43:56  INFO DictionaryFactory:147 : 词典平均词长：3.0032012
+2019-09-10 11:43:56  INFO DictionaryFactory:122 : 词典初始化完毕，耗时：10465 毫秒
+2019-09-10 11:43:56  INFO AutoDetector:104 : 完成加载资源，耗时10746 毫秒
+2019-09-10 11:43:56  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.MaximumMatching
+2019-09-10 11:43:56  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.ReverseMaximumMatching
+2019-09-10 11:43:56  INFO AutoDetector:78 : 开始加载资源
+2019-09-10 11:43:56  INFO AutoDetector:79 : classpath:punctuation.txt
+2019-09-10 11:43:56  INFO AutoDetector:116 : 类路径资源：punctuation.txt
+2019-09-10 11:43:56  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/punctuation.txt
+2019-09-10 11:43:56  INFO AutoDetector:350 : 加载资源：classpath:punctuation.txt
+2019-09-10 11:43:56  INFO AutoDetector:99 : 加载资源 48 行
+2019-09-10 11:43:56  INFO Punctuation:55 : 初始化标点符号
+2019-09-10 11:43:56  INFO Punctuation:80 : 标点符号初始化完毕，标点符号个数：52
+2019-09-10 11:43:56  INFO AutoDetector:104 : 完成加载资源，耗时2 毫秒
+2019-09-10 11:43:56  INFO AutoDetector:78 : 开始加载资源
+2019-09-10 11:43:56  INFO AutoDetector:79 : classpath:quantifier.txt
+2019-09-10 11:43:56  INFO AutoDetector:116 : 类路径资源：quantifier.txt
+2019-09-10 11:43:56  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/quantifier.txt
+2019-09-10 11:43:56  INFO AutoDetector:350 : 加载资源：classpath:quantifier.txt
+2019-09-10 11:43:56  INFO AutoDetector:99 : 加载资源 164 行
+2019-09-10 11:43:56  INFO Quantifier:52 : 初始化数量词
+2019-09-10 11:43:56  INFO Quantifier:65 : 数量词初始化完毕，数量词个数：164
+2019-09-10 11:43:56  INFO AutoDetector:104 : 完成加载资源，耗时2 毫秒
+2019-09-10 11:43:56  INFO AutoDetector:78 : 开始加载资源
+2019-09-10 11:43:56  INFO AutoDetector:79 : classpath:bigram.txt
+2019-09-10 11:43:56  INFO AutoDetector:116 : 类路径资源：bigram.txt
+2019-09-10 11:43:56  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/bigram.txt
+2019-09-10 11:43:56  INFO AutoDetector:350 : 加载资源：classpath:bigram.txt
+2019-09-10 11:43:57  INFO AutoDetector:99 : 加载资源 1519443 行
+2019-09-10 11:43:57  INFO Bigram:52 : 初始化bigram
+2019-09-10 11:44:20  INFO Bigram:63 : bigram初始化完毕，bigram数据条数：1519443
+2019-09-10 11:44:20  INFO AutoDetector:104 : 完成加载资源，耗时24070 毫秒
+2019-09-10 11:44:20  INFO AutoDetector:78 : 开始加载资源
+2019-09-10 11:44:20  INFO AutoDetector:79 : classpath:stopwords.txt,classpath:custom_stopwords_dic.txt
+2019-09-10 11:44:20  INFO AutoDetector:116 : 类路径资源：stopwords.txt
+2019-09-10 11:44:20  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/stopwords.txt
+2019-09-10 11:44:20  INFO AutoDetector:350 : 加载资源：classpath:stopwords.txt
+2019-09-10 11:44:20  INFO AutoDetector:116 : 类路径资源：custom_stopwords_dic.txt
+2019-09-10 11:44:20  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/custom_stopwords_dic.txt
+2019-09-10 11:44:20  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\custom_stopwords_dic.txt
+2019-09-10 11:44:20  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\custom_stopwords_dic.txt
+2019-09-10 11:44:20  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-10 11:44:20  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-10 11:44:20  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-10 11:44:20  INFO AutoDetector:99 : 加载资源 1482 行
+2019-09-10 11:44:20  INFO StopWord:64 : 初始化停用词
+2019-09-10 11:44:20  INFO StopWord:70 : 停用词初始化完毕，停用词个数：1482
+2019-09-10 11:44:20  INFO AutoDetector:104 : 完成加载资源，耗时4 毫秒
+2019-09-10 11:44:20  INFO AutoDetector:78 : 开始加载资源
+2019-09-10 11:44:20  INFO AutoDetector:79 : classpath:word_refine.txt
+2019-09-10 11:44:20  INFO AutoDetector:116 : 类路径资源：word_refine.txt
+2019-09-10 11:44:20  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/word_refine.txt
+2019-09-10 11:44:20  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\word_refine.txt
+2019-09-10 11:44:20  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\word_refine.txt
+2019-09-10 11:44:20  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-10 11:44:20  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-10 11:44:20  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-10 11:44:20  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_refine.txt
+2019-09-10 11:44:20  INFO AutoDetector:350 : 加载资源：classpath:word_refine.txt
+2019-09-10 11:44:20  INFO AutoDetector:99 : 加载资源 2 行
+2019-09-10 11:44:20  INFO WordRefiner:55 : 初始化WordRefiner
+2019-09-10 11:44:20  INFO WordRefiner:66 : WordRefiner初始化完毕，数据条数：2
+2019-09-10 11:44:20  INFO AutoDetector:104 : 完成加载资源，耗时2 毫秒
+2019-09-10 11:44:20  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.MaxNgramScore
+2019-09-10 11:44:35  INFO SpringBootTestContextBootstrapper:308 : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.digitalx.RedisTest], using SpringBootContextLoader
+2019-09-10 11:44:35  INFO AbstractContextLoader:264 : Could not detect default resource locations for test class [com.digitalx.RedisTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-09-10 11:44:35  INFO SpringBootTestContextBootstrapper:248 : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-09-10 11:44:35  INFO SpringBootTestContextBootstrapper:177 : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2f7c2f4f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6af93788, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@ef9296d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@36c88a32, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7880cdf3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5be6e01c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1c93084c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6ef888f6, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@10e92f8f, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7ce3cb8e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@78b66d36, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5223e5ee]
+2019-09-10 11:44:35 ERROR TestContextManager:250 : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@2f7c2f4f] to prepare test instance [com.digitalx.RedisTest@36ebc363]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: java.lang.IllegalArgumentException: LoggerFactory is not a Logback LoggerContext but Logback is on the classpath. Either remove Logback or the competing implementation (class org.slf4j.impl.Log4jLoggerFactory loaded from file:/C:/Users/pjli/.m2/repository/org/slf4j/slf4j-log4j12/1.7.26/slf4j-log4j12-1.7.26.jar). If you are using WebLogic you will need to add 'org.slf4j' to prefer-application-packages in WEB-INF/weblogic.xml: org.slf4j.impl.Log4jLoggerFactory
+	at org.springframework.util.Assert.instanceCheckFailed(Assert.java:655)
+	at org.springframework.util.Assert.isInstanceOf(Assert.java:555)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.getLoggerContext(LogbackLoggingSystem.java:280)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.beforeInitialize(LogbackLoggingSystem.java:104)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationStartingEvent(LoggingApplicationListener.java:219)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:200)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.starting(EventPublishingRunListener.java:70)
+	at org.springframework.boot.SpringApplicationRunListeners.starting(SpringApplicationRunListeners.java:47)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	... 24 more
+2019-09-10 11:46:25  INFO SpringBootTestContextBootstrapper:308 : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.digitalx.RedisTest], using SpringBootContextLoader
+2019-09-10 11:46:25  INFO AbstractContextLoader:264 : Could not detect default resource locations for test class [com.digitalx.RedisTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-09-10 11:46:25  INFO SpringBootTestContextBootstrapper:248 : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-09-10 11:46:25  INFO SpringBootTestContextBootstrapper:177 : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@47c81abf, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@776a6d9b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@21d03963, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1f760b47, org.springframework.test.context.support.DirtiesContextTestExecutionListener@18ece7f4, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3cce57c7, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1cf56a1c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@33f676f6, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4c5ae43b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@264f218, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3576ddc2, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@35b74c5c]
+2019-09-10 11:46:25 ERROR TestContextManager:250 : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@47c81abf] to prepare test instance [com.digitalx.RedisTest@36b4091c]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: java.lang.IllegalArgumentException: LoggerFactory is not a Logback LoggerContext but Logback is on the classpath. Either remove Logback or the competing implementation (class org.slf4j.impl.Log4jLoggerFactory loaded from file:/C:/Users/pjli/.m2/repository/org/slf4j/slf4j-log4j12/1.7.26/slf4j-log4j12-1.7.26.jar). If you are using WebLogic you will need to add 'org.slf4j' to prefer-application-packages in WEB-INF/weblogic.xml: org.slf4j.impl.Log4jLoggerFactory
+	at org.springframework.util.Assert.instanceCheckFailed(Assert.java:655)
+	at org.springframework.util.Assert.isInstanceOf(Assert.java:555)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.getLoggerContext(LogbackLoggingSystem.java:280)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.beforeInitialize(LogbackLoggingSystem.java:104)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationStartingEvent(LoggingApplicationListener.java:219)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:200)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.starting(EventPublishingRunListener.java:70)
+	at org.springframework.boot.SpringApplicationRunListeners.starting(SpringApplicationRunListeners.java:47)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	... 24 more
+2019-09-10 11:48:28  INFO SpringBootTestContextBootstrapper:308 : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.digitalx.RedisTest], using SpringBootContextLoader
+2019-09-10 11:48:28  INFO AbstractContextLoader:264 : Could not detect default resource locations for test class [com.digitalx.RedisTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-09-10 11:48:28  INFO SpringBootTestContextBootstrapper:248 : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-09-10 11:48:28  INFO SpringBootTestContextBootstrapper:177 : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2f7c2f4f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6af93788, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@ef9296d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@36c88a32, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7880cdf3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5be6e01c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1c93084c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6ef888f6, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@10e92f8f, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7ce3cb8e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@78b66d36, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5223e5ee]
+2019-09-10 11:48:28 ERROR TestContextManager:250 : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@2f7c2f4f] to prepare test instance [com.digitalx.RedisTest@36ebc363]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: java.lang.IllegalArgumentException: LoggerFactory is not a Logback LoggerContext but Logback is on the classpath. Either remove Logback or the competing implementation (class org.slf4j.impl.Log4jLoggerFactory loaded from file:/C:/Users/pjli/.m2/repository/org/slf4j/slf4j-log4j12/1.7.26/slf4j-log4j12-1.7.26.jar). If you are using WebLogic you will need to add 'org.slf4j' to prefer-application-packages in WEB-INF/weblogic.xml: org.slf4j.impl.Log4jLoggerFactory
+	at org.springframework.util.Assert.instanceCheckFailed(Assert.java:655)
+	at org.springframework.util.Assert.isInstanceOf(Assert.java:555)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.getLoggerContext(LogbackLoggingSystem.java:280)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.beforeInitialize(LogbackLoggingSystem.java:104)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationStartingEvent(LoggingApplicationListener.java:219)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:200)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.starting(EventPublishingRunListener.java:70)
+	at org.springframework.boot.SpringApplicationRunListeners.starting(SpringApplicationRunListeners.java:47)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	... 24 more
+2019-09-10 11:51:51  INFO SpringBootTestContextBootstrapper:308 : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.digitalx.RedisTest], using SpringBootContextLoader
+2019-09-10 11:51:51  INFO AbstractContextLoader:264 : Could not detect default resource locations for test class [com.digitalx.RedisTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-09-10 11:51:52  INFO SpringBootTestContextBootstrapper:248 : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-09-10 11:51:52  INFO SpringBootTestContextBootstrapper:177 : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@60d8c9b7, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@48aaecc3, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7c0c77c7, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7adda9cc, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5cee5251, org.springframework.test.context.transaction.TransactionalTestExecutionListener@433d61fb, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5c909414, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4b14c583, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@65466a6a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4ddced80, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1534f01b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@78e117e3]
+2019-09-10 11:51:52 ERROR TestContextManager:250 : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@60d8c9b7] to prepare test instance [com.digitalx.RedisTest@6771beb3]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: java.lang.IllegalArgumentException: LoggerFactory is not a Logback LoggerContext but Logback is on the classpath. Either remove Logback or the competing implementation (class org.slf4j.impl.Log4jLoggerFactory loaded from file:/C:/Users/pjli/.m2/repository/org/slf4j/slf4j-log4j12/1.7.26/slf4j-log4j12-1.7.26.jar). If you are using WebLogic you will need to add 'org.slf4j' to prefer-application-packages in WEB-INF/weblogic.xml: org.slf4j.impl.Log4jLoggerFactory
+	at org.springframework.util.Assert.instanceCheckFailed(Assert.java:655)
+	at org.springframework.util.Assert.isInstanceOf(Assert.java:555)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.getLoggerContext(LogbackLoggingSystem.java:280)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.beforeInitialize(LogbackLoggingSystem.java:104)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationStartingEvent(LoggingApplicationListener.java:219)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:200)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.starting(EventPublishingRunListener.java:70)
+	at org.springframework.boot.SpringApplicationRunListeners.starting(SpringApplicationRunListeners.java:47)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	... 24 more

@@ -29,7 +29,7 @@ public class JwtUtils {
     public static final String SECRET = "SECRET_VALUE";
 
     // 请求头
-    public static final String AUTH_HEADER = "X-Authorization-With";
+    public static final String AUTH_HEADER = "x-Authorization-With";
 
     /**
      * 验证token是否正确

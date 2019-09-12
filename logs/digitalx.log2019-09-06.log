@@ -1,0 +1,2044 @@
+2019-09-06 18:02:01  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.BidirectionalMaximumMatching
+2019-09-06 18:02:01  INFO WordConfTools:88 : 开始加载配置文件
+2019-09-06 18:02:01  INFO WordConfTools:128 : 加载配置文件：word.conf
+2019-09-06 18:02:01  INFO WordConfTools:128 : 加载配置文件：word.local.conf
+2019-09-06 18:02:01  INFO WordConfTools:94 : 配置文件加载完毕，耗时3 毫秒，配置项数目：33
+2019-09-06 18:02:01  INFO WordConfTools:95 : 配置信息：
+2019-09-06 18:02:01  INFO WordConfTools:98 : 1、auto.detect=true
+2019-09-06 18:02:01  INFO WordConfTools:98 : 2、bigram.double.array.trie.size=5300000
+2019-09-06 18:02:01  INFO WordConfTools:98 : 3、bigram.path=classpath:bigram.txt
+2019-09-06 18:02:01  INFO WordConfTools:98 : 4、dic.class=org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-06 18:02:01  INFO WordConfTools:98 : 5、dic.dump.path=
+2019-09-06 18:02:01  INFO WordConfTools:98 : 6、dic.path=classpath:dic.txt,classpath:custom_dic.txt
+2019-09-06 18:02:01  INFO WordConfTools:98 : 7、dictionary.trie.index.size=24000
+2019-09-06 18:02:01  INFO WordConfTools:98 : 8、double.array.dictionary.trie.size=2600000
+2019-09-06 18:02:01  INFO WordConfTools:98 : 9、intercept.length=16
+2019-09-06 18:02:01  INFO WordConfTools:98 : 10、keep.punctuation=false
+2019-09-06 18:02:01  INFO WordConfTools:98 : 11、keep.whitespace=false
+2019-09-06 18:02:01  INFO WordConfTools:98 : 12、ngram=bigram
+2019-09-06 18:02:01  INFO WordConfTools:98 : 13、parallel.seg=true
+2019-09-06 18:02:01  INFO WordConfTools:98 : 14、part.of.speech.des.path=classpath:part_of_speech_des.txt
+2019-09-06 18:02:01  INFO WordConfTools:98 : 15、part.of.speech.dic.path=classpath:part_of_speech_dic.txt
+2019-09-06 18:02:01  INFO WordConfTools:98 : 16、person.name.recognize=true
+2019-09-06 18:02:01  INFO WordConfTools:98 : 17、punctuation.path=classpath:punctuation.txt
+2019-09-06 18:02:01  INFO WordConfTools:98 : 18、quantifier.path=classpath:quantifier.txt
+2019-09-06 18:02:01  INFO WordConfTools:98 : 19、recognition.tool.enabled=true
+2019-09-06 18:02:01  INFO WordConfTools:98 : 20、redis.host=localhost
+2019-09-06 18:02:01  INFO WordConfTools:98 : 21、redis.port=6379
+2019-09-06 18:02:01  INFO WordConfTools:98 : 22、stopwords.path=classpath:stopwords.txt,classpath:custom_stopwords_dic.txt
+2019-09-06 18:02:01  INFO WordConfTools:98 : 23、surname.path=classpath:surname.txt
+2019-09-06 18:02:01  INFO WordConfTools:98 : 24、tagging.antonym=false
+2019-09-06 18:02:01  INFO WordConfTools:98 : 25、tagging.pinyin.acronym=false
+2019-09-06 18:02:01  INFO WordConfTools:98 : 26、tagging.pinyin.full=false
+2019-09-06 18:02:01  INFO WordConfTools:98 : 27、tagging.synonym=false
+2019-09-06 18:02:01  INFO WordConfTools:98 : 28、trigram.double.array.trie.size=9800000
+2019-09-06 18:02:01  INFO WordConfTools:98 : 29、trigram.path=classpath:trigram.txt
+2019-09-06 18:02:01  INFO WordConfTools:98 : 30、word.antonym.path=classpath:word_antonym.txt
+2019-09-06 18:02:01  INFO WordConfTools:98 : 31、word.refine.combine.max.length=3
+2019-09-06 18:02:01  INFO WordConfTools:98 : 32、word.refine.path=classpath:word_refine.txt
+2019-09-06 18:02:01  INFO WordConfTools:98 : 33、word.synonym.path=classpath:word_synonym.txt
+2019-09-06 18:02:01  INFO DictionaryFactory:72 : dic.class=org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-06 18:02:01  INFO DoubleArrayDictionaryTrie:69 : 初始化词典：org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-06 18:02:01  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:02:01  INFO AutoDetector:79 : classpath:dic.txt,classpath:custom_dic.txt,classpath:punctuation.txt,classpath:part_of_speech_dic.txt,classpath:word_synonym.txt,classpath:word_antonym.txt
+2019-09-06 18:02:01  INFO AutoDetector:116 : 类路径资源：dic.txt
+2019-09-06 18:02:01  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/dic.txt
+2019-09-06 18:02:01  INFO AutoDetector:350 : 加载资源：classpath:dic.txt
+2019-09-06 18:02:02  INFO AutoDetector:116 : 类路径资源：custom_dic.txt
+2019-09-06 18:02:02  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/custom_dic.txt
+2019-09-06 18:02:02  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\custom_dic.txt
+2019-09-06 18:02:02  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\custom_dic.txt
+2019-09-06 18:02:02  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-06 18:02:02  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-06 18:02:02  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-06 18:02:02  INFO AutoDetector:116 : 类路径资源：punctuation.txt
+2019-09-06 18:02:02  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/punctuation.txt
+2019-09-06 18:02:02  INFO AutoDetector:350 : 加载资源：classpath:punctuation.txt
+2019-09-06 18:02:02  INFO AutoDetector:116 : 类路径资源：part_of_speech_dic.txt
+2019-09-06 18:02:02  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/part_of_speech_dic.txt
+2019-09-06 18:02:02  INFO AutoDetector:350 : 加载资源：classpath:part_of_speech_dic.txt
+2019-09-06 18:02:02  INFO AutoDetector:116 : 类路径资源：word_synonym.txt
+2019-09-06 18:02:02  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_synonym.txt
+2019-09-06 18:02:02  INFO AutoDetector:350 : 加载资源：classpath:word_synonym.txt
+2019-09-06 18:02:02  INFO AutoDetector:116 : 类路径资源：word_antonym.txt
+2019-09-06 18:02:02  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_antonym.txt
+2019-09-06 18:02:02  INFO AutoDetector:350 : 加载资源：classpath:word_antonym.txt
+2019-09-06 18:02:02  INFO AutoDetector:99 : 加载资源 1091314 行
+2019-09-06 18:02:02  INFO DictionaryFactory:92 : 初始化词典
+2019-09-06 18:02:02  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:02:02  INFO AutoDetector:79 : classpath:surname.txt
+2019-09-06 18:02:02  INFO AutoDetector:116 : 类路径资源：surname.txt
+2019-09-06 18:02:02  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/surname.txt
+2019-09-06 18:02:02  INFO AutoDetector:350 : 加载资源：classpath:surname.txt
+2019-09-06 18:02:02  INFO AutoDetector:99 : 加载资源 508 行
+2019-09-06 18:02:02  INFO PersonName:61 : 初始化百家姓
+2019-09-06 18:02:02  INFO PersonName:74 : 百家姓初始化完毕，单姓个数：446，复姓个数：60
+2019-09-06 18:02:02  INFO AutoDetector:104 : 完成加载资源，耗时1 毫秒
+2019-09-06 18:02:02  INFO DictionaryFactory:101 : 将 60 个复姓加入词典
+2019-09-06 18:02:13  INFO DictionaryFactory:139 : 词数目：677848，词典最大词长：16
+2019-09-06 18:02:13  INFO DictionaryFactory:142 : 词长  1 的词数为：47
+2019-09-06 18:02:13  INFO DictionaryFactory:142 : 词长  2 的词数为：213335
+2019-09-06 18:02:13  INFO DictionaryFactory:142 : 词长  3 的词数为：289751
+2019-09-06 18:02:13  INFO DictionaryFactory:142 : 词长  4 的词数为：158965
+2019-09-06 18:02:13  INFO DictionaryFactory:142 : 词长  5 的词数为：6139
+2019-09-06 18:02:13  INFO DictionaryFactory:142 : 词长  6 的词数为：3746
+2019-09-06 18:02:13  INFO DictionaryFactory:142 : 词长  7 的词数为：2205
+2019-09-06 18:02:13  INFO DictionaryFactory:142 : 词长  8 的词数为：1321
+2019-09-06 18:02:13  INFO DictionaryFactory:142 : 词长  9 的词数为：797
+2019-09-06 18:02:13  INFO DictionaryFactory:144 : 词长 10 的词数为：632
+2019-09-06 18:02:13  INFO DictionaryFactory:144 : 词长 11 的词数为：312
+2019-09-06 18:02:13  INFO DictionaryFactory:144 : 词长 12 的词数为：282
+2019-09-06 18:02:13  INFO DictionaryFactory:144 : 词长 13 的词数为：124
+2019-09-06 18:02:13  INFO DictionaryFactory:144 : 词长 14 的词数为：116
+2019-09-06 18:02:13  INFO DictionaryFactory:144 : 词长 15 的词数为：51
+2019-09-06 18:02:13  INFO DictionaryFactory:144 : 词长 16 的词数为：25
+2019-09-06 18:02:13  INFO DictionaryFactory:147 : 词典平均词长：3.0032012
+2019-09-06 18:02:13  INFO DictionaryFactory:122 : 词典初始化完毕，耗时：11080 毫秒
+2019-09-06 18:02:13  INFO AutoDetector:104 : 完成加载资源，耗时11373 毫秒
+2019-09-06 18:02:13  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.MaximumMatching
+2019-09-06 18:02:13  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.ReverseMaximumMatching
+2019-09-06 18:02:13  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:02:13  INFO AutoDetector:79 : classpath:punctuation.txt
+2019-09-06 18:02:13  INFO AutoDetector:116 : 类路径资源：punctuation.txt
+2019-09-06 18:02:13  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/punctuation.txt
+2019-09-06 18:02:13  INFO AutoDetector:350 : 加载资源：classpath:punctuation.txt
+2019-09-06 18:02:13  INFO AutoDetector:99 : 加载资源 48 行
+2019-09-06 18:02:13  INFO Punctuation:55 : 初始化标点符号
+2019-09-06 18:02:13  INFO Punctuation:80 : 标点符号初始化完毕，标点符号个数：52
+2019-09-06 18:02:13  INFO AutoDetector:104 : 完成加载资源，耗时1 毫秒
+2019-09-06 18:02:13  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:02:13  INFO AutoDetector:79 : classpath:quantifier.txt
+2019-09-06 18:02:13  INFO AutoDetector:116 : 类路径资源：quantifier.txt
+2019-09-06 18:02:13  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/quantifier.txt
+2019-09-06 18:02:13  INFO AutoDetector:350 : 加载资源：classpath:quantifier.txt
+2019-09-06 18:02:13  INFO AutoDetector:99 : 加载资源 164 行
+2019-09-06 18:02:13  INFO Quantifier:52 : 初始化数量词
+2019-09-06 18:02:13  INFO Quantifier:65 : 数量词初始化完毕，数量词个数：164
+2019-09-06 18:02:13  INFO AutoDetector:104 : 完成加载资源，耗时1 毫秒
+2019-09-06 18:02:13  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:02:13  INFO AutoDetector:79 : classpath:bigram.txt
+2019-09-06 18:02:13  INFO AutoDetector:116 : 类路径资源：bigram.txt
+2019-09-06 18:02:13  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/bigram.txt
+2019-09-06 18:02:13  INFO AutoDetector:350 : 加载资源：classpath:bigram.txt
+2019-09-06 18:02:13  INFO AutoDetector:99 : 加载资源 1519443 行
+2019-09-06 18:02:13  INFO Bigram:52 : 初始化bigram
+2019-09-06 18:02:38  INFO Bigram:63 : bigram初始化完毕，bigram数据条数：1519443
+2019-09-06 18:02:38  INFO AutoDetector:104 : 完成加载资源，耗时25210 毫秒
+2019-09-06 18:02:38  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:02:38  INFO AutoDetector:79 : classpath:stopwords.txt,classpath:custom_stopwords_dic.txt
+2019-09-06 18:02:38  INFO AutoDetector:116 : 类路径资源：stopwords.txt
+2019-09-06 18:02:38  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/stopwords.txt
+2019-09-06 18:02:38  INFO AutoDetector:350 : 加载资源：classpath:stopwords.txt
+2019-09-06 18:02:38  INFO AutoDetector:116 : 类路径资源：custom_stopwords_dic.txt
+2019-09-06 18:02:38  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/custom_stopwords_dic.txt
+2019-09-06 18:02:38  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\custom_stopwords_dic.txt
+2019-09-06 18:02:38  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\custom_stopwords_dic.txt
+2019-09-06 18:02:38  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-06 18:02:38  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-06 18:02:38  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-06 18:02:38  INFO AutoDetector:99 : 加载资源 1482 行
+2019-09-06 18:02:38  INFO StopWord:64 : 初始化停用词
+2019-09-06 18:02:38  INFO StopWord:70 : 停用词初始化完毕，停用词个数：1482
+2019-09-06 18:02:38  INFO AutoDetector:104 : 完成加载资源，耗时5 毫秒
+2019-09-06 18:02:38  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:02:38  INFO AutoDetector:79 : classpath:word_refine.txt
+2019-09-06 18:02:38  INFO AutoDetector:116 : 类路径资源：word_refine.txt
+2019-09-06 18:02:38  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/word_refine.txt
+2019-09-06 18:02:38  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\word_refine.txt
+2019-09-06 18:02:38  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\word_refine.txt
+2019-09-06 18:02:38  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-06 18:02:38  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-06 18:02:38  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-06 18:02:38  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_refine.txt
+2019-09-06 18:02:38  INFO AutoDetector:350 : 加载资源：classpath:word_refine.txt
+2019-09-06 18:02:38  INFO AutoDetector:99 : 加载资源 2 行
+2019-09-06 18:02:38  INFO WordRefiner:55 : 初始化WordRefiner
+2019-09-06 18:02:38  INFO WordRefiner:66 : WordRefiner初始化完毕，数据条数：2
+2019-09-06 18:02:38  INFO AutoDetector:104 : 完成加载资源，耗时3 毫秒
+2019-09-06 18:02:38  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.MaxNgramScore
+2019-09-06 18:03:04  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.BidirectionalMaximumMatching
+2019-09-06 18:03:04  INFO WordConfTools:88 : 开始加载配置文件
+2019-09-06 18:03:04  INFO WordConfTools:128 : 加载配置文件：word.conf
+2019-09-06 18:03:04  INFO WordConfTools:128 : 加载配置文件：word.local.conf
+2019-09-06 18:03:04  INFO WordConfTools:94 : 配置文件加载完毕，耗时6 毫秒，配置项数目：33
+2019-09-06 18:03:04  INFO WordConfTools:95 : 配置信息：
+2019-09-06 18:03:04  INFO WordConfTools:98 : 1、auto.detect=true
+2019-09-06 18:03:04  INFO WordConfTools:98 : 2、bigram.double.array.trie.size=5300000
+2019-09-06 18:03:04  INFO WordConfTools:98 : 3、bigram.path=classpath:bigram.txt
+2019-09-06 18:03:04  INFO WordConfTools:98 : 4、dic.class=org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-06 18:03:04  INFO WordConfTools:98 : 5、dic.dump.path=
+2019-09-06 18:03:04  INFO WordConfTools:98 : 6、dic.path=classpath:dic.txt,classpath:custom_dic.txt
+2019-09-06 18:03:04  INFO WordConfTools:98 : 7、dictionary.trie.index.size=24000
+2019-09-06 18:03:04  INFO WordConfTools:98 : 8、double.array.dictionary.trie.size=2600000
+2019-09-06 18:03:04  INFO WordConfTools:98 : 9、intercept.length=16
+2019-09-06 18:03:04  INFO WordConfTools:98 : 10、keep.punctuation=false
+2019-09-06 18:03:04  INFO WordConfTools:98 : 11、keep.whitespace=false
+2019-09-06 18:03:04  INFO WordConfTools:98 : 12、ngram=bigram
+2019-09-06 18:03:04  INFO WordConfTools:98 : 13、parallel.seg=true
+2019-09-06 18:03:04  INFO WordConfTools:98 : 14、part.of.speech.des.path=classpath:part_of_speech_des.txt
+2019-09-06 18:03:04  INFO WordConfTools:98 : 15、part.of.speech.dic.path=classpath:part_of_speech_dic.txt
+2019-09-06 18:03:04  INFO WordConfTools:98 : 16、person.name.recognize=true
+2019-09-06 18:03:04  INFO WordConfTools:98 : 17、punctuation.path=classpath:punctuation.txt
+2019-09-06 18:03:04  INFO WordConfTools:98 : 18、quantifier.path=classpath:quantifier.txt
+2019-09-06 18:03:04  INFO WordConfTools:98 : 19、recognition.tool.enabled=true
+2019-09-06 18:03:04  INFO WordConfTools:98 : 20、redis.host=localhost
+2019-09-06 18:03:04  INFO WordConfTools:98 : 21、redis.port=6379
+2019-09-06 18:03:04  INFO WordConfTools:98 : 22、stopwords.path=classpath:stopwords.txt,classpath:custom_stopwords_dic.txt
+2019-09-06 18:03:04  INFO WordConfTools:98 : 23、surname.path=classpath:surname.txt
+2019-09-06 18:03:04  INFO WordConfTools:98 : 24、tagging.antonym=false
+2019-09-06 18:03:04  INFO WordConfTools:98 : 25、tagging.pinyin.acronym=false
+2019-09-06 18:03:04  INFO WordConfTools:98 : 26、tagging.pinyin.full=false
+2019-09-06 18:03:04  INFO WordConfTools:98 : 27、tagging.synonym=false
+2019-09-06 18:03:04  INFO WordConfTools:98 : 28、trigram.double.array.trie.size=9800000
+2019-09-06 18:03:04  INFO WordConfTools:98 : 29、trigram.path=classpath:trigram.txt
+2019-09-06 18:03:04  INFO WordConfTools:98 : 30、word.antonym.path=classpath:word_antonym.txt
+2019-09-06 18:03:04  INFO WordConfTools:98 : 31、word.refine.combine.max.length=3
+2019-09-06 18:03:04  INFO WordConfTools:98 : 32、word.refine.path=classpath:word_refine.txt
+2019-09-06 18:03:04  INFO WordConfTools:98 : 33、word.synonym.path=classpath:word_synonym.txt
+2019-09-06 18:03:04  INFO DictionaryFactory:72 : dic.class=org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-06 18:03:04  INFO DoubleArrayDictionaryTrie:69 : 初始化词典：org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-06 18:03:04  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:03:04  INFO AutoDetector:79 : classpath:dic.txt,classpath:custom_dic.txt,classpath:punctuation.txt,classpath:part_of_speech_dic.txt,classpath:word_synonym.txt,classpath:word_antonym.txt
+2019-09-06 18:03:04  INFO AutoDetector:116 : 类路径资源：dic.txt
+2019-09-06 18:03:04  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/dic.txt
+2019-09-06 18:03:04  INFO AutoDetector:350 : 加载资源：classpath:dic.txt
+2019-09-06 18:03:04  INFO AutoDetector:116 : 类路径资源：custom_dic.txt
+2019-09-06 18:03:04  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/custom_dic.txt
+2019-09-06 18:03:04  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\custom_dic.txt
+2019-09-06 18:03:04  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\custom_dic.txt
+2019-09-06 18:03:04  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-06 18:03:04  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-06 18:03:04  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-06 18:03:04  INFO AutoDetector:116 : 类路径资源：punctuation.txt
+2019-09-06 18:03:04  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/punctuation.txt
+2019-09-06 18:03:04  INFO AutoDetector:350 : 加载资源：classpath:punctuation.txt
+2019-09-06 18:03:04  INFO AutoDetector:116 : 类路径资源：part_of_speech_dic.txt
+2019-09-06 18:03:04  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/part_of_speech_dic.txt
+2019-09-06 18:03:04  INFO AutoDetector:350 : 加载资源：classpath:part_of_speech_dic.txt
+2019-09-06 18:03:04  INFO AutoDetector:116 : 类路径资源：word_synonym.txt
+2019-09-06 18:03:04  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_synonym.txt
+2019-09-06 18:03:04  INFO AutoDetector:350 : 加载资源：classpath:word_synonym.txt
+2019-09-06 18:03:04  INFO AutoDetector:116 : 类路径资源：word_antonym.txt
+2019-09-06 18:03:04  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_antonym.txt
+2019-09-06 18:03:04  INFO AutoDetector:350 : 加载资源：classpath:word_antonym.txt
+2019-09-06 18:03:04  INFO AutoDetector:99 : 加载资源 1091314 行
+2019-09-06 18:03:04  INFO DictionaryFactory:92 : 初始化词典
+2019-09-06 18:03:04  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:03:04  INFO AutoDetector:79 : classpath:surname.txt
+2019-09-06 18:03:04  INFO AutoDetector:116 : 类路径资源：surname.txt
+2019-09-06 18:03:04  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/surname.txt
+2019-09-06 18:03:04  INFO AutoDetector:350 : 加载资源：classpath:surname.txt
+2019-09-06 18:03:04  INFO AutoDetector:99 : 加载资源 508 行
+2019-09-06 18:03:04  INFO PersonName:61 : 初始化百家姓
+2019-09-06 18:03:04  INFO PersonName:74 : 百家姓初始化完毕，单姓个数：446，复姓个数：60
+2019-09-06 18:03:04  INFO AutoDetector:104 : 完成加载资源，耗时2 毫秒
+2019-09-06 18:03:04  INFO DictionaryFactory:101 : 将 60 个复姓加入词典
+2019-09-06 18:03:15  INFO DictionaryFactory:139 : 词数目：677848，词典最大词长：16
+2019-09-06 18:03:15  INFO DictionaryFactory:142 : 词长  1 的词数为：47
+2019-09-06 18:03:15  INFO DictionaryFactory:142 : 词长  2 的词数为：213335
+2019-09-06 18:03:15  INFO DictionaryFactory:142 : 词长  3 的词数为：289751
+2019-09-06 18:03:15  INFO DictionaryFactory:142 : 词长  4 的词数为：158965
+2019-09-06 18:03:15  INFO DictionaryFactory:142 : 词长  5 的词数为：6139
+2019-09-06 18:03:15  INFO DictionaryFactory:142 : 词长  6 的词数为：3746
+2019-09-06 18:03:15  INFO DictionaryFactory:142 : 词长  7 的词数为：2205
+2019-09-06 18:03:15  INFO DictionaryFactory:142 : 词长  8 的词数为：1321
+2019-09-06 18:03:15  INFO DictionaryFactory:142 : 词长  9 的词数为：797
+2019-09-06 18:03:15  INFO DictionaryFactory:144 : 词长 10 的词数为：632
+2019-09-06 18:03:15  INFO DictionaryFactory:144 : 词长 11 的词数为：312
+2019-09-06 18:03:15  INFO DictionaryFactory:144 : 词长 12 的词数为：282
+2019-09-06 18:03:15  INFO DictionaryFactory:144 : 词长 13 的词数为：124
+2019-09-06 18:03:15  INFO DictionaryFactory:144 : 词长 14 的词数为：116
+2019-09-06 18:03:15  INFO DictionaryFactory:144 : 词长 15 的词数为：51
+2019-09-06 18:03:15  INFO DictionaryFactory:144 : 词长 16 的词数为：25
+2019-09-06 18:03:15  INFO DictionaryFactory:147 : 词典平均词长：3.0032012
+2019-09-06 18:03:15  INFO DictionaryFactory:122 : 词典初始化完毕，耗时：10640 毫秒
+2019-09-06 18:03:15  INFO AutoDetector:104 : 完成加载资源，耗时10931 毫秒
+2019-09-06 18:03:15  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.MaximumMatching
+2019-09-06 18:03:15  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.ReverseMaximumMatching
+2019-09-06 18:03:15  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:03:15  INFO AutoDetector:79 : classpath:punctuation.txt
+2019-09-06 18:03:15  INFO AutoDetector:116 : 类路径资源：punctuation.txt
+2019-09-06 18:03:15  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/punctuation.txt
+2019-09-06 18:03:15  INFO AutoDetector:350 : 加载资源：classpath:punctuation.txt
+2019-09-06 18:03:15  INFO AutoDetector:99 : 加载资源 48 行
+2019-09-06 18:03:15  INFO Punctuation:55 : 初始化标点符号
+2019-09-06 18:03:15  INFO Punctuation:80 : 标点符号初始化完毕，标点符号个数：52
+2019-09-06 18:03:15  INFO AutoDetector:104 : 完成加载资源，耗时1 毫秒
+2019-09-06 18:03:15  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:03:15  INFO AutoDetector:79 : classpath:quantifier.txt
+2019-09-06 18:03:15  INFO AutoDetector:116 : 类路径资源：quantifier.txt
+2019-09-06 18:03:15  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/quantifier.txt
+2019-09-06 18:03:15  INFO AutoDetector:350 : 加载资源：classpath:quantifier.txt
+2019-09-06 18:03:15  INFO AutoDetector:99 : 加载资源 164 行
+2019-09-06 18:03:15  INFO Quantifier:52 : 初始化数量词
+2019-09-06 18:03:15  INFO Quantifier:65 : 数量词初始化完毕，数量词个数：164
+2019-09-06 18:03:15  INFO AutoDetector:104 : 完成加载资源，耗时2 毫秒
+2019-09-06 18:03:15  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:03:15  INFO AutoDetector:79 : classpath:bigram.txt
+2019-09-06 18:03:15  INFO AutoDetector:116 : 类路径资源：bigram.txt
+2019-09-06 18:03:15  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/bigram.txt
+2019-09-06 18:03:15  INFO AutoDetector:350 : 加载资源：classpath:bigram.txt
+2019-09-06 18:03:15  INFO AutoDetector:99 : 加载资源 1519443 行
+2019-09-06 18:03:15  INFO Bigram:52 : 初始化bigram
+2019-09-06 18:03:39  INFO Bigram:63 : bigram初始化完毕，bigram数据条数：1519443
+2019-09-06 18:03:39  INFO AutoDetector:104 : 完成加载资源，耗时24412 毫秒
+2019-09-06 18:03:39  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:03:39  INFO AutoDetector:79 : classpath:stopwords.txt,classpath:custom_stopwords_dic.txt
+2019-09-06 18:03:39  INFO AutoDetector:116 : 类路径资源：stopwords.txt
+2019-09-06 18:03:39  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/stopwords.txt
+2019-09-06 18:03:39  INFO AutoDetector:350 : 加载资源：classpath:stopwords.txt
+2019-09-06 18:03:39  INFO AutoDetector:116 : 类路径资源：custom_stopwords_dic.txt
+2019-09-06 18:03:39  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/custom_stopwords_dic.txt
+2019-09-06 18:03:39  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\custom_stopwords_dic.txt
+2019-09-06 18:03:39  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\custom_stopwords_dic.txt
+2019-09-06 18:03:39  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-06 18:03:39  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-06 18:03:39  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-06 18:03:39  INFO AutoDetector:99 : 加载资源 1482 行
+2019-09-06 18:03:39  INFO StopWord:64 : 初始化停用词
+2019-09-06 18:03:39  INFO StopWord:70 : 停用词初始化完毕，停用词个数：1482
+2019-09-06 18:03:39  INFO AutoDetector:104 : 完成加载资源，耗时4 毫秒
+2019-09-06 18:03:39  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:03:39  INFO AutoDetector:79 : classpath:word_refine.txt
+2019-09-06 18:03:39  INFO AutoDetector:116 : 类路径资源：word_refine.txt
+2019-09-06 18:03:39  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/word_refine.txt
+2019-09-06 18:03:39  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\word_refine.txt
+2019-09-06 18:03:39  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\word_refine.txt
+2019-09-06 18:03:39  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-06 18:03:39  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-06 18:03:39  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-06 18:03:39  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_refine.txt
+2019-09-06 18:03:39  INFO AutoDetector:350 : 加载资源：classpath:word_refine.txt
+2019-09-06 18:03:39  INFO AutoDetector:99 : 加载资源 2 行
+2019-09-06 18:03:39  INFO WordRefiner:55 : 初始化WordRefiner
+2019-09-06 18:03:39  INFO WordRefiner:66 : WordRefiner初始化完毕，数据条数：2
+2019-09-06 18:03:39  INFO AutoDetector:104 : 完成加载资源，耗时6 毫秒
+2019-09-06 18:08:32  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.BidirectionalMaximumMatching
+2019-09-06 18:08:32  INFO WordConfTools:88 : 开始加载配置文件
+2019-09-06 18:08:32  INFO WordConfTools:128 : 加载配置文件：word.conf
+2019-09-06 18:08:32  INFO WordConfTools:128 : 加载配置文件：word.local.conf
+2019-09-06 18:08:32  INFO WordConfTools:94 : 配置文件加载完毕，耗时1 毫秒，配置项数目：33
+2019-09-06 18:08:32  INFO WordConfTools:95 : 配置信息：
+2019-09-06 18:08:32  INFO WordConfTools:98 : 1、auto.detect=true
+2019-09-06 18:08:32  INFO WordConfTools:98 : 2、bigram.double.array.trie.size=5300000
+2019-09-06 18:08:32  INFO WordConfTools:98 : 3、bigram.path=classpath:bigram.txt
+2019-09-06 18:08:32  INFO WordConfTools:98 : 4、dic.class=org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-06 18:08:32  INFO WordConfTools:98 : 5、dic.dump.path=
+2019-09-06 18:08:32  INFO WordConfTools:98 : 6、dic.path=classpath:dic.txt,classpath:custom_dic.txt
+2019-09-06 18:08:32  INFO WordConfTools:98 : 7、dictionary.trie.index.size=24000
+2019-09-06 18:08:32  INFO WordConfTools:98 : 8、double.array.dictionary.trie.size=2600000
+2019-09-06 18:08:32  INFO WordConfTools:98 : 9、intercept.length=16
+2019-09-06 18:08:32  INFO WordConfTools:98 : 10、keep.punctuation=false
+2019-09-06 18:08:32  INFO WordConfTools:98 : 11、keep.whitespace=false
+2019-09-06 18:08:32  INFO WordConfTools:98 : 12、ngram=bigram
+2019-09-06 18:08:32  INFO WordConfTools:98 : 13、parallel.seg=true
+2019-09-06 18:08:32  INFO WordConfTools:98 : 14、part.of.speech.des.path=classpath:part_of_speech_des.txt
+2019-09-06 18:08:32  INFO WordConfTools:98 : 15、part.of.speech.dic.path=classpath:part_of_speech_dic.txt
+2019-09-06 18:08:32  INFO WordConfTools:98 : 16、person.name.recognize=true
+2019-09-06 18:08:32  INFO WordConfTools:98 : 17、punctuation.path=classpath:punctuation.txt
+2019-09-06 18:08:32  INFO WordConfTools:98 : 18、quantifier.path=classpath:quantifier.txt
+2019-09-06 18:08:32  INFO WordConfTools:98 : 19、recognition.tool.enabled=true
+2019-09-06 18:08:32  INFO WordConfTools:98 : 20、redis.host=localhost
+2019-09-06 18:08:32  INFO WordConfTools:98 : 21、redis.port=6379
+2019-09-06 18:08:32  INFO WordConfTools:98 : 22、stopwords.path=classpath:stopwords.txt,classpath:custom_stopwords_dic.txt
+2019-09-06 18:08:32  INFO WordConfTools:98 : 23、surname.path=classpath:surname.txt
+2019-09-06 18:08:32  INFO WordConfTools:98 : 24、tagging.antonym=false
+2019-09-06 18:08:32  INFO WordConfTools:98 : 25、tagging.pinyin.acronym=false
+2019-09-06 18:08:32  INFO WordConfTools:98 : 26、tagging.pinyin.full=false
+2019-09-06 18:08:32  INFO WordConfTools:98 : 27、tagging.synonym=false
+2019-09-06 18:08:32  INFO WordConfTools:98 : 28、trigram.double.array.trie.size=9800000
+2019-09-06 18:08:32  INFO WordConfTools:98 : 29、trigram.path=classpath:trigram.txt
+2019-09-06 18:08:32  INFO WordConfTools:98 : 30、word.antonym.path=classpath:word_antonym.txt
+2019-09-06 18:08:32  INFO WordConfTools:98 : 31、word.refine.combine.max.length=3
+2019-09-06 18:08:32  INFO WordConfTools:98 : 32、word.refine.path=classpath:word_refine.txt
+2019-09-06 18:08:32  INFO WordConfTools:98 : 33、word.synonym.path=classpath:word_synonym.txt
+2019-09-06 18:08:32  INFO DictionaryFactory:72 : dic.class=org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-06 18:08:32  INFO DoubleArrayDictionaryTrie:69 : 初始化词典：org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-06 18:08:32  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:08:32  INFO AutoDetector:79 : classpath:dic.txt,classpath:custom_dic.txt,classpath:punctuation.txt,classpath:part_of_speech_dic.txt,classpath:word_synonym.txt,classpath:word_antonym.txt
+2019-09-06 18:08:32  INFO AutoDetector:116 : 类路径资源：dic.txt
+2019-09-06 18:08:32  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/dic.txt
+2019-09-06 18:08:32  INFO AutoDetector:350 : 加载资源：classpath:dic.txt
+2019-09-06 18:08:32  INFO AutoDetector:116 : 类路径资源：custom_dic.txt
+2019-09-06 18:08:32  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/custom_dic.txt
+2019-09-06 18:08:32  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\custom_dic.txt
+2019-09-06 18:08:32  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\custom_dic.txt
+2019-09-06 18:08:32  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-06 18:08:32  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-06 18:08:32  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-06 18:08:32  INFO AutoDetector:116 : 类路径资源：punctuation.txt
+2019-09-06 18:08:32  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/punctuation.txt
+2019-09-06 18:08:32  INFO AutoDetector:350 : 加载资源：classpath:punctuation.txt
+2019-09-06 18:08:32  INFO AutoDetector:116 : 类路径资源：part_of_speech_dic.txt
+2019-09-06 18:08:32  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/part_of_speech_dic.txt
+2019-09-06 18:08:32  INFO AutoDetector:350 : 加载资源：classpath:part_of_speech_dic.txt
+2019-09-06 18:08:32  INFO AutoDetector:116 : 类路径资源：word_synonym.txt
+2019-09-06 18:08:32  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_synonym.txt
+2019-09-06 18:08:32  INFO AutoDetector:350 : 加载资源：classpath:word_synonym.txt
+2019-09-06 18:08:32  INFO AutoDetector:116 : 类路径资源：word_antonym.txt
+2019-09-06 18:08:32  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_antonym.txt
+2019-09-06 18:08:32  INFO AutoDetector:350 : 加载资源：classpath:word_antonym.txt
+2019-09-06 18:08:32  INFO AutoDetector:99 : 加载资源 1091314 行
+2019-09-06 18:08:32  INFO DictionaryFactory:92 : 初始化词典
+2019-09-06 18:08:32  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:08:32  INFO AutoDetector:79 : classpath:surname.txt
+2019-09-06 18:08:32  INFO AutoDetector:116 : 类路径资源：surname.txt
+2019-09-06 18:08:32  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/surname.txt
+2019-09-06 18:08:32  INFO AutoDetector:350 : 加载资源：classpath:surname.txt
+2019-09-06 18:08:32  INFO AutoDetector:99 : 加载资源 508 行
+2019-09-06 18:08:32  INFO PersonName:61 : 初始化百家姓
+2019-09-06 18:08:32  INFO PersonName:74 : 百家姓初始化完毕，单姓个数：446，复姓个数：60
+2019-09-06 18:08:32  INFO AutoDetector:104 : 完成加载资源，耗时3 毫秒
+2019-09-06 18:08:32  INFO DictionaryFactory:101 : 将 60 个复姓加入词典
+2019-09-06 18:08:43  INFO DictionaryFactory:139 : 词数目：677848，词典最大词长：16
+2019-09-06 18:08:43  INFO DictionaryFactory:142 : 词长  1 的词数为：47
+2019-09-06 18:08:43  INFO DictionaryFactory:142 : 词长  2 的词数为：213335
+2019-09-06 18:08:43  INFO DictionaryFactory:142 : 词长  3 的词数为：289751
+2019-09-06 18:08:43  INFO DictionaryFactory:142 : 词长  4 的词数为：158965
+2019-09-06 18:08:43  INFO DictionaryFactory:142 : 词长  5 的词数为：6139
+2019-09-06 18:08:43  INFO DictionaryFactory:142 : 词长  6 的词数为：3746
+2019-09-06 18:08:43  INFO DictionaryFactory:142 : 词长  7 的词数为：2205
+2019-09-06 18:08:43  INFO DictionaryFactory:142 : 词长  8 的词数为：1321
+2019-09-06 18:08:43  INFO DictionaryFactory:142 : 词长  9 的词数为：797
+2019-09-06 18:08:43  INFO DictionaryFactory:144 : 词长 10 的词数为：632
+2019-09-06 18:08:43  INFO DictionaryFactory:144 : 词长 11 的词数为：312
+2019-09-06 18:08:43  INFO DictionaryFactory:144 : 词长 12 的词数为：282
+2019-09-06 18:08:43  INFO DictionaryFactory:144 : 词长 13 的词数为：124
+2019-09-06 18:08:43  INFO DictionaryFactory:144 : 词长 14 的词数为：116
+2019-09-06 18:08:43  INFO DictionaryFactory:144 : 词长 15 的词数为：51
+2019-09-06 18:08:43  INFO DictionaryFactory:144 : 词长 16 的词数为：25
+2019-09-06 18:08:43  INFO DictionaryFactory:147 : 词典平均词长：3.0032012
+2019-09-06 18:08:43  INFO DictionaryFactory:122 : 词典初始化完毕，耗时：10753 毫秒
+2019-09-06 18:08:43  INFO AutoDetector:104 : 完成加载资源，耗时11103 毫秒
+2019-09-06 18:08:43  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.MaximumMatching
+2019-09-06 18:08:43  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.ReverseMaximumMatching
+2019-09-06 18:08:43  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:08:43  INFO AutoDetector:79 : classpath:punctuation.txt
+2019-09-06 18:08:43  INFO AutoDetector:116 : 类路径资源：punctuation.txt
+2019-09-06 18:08:43  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/punctuation.txt
+2019-09-06 18:08:43  INFO AutoDetector:350 : 加载资源：classpath:punctuation.txt
+2019-09-06 18:08:43  INFO AutoDetector:99 : 加载资源 48 行
+2019-09-06 18:08:43  INFO Punctuation:55 : 初始化标点符号
+2019-09-06 18:08:43  INFO Punctuation:80 : 标点符号初始化完毕，标点符号个数：52
+2019-09-06 18:08:43  INFO AutoDetector:104 : 完成加载资源，耗时1 毫秒
+2019-09-06 18:08:43  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:08:43  INFO AutoDetector:79 : classpath:quantifier.txt
+2019-09-06 18:08:43  INFO AutoDetector:116 : 类路径资源：quantifier.txt
+2019-09-06 18:08:43  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/quantifier.txt
+2019-09-06 18:08:43  INFO AutoDetector:350 : 加载资源：classpath:quantifier.txt
+2019-09-06 18:08:43  INFO AutoDetector:99 : 加载资源 164 行
+2019-09-06 18:08:43  INFO Quantifier:52 : 初始化数量词
+2019-09-06 18:08:43  INFO Quantifier:65 : 数量词初始化完毕，数量词个数：164
+2019-09-06 18:08:43  INFO AutoDetector:104 : 完成加载资源，耗时2 毫秒
+2019-09-06 18:08:43  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:08:43  INFO AutoDetector:79 : classpath:bigram.txt
+2019-09-06 18:08:43  INFO AutoDetector:116 : 类路径资源：bigram.txt
+2019-09-06 18:08:43  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/bigram.txt
+2019-09-06 18:08:43  INFO AutoDetector:350 : 加载资源：classpath:bigram.txt
+2019-09-06 18:08:43  INFO AutoDetector:99 : 加载资源 1519443 行
+2019-09-06 18:08:43  INFO Bigram:52 : 初始化bigram
+2019-09-06 18:09:07  INFO Bigram:63 : bigram初始化完毕，bigram数据条数：1519443
+2019-09-06 18:09:07  INFO AutoDetector:104 : 完成加载资源，耗时24341 毫秒
+2019-09-06 18:09:07  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:09:07  INFO AutoDetector:79 : classpath:stopwords.txt,classpath:custom_stopwords_dic.txt
+2019-09-06 18:09:07  INFO AutoDetector:116 : 类路径资源：stopwords.txt
+2019-09-06 18:09:07  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/stopwords.txt
+2019-09-06 18:09:07  INFO AutoDetector:350 : 加载资源：classpath:stopwords.txt
+2019-09-06 18:09:07  INFO AutoDetector:116 : 类路径资源：custom_stopwords_dic.txt
+2019-09-06 18:09:07  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/custom_stopwords_dic.txt
+2019-09-06 18:09:07  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\custom_stopwords_dic.txt
+2019-09-06 18:09:07  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\custom_stopwords_dic.txt
+2019-09-06 18:09:07  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-06 18:09:07  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-06 18:09:07  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-06 18:09:07  INFO AutoDetector:99 : 加载资源 1482 行
+2019-09-06 18:09:07  INFO StopWord:64 : 初始化停用词
+2019-09-06 18:09:07  INFO StopWord:70 : 停用词初始化完毕，停用词个数：1482
+2019-09-06 18:09:07  INFO AutoDetector:104 : 完成加载资源，耗时4 毫秒
+2019-09-06 18:09:07  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:09:07  INFO AutoDetector:79 : classpath:word_refine.txt
+2019-09-06 18:09:07  INFO AutoDetector:116 : 类路径资源：word_refine.txt
+2019-09-06 18:09:07  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/word_refine.txt
+2019-09-06 18:09:07  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\word_refine.txt
+2019-09-06 18:09:07  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\word_refine.txt
+2019-09-06 18:09:07  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-06 18:09:07  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-06 18:09:07  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-06 18:09:07  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_refine.txt
+2019-09-06 18:09:07  INFO AutoDetector:350 : 加载资源：classpath:word_refine.txt
+2019-09-06 18:09:07  INFO AutoDetector:99 : 加载资源 2 行
+2019-09-06 18:09:07  INFO WordRefiner:55 : 初始化WordRefiner
+2019-09-06 18:09:07  INFO WordRefiner:66 : WordRefiner初始化完毕，数据条数：2
+2019-09-06 18:09:07  INFO AutoDetector:104 : 完成加载资源，耗时2 毫秒
+2019-09-06 18:09:52  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.BidirectionalMaximumMatching
+2019-09-06 18:09:52  INFO WordConfTools:88 : 开始加载配置文件
+2019-09-06 18:09:52  INFO WordConfTools:128 : 加载配置文件：word.conf
+2019-09-06 18:09:52  INFO WordConfTools:128 : 加载配置文件：word.local.conf
+2019-09-06 18:09:52  INFO WordConfTools:94 : 配置文件加载完毕，耗时2 毫秒，配置项数目：33
+2019-09-06 18:09:52  INFO WordConfTools:95 : 配置信息：
+2019-09-06 18:09:52  INFO WordConfTools:98 : 1、auto.detect=true
+2019-09-06 18:09:52  INFO WordConfTools:98 : 2、bigram.double.array.trie.size=5300000
+2019-09-06 18:09:52  INFO WordConfTools:98 : 3、bigram.path=classpath:bigram.txt
+2019-09-06 18:09:52  INFO WordConfTools:98 : 4、dic.class=org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-06 18:09:52  INFO WordConfTools:98 : 5、dic.dump.path=
+2019-09-06 18:09:52  INFO WordConfTools:98 : 6、dic.path=classpath:dic.txt,classpath:custom_dic.txt
+2019-09-06 18:09:52  INFO WordConfTools:98 : 7、dictionary.trie.index.size=24000
+2019-09-06 18:09:52  INFO WordConfTools:98 : 8、double.array.dictionary.trie.size=2600000
+2019-09-06 18:09:52  INFO WordConfTools:98 : 9、intercept.length=16
+2019-09-06 18:09:52  INFO WordConfTools:98 : 10、keep.punctuation=false
+2019-09-06 18:09:52  INFO WordConfTools:98 : 11、keep.whitespace=false
+2019-09-06 18:09:52  INFO WordConfTools:98 : 12、ngram=bigram
+2019-09-06 18:09:52  INFO WordConfTools:98 : 13、parallel.seg=true
+2019-09-06 18:09:52  INFO WordConfTools:98 : 14、part.of.speech.des.path=classpath:part_of_speech_des.txt
+2019-09-06 18:09:52  INFO WordConfTools:98 : 15、part.of.speech.dic.path=classpath:part_of_speech_dic.txt
+2019-09-06 18:09:52  INFO WordConfTools:98 : 16、person.name.recognize=true
+2019-09-06 18:09:52  INFO WordConfTools:98 : 17、punctuation.path=classpath:punctuation.txt
+2019-09-06 18:09:52  INFO WordConfTools:98 : 18、quantifier.path=classpath:quantifier.txt
+2019-09-06 18:09:52  INFO WordConfTools:98 : 19、recognition.tool.enabled=true
+2019-09-06 18:09:52  INFO WordConfTools:98 : 20、redis.host=localhost
+2019-09-06 18:09:52  INFO WordConfTools:98 : 21、redis.port=6379
+2019-09-06 18:09:52  INFO WordConfTools:98 : 22、stopwords.path=classpath:stopwords.txt,classpath:custom_stopwords_dic.txt
+2019-09-06 18:09:52  INFO WordConfTools:98 : 23、surname.path=classpath:surname.txt
+2019-09-06 18:09:52  INFO WordConfTools:98 : 24、tagging.antonym=false
+2019-09-06 18:09:52  INFO WordConfTools:98 : 25、tagging.pinyin.acronym=false
+2019-09-06 18:09:52  INFO WordConfTools:98 : 26、tagging.pinyin.full=false
+2019-09-06 18:09:52  INFO WordConfTools:98 : 27、tagging.synonym=false
+2019-09-06 18:09:52  INFO WordConfTools:98 : 28、trigram.double.array.trie.size=9800000
+2019-09-06 18:09:52  INFO WordConfTools:98 : 29、trigram.path=classpath:trigram.txt
+2019-09-06 18:09:52  INFO WordConfTools:98 : 30、word.antonym.path=classpath:word_antonym.txt
+2019-09-06 18:09:52  INFO WordConfTools:98 : 31、word.refine.combine.max.length=3
+2019-09-06 18:09:52  INFO WordConfTools:98 : 32、word.refine.path=classpath:word_refine.txt
+2019-09-06 18:09:52  INFO WordConfTools:98 : 33、word.synonym.path=classpath:word_synonym.txt
+2019-09-06 18:09:52  INFO DictionaryFactory:72 : dic.class=org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-06 18:09:52  INFO DoubleArrayDictionaryTrie:69 : 初始化词典：org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-06 18:09:52  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:09:52  INFO AutoDetector:79 : classpath:dic.txt,classpath:custom_dic.txt,classpath:punctuation.txt,classpath:part_of_speech_dic.txt,classpath:word_synonym.txt,classpath:word_antonym.txt
+2019-09-06 18:09:52  INFO AutoDetector:116 : 类路径资源：dic.txt
+2019-09-06 18:09:52  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/dic.txt
+2019-09-06 18:09:52  INFO AutoDetector:350 : 加载资源：classpath:dic.txt
+2019-09-06 18:09:53  INFO AutoDetector:116 : 类路径资源：custom_dic.txt
+2019-09-06 18:09:53  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/custom_dic.txt
+2019-09-06 18:09:53  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\custom_dic.txt
+2019-09-06 18:09:53  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\custom_dic.txt
+2019-09-06 18:09:53  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-06 18:09:53  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-06 18:09:53  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-06 18:09:53  INFO AutoDetector:116 : 类路径资源：punctuation.txt
+2019-09-06 18:09:53  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/punctuation.txt
+2019-09-06 18:09:53  INFO AutoDetector:350 : 加载资源：classpath:punctuation.txt
+2019-09-06 18:09:53  INFO AutoDetector:116 : 类路径资源：part_of_speech_dic.txt
+2019-09-06 18:09:53  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/part_of_speech_dic.txt
+2019-09-06 18:09:53  INFO AutoDetector:350 : 加载资源：classpath:part_of_speech_dic.txt
+2019-09-06 18:09:53  INFO AutoDetector:116 : 类路径资源：word_synonym.txt
+2019-09-06 18:09:53  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_synonym.txt
+2019-09-06 18:09:53  INFO AutoDetector:350 : 加载资源：classpath:word_synonym.txt
+2019-09-06 18:09:53  INFO AutoDetector:116 : 类路径资源：word_antonym.txt
+2019-09-06 18:09:53  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_antonym.txt
+2019-09-06 18:09:53  INFO AutoDetector:350 : 加载资源：classpath:word_antonym.txt
+2019-09-06 18:09:53  INFO AutoDetector:99 : 加载资源 1091314 行
+2019-09-06 18:09:53  INFO DictionaryFactory:92 : 初始化词典
+2019-09-06 18:09:53  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:09:53  INFO AutoDetector:79 : classpath:surname.txt
+2019-09-06 18:09:53  INFO AutoDetector:116 : 类路径资源：surname.txt
+2019-09-06 18:09:53  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/surname.txt
+2019-09-06 18:09:53  INFO AutoDetector:350 : 加载资源：classpath:surname.txt
+2019-09-06 18:09:53  INFO AutoDetector:99 : 加载资源 508 行
+2019-09-06 18:09:53  INFO PersonName:61 : 初始化百家姓
+2019-09-06 18:09:53  INFO PersonName:74 : 百家姓初始化完毕，单姓个数：446，复姓个数：60
+2019-09-06 18:09:53  INFO AutoDetector:104 : 完成加载资源，耗时2 毫秒
+2019-09-06 18:09:53  INFO DictionaryFactory:101 : 将 60 个复姓加入词典
+2019-09-06 18:10:04  INFO DictionaryFactory:139 : 词数目：677848，词典最大词长：16
+2019-09-06 18:10:04  INFO DictionaryFactory:142 : 词长  1 的词数为：47
+2019-09-06 18:10:04  INFO DictionaryFactory:142 : 词长  2 的词数为：213335
+2019-09-06 18:10:04  INFO DictionaryFactory:142 : 词长  3 的词数为：289751
+2019-09-06 18:10:04  INFO DictionaryFactory:142 : 词长  4 的词数为：158965
+2019-09-06 18:10:04  INFO DictionaryFactory:142 : 词长  5 的词数为：6139
+2019-09-06 18:10:04  INFO DictionaryFactory:142 : 词长  6 的词数为：3746
+2019-09-06 18:10:04  INFO DictionaryFactory:142 : 词长  7 的词数为：2205
+2019-09-06 18:10:04  INFO DictionaryFactory:142 : 词长  8 的词数为：1321
+2019-09-06 18:10:04  INFO DictionaryFactory:142 : 词长  9 的词数为：797
+2019-09-06 18:10:04  INFO DictionaryFactory:144 : 词长 10 的词数为：632
+2019-09-06 18:10:04  INFO DictionaryFactory:144 : 词长 11 的词数为：312
+2019-09-06 18:10:04  INFO DictionaryFactory:144 : 词长 12 的词数为：282
+2019-09-06 18:10:04  INFO DictionaryFactory:144 : 词长 13 的词数为：124
+2019-09-06 18:10:04  INFO DictionaryFactory:144 : 词长 14 的词数为：116
+2019-09-06 18:10:04  INFO DictionaryFactory:144 : 词长 15 的词数为：51
+2019-09-06 18:10:04  INFO DictionaryFactory:144 : 词长 16 的词数为：25
+2019-09-06 18:10:04  INFO DictionaryFactory:147 : 词典平均词长：3.0032012
+2019-09-06 18:10:04  INFO DictionaryFactory:122 : 词典初始化完毕，耗时：11235 毫秒
+2019-09-06 18:10:04  INFO AutoDetector:104 : 完成加载资源，耗时11550 毫秒
+2019-09-06 18:10:04  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.MaximumMatching
+2019-09-06 18:10:04  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.ReverseMaximumMatching
+2019-09-06 18:10:04  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:10:04  INFO AutoDetector:79 : classpath:punctuation.txt
+2019-09-06 18:10:04  INFO AutoDetector:116 : 类路径资源：punctuation.txt
+2019-09-06 18:10:04  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/punctuation.txt
+2019-09-06 18:10:04  INFO AutoDetector:350 : 加载资源：classpath:punctuation.txt
+2019-09-06 18:10:04  INFO AutoDetector:99 : 加载资源 48 行
+2019-09-06 18:10:04  INFO Punctuation:55 : 初始化标点符号
+2019-09-06 18:10:04  INFO Punctuation:80 : 标点符号初始化完毕，标点符号个数：52
+2019-09-06 18:10:04  INFO AutoDetector:104 : 完成加载资源，耗时3 毫秒
+2019-09-06 18:10:04  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:10:04  INFO AutoDetector:79 : classpath:quantifier.txt
+2019-09-06 18:10:04  INFO AutoDetector:116 : 类路径资源：quantifier.txt
+2019-09-06 18:10:04  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/quantifier.txt
+2019-09-06 18:10:04  INFO AutoDetector:350 : 加载资源：classpath:quantifier.txt
+2019-09-06 18:10:04  INFO AutoDetector:99 : 加载资源 164 行
+2019-09-06 18:10:04  INFO Quantifier:52 : 初始化数量词
+2019-09-06 18:10:04  INFO Quantifier:65 : 数量词初始化完毕，数量词个数：164
+2019-09-06 18:10:04  INFO AutoDetector:104 : 完成加载资源，耗时2 毫秒
+2019-09-06 18:10:04  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:10:04  INFO AutoDetector:79 : classpath:bigram.txt
+2019-09-06 18:10:04  INFO AutoDetector:116 : 类路径资源：bigram.txt
+2019-09-06 18:10:04  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/bigram.txt
+2019-09-06 18:10:04  INFO AutoDetector:350 : 加载资源：classpath:bigram.txt
+2019-09-06 18:10:04  INFO AutoDetector:99 : 加载资源 1519443 行
+2019-09-06 18:10:04  INFO Bigram:52 : 初始化bigram
+2019-09-06 18:10:29  INFO Bigram:63 : bigram初始化完毕，bigram数据条数：1519443
+2019-09-06 18:10:29  INFO AutoDetector:104 : 完成加载资源，耗时24812 毫秒
+2019-09-06 18:10:29  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:10:29  INFO AutoDetector:79 : classpath:stopwords.txt,classpath:custom_stopwords_dic.txt
+2019-09-06 18:10:29  INFO AutoDetector:116 : 类路径资源：stopwords.txt
+2019-09-06 18:10:29  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/stopwords.txt
+2019-09-06 18:10:29  INFO AutoDetector:350 : 加载资源：classpath:stopwords.txt
+2019-09-06 18:10:29  INFO AutoDetector:116 : 类路径资源：custom_stopwords_dic.txt
+2019-09-06 18:10:29  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/custom_stopwords_dic.txt
+2019-09-06 18:10:29  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\custom_stopwords_dic.txt
+2019-09-06 18:10:29  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\custom_stopwords_dic.txt
+2019-09-06 18:10:29  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-06 18:10:29  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-06 18:10:29  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-06 18:10:29  INFO AutoDetector:99 : 加载资源 1482 行
+2019-09-06 18:10:29  INFO StopWord:64 : 初始化停用词
+2019-09-06 18:10:29  INFO StopWord:70 : 停用词初始化完毕，停用词个数：1482
+2019-09-06 18:10:29  INFO AutoDetector:104 : 完成加载资源，耗时4 毫秒
+2019-09-06 18:10:29  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:10:29  INFO AutoDetector:79 : classpath:word_refine.txt
+2019-09-06 18:10:29  INFO AutoDetector:116 : 类路径资源：word_refine.txt
+2019-09-06 18:10:29  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/word_refine.txt
+2019-09-06 18:10:29  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\word_refine.txt
+2019-09-06 18:10:29  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\word_refine.txt
+2019-09-06 18:10:29  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-06 18:10:29  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-06 18:10:29  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-06 18:10:29  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_refine.txt
+2019-09-06 18:10:29  INFO AutoDetector:350 : 加载资源：classpath:word_refine.txt
+2019-09-06 18:10:29  INFO AutoDetector:99 : 加载资源 2 行
+2019-09-06 18:10:29  INFO WordRefiner:55 : 初始化WordRefiner
+2019-09-06 18:10:29  INFO WordRefiner:66 : WordRefiner初始化完毕，数据条数：2
+2019-09-06 18:10:29  INFO AutoDetector:104 : 完成加载资源，耗时3 毫秒
+2019-09-06 18:11:28  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.BidirectionalMaximumMatching
+2019-09-06 18:11:28  INFO WordConfTools:88 : 开始加载配置文件
+2019-09-06 18:11:28  INFO WordConfTools:128 : 加载配置文件：word.conf
+2019-09-06 18:11:28  INFO WordConfTools:128 : 加载配置文件：word.local.conf
+2019-09-06 18:11:28  INFO WordConfTools:94 : 配置文件加载完毕，耗时2 毫秒，配置项数目：33
+2019-09-06 18:11:28  INFO WordConfTools:95 : 配置信息：
+2019-09-06 18:11:28  INFO WordConfTools:98 : 1、auto.detect=true
+2019-09-06 18:11:28  INFO WordConfTools:98 : 2、bigram.double.array.trie.size=5300000
+2019-09-06 18:11:28  INFO WordConfTools:98 : 3、bigram.path=classpath:bigram.txt
+2019-09-06 18:11:28  INFO WordConfTools:98 : 4、dic.class=org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-06 18:11:28  INFO WordConfTools:98 : 5、dic.dump.path=
+2019-09-06 18:11:28  INFO WordConfTools:98 : 6、dic.path=classpath:dic.txt,classpath:custom_dic.txt
+2019-09-06 18:11:28  INFO WordConfTools:98 : 7、dictionary.trie.index.size=24000
+2019-09-06 18:11:28  INFO WordConfTools:98 : 8、double.array.dictionary.trie.size=2600000
+2019-09-06 18:11:28  INFO WordConfTools:98 : 9、intercept.length=16
+2019-09-06 18:11:28  INFO WordConfTools:98 : 10、keep.punctuation=false
+2019-09-06 18:11:28  INFO WordConfTools:98 : 11、keep.whitespace=false
+2019-09-06 18:11:28  INFO WordConfTools:98 : 12、ngram=bigram
+2019-09-06 18:11:28  INFO WordConfTools:98 : 13、parallel.seg=true
+2019-09-06 18:11:28  INFO WordConfTools:98 : 14、part.of.speech.des.path=classpath:part_of_speech_des.txt
+2019-09-06 18:11:28  INFO WordConfTools:98 : 15、part.of.speech.dic.path=classpath:part_of_speech_dic.txt
+2019-09-06 18:11:28  INFO WordConfTools:98 : 16、person.name.recognize=true
+2019-09-06 18:11:28  INFO WordConfTools:98 : 17、punctuation.path=classpath:punctuation.txt
+2019-09-06 18:11:28  INFO WordConfTools:98 : 18、quantifier.path=classpath:quantifier.txt
+2019-09-06 18:11:28  INFO WordConfTools:98 : 19、recognition.tool.enabled=true
+2019-09-06 18:11:28  INFO WordConfTools:98 : 20、redis.host=localhost
+2019-09-06 18:11:28  INFO WordConfTools:98 : 21、redis.port=6379
+2019-09-06 18:11:28  INFO WordConfTools:98 : 22、stopwords.path=classpath:stopwords.txt,classpath:custom_stopwords_dic.txt
+2019-09-06 18:11:28  INFO WordConfTools:98 : 23、surname.path=classpath:surname.txt
+2019-09-06 18:11:28  INFO WordConfTools:98 : 24、tagging.antonym=false
+2019-09-06 18:11:28  INFO WordConfTools:98 : 25、tagging.pinyin.acronym=false
+2019-09-06 18:11:28  INFO WordConfTools:98 : 26、tagging.pinyin.full=false
+2019-09-06 18:11:28  INFO WordConfTools:98 : 27、tagging.synonym=false
+2019-09-06 18:11:28  INFO WordConfTools:98 : 28、trigram.double.array.trie.size=9800000
+2019-09-06 18:11:28  INFO WordConfTools:98 : 29、trigram.path=classpath:trigram.txt
+2019-09-06 18:11:28  INFO WordConfTools:98 : 30、word.antonym.path=classpath:word_antonym.txt
+2019-09-06 18:11:28  INFO WordConfTools:98 : 31、word.refine.combine.max.length=3
+2019-09-06 18:11:28  INFO WordConfTools:98 : 32、word.refine.path=classpath:word_refine.txt
+2019-09-06 18:11:28  INFO WordConfTools:98 : 33、word.synonym.path=classpath:word_synonym.txt
+2019-09-06 18:11:28  INFO DictionaryFactory:72 : dic.class=org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-06 18:11:28  INFO DoubleArrayDictionaryTrie:69 : 初始化词典：org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-06 18:11:28  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:11:28  INFO AutoDetector:79 : classpath:dic.txt,classpath:custom_dic.txt,classpath:punctuation.txt,classpath:part_of_speech_dic.txt,classpath:word_synonym.txt,classpath:word_antonym.txt
+2019-09-06 18:11:28  INFO AutoDetector:116 : 类路径资源：dic.txt
+2019-09-06 18:11:28  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/dic.txt
+2019-09-06 18:11:28  INFO AutoDetector:350 : 加载资源：classpath:dic.txt
+2019-09-06 18:11:28  INFO AutoDetector:116 : 类路径资源：custom_dic.txt
+2019-09-06 18:11:28  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/custom_dic.txt
+2019-09-06 18:11:28  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\custom_dic.txt
+2019-09-06 18:11:28  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\custom_dic.txt
+2019-09-06 18:11:28  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-06 18:11:28  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-06 18:11:28  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-06 18:11:28  INFO AutoDetector:116 : 类路径资源：punctuation.txt
+2019-09-06 18:11:28  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/punctuation.txt
+2019-09-06 18:11:28  INFO AutoDetector:350 : 加载资源：classpath:punctuation.txt
+2019-09-06 18:11:28  INFO AutoDetector:116 : 类路径资源：part_of_speech_dic.txt
+2019-09-06 18:11:28  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/part_of_speech_dic.txt
+2019-09-06 18:11:28  INFO AutoDetector:350 : 加载资源：classpath:part_of_speech_dic.txt
+2019-09-06 18:11:28  INFO AutoDetector:116 : 类路径资源：word_synonym.txt
+2019-09-06 18:11:28  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_synonym.txt
+2019-09-06 18:11:28  INFO AutoDetector:350 : 加载资源：classpath:word_synonym.txt
+2019-09-06 18:11:28  INFO AutoDetector:116 : 类路径资源：word_antonym.txt
+2019-09-06 18:11:28  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_antonym.txt
+2019-09-06 18:11:28  INFO AutoDetector:350 : 加载资源：classpath:word_antonym.txt
+2019-09-06 18:11:28  INFO AutoDetector:99 : 加载资源 1091314 行
+2019-09-06 18:11:28  INFO DictionaryFactory:92 : 初始化词典
+2019-09-06 18:11:28  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:11:28  INFO AutoDetector:79 : classpath:surname.txt
+2019-09-06 18:11:28  INFO AutoDetector:116 : 类路径资源：surname.txt
+2019-09-06 18:11:28  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/surname.txt
+2019-09-06 18:11:28  INFO AutoDetector:350 : 加载资源：classpath:surname.txt
+2019-09-06 18:11:28  INFO AutoDetector:99 : 加载资源 508 行
+2019-09-06 18:11:28  INFO PersonName:61 : 初始化百家姓
+2019-09-06 18:11:28  INFO PersonName:74 : 百家姓初始化完毕，单姓个数：446，复姓个数：60
+2019-09-06 18:11:28  INFO AutoDetector:104 : 完成加载资源，耗时2 毫秒
+2019-09-06 18:11:28  INFO DictionaryFactory:101 : 将 60 个复姓加入词典
+2019-09-06 18:11:39  INFO DictionaryFactory:139 : 词数目：677848，词典最大词长：16
+2019-09-06 18:11:39  INFO DictionaryFactory:142 : 词长  1 的词数为：47
+2019-09-06 18:11:39  INFO DictionaryFactory:142 : 词长  2 的词数为：213335
+2019-09-06 18:11:39  INFO DictionaryFactory:142 : 词长  3 的词数为：289751
+2019-09-06 18:11:39  INFO DictionaryFactory:142 : 词长  4 的词数为：158965
+2019-09-06 18:11:39  INFO DictionaryFactory:142 : 词长  5 的词数为：6139
+2019-09-06 18:11:39  INFO DictionaryFactory:142 : 词长  6 的词数为：3746
+2019-09-06 18:11:39  INFO DictionaryFactory:142 : 词长  7 的词数为：2205
+2019-09-06 18:11:39  INFO DictionaryFactory:142 : 词长  8 的词数为：1321
+2019-09-06 18:11:39  INFO DictionaryFactory:142 : 词长  9 的词数为：797
+2019-09-06 18:11:39  INFO DictionaryFactory:144 : 词长 10 的词数为：632
+2019-09-06 18:11:39  INFO DictionaryFactory:144 : 词长 11 的词数为：312
+2019-09-06 18:11:39  INFO DictionaryFactory:144 : 词长 12 的词数为：282
+2019-09-06 18:11:39  INFO DictionaryFactory:144 : 词长 13 的词数为：124
+2019-09-06 18:11:39  INFO DictionaryFactory:144 : 词长 14 的词数为：116
+2019-09-06 18:11:39  INFO DictionaryFactory:144 : 词长 15 的词数为：51
+2019-09-06 18:11:39  INFO DictionaryFactory:144 : 词长 16 的词数为：25
+2019-09-06 18:11:39  INFO DictionaryFactory:147 : 词典平均词长：3.0032012
+2019-09-06 18:11:39  INFO DictionaryFactory:122 : 词典初始化完毕，耗时：11128 毫秒
+2019-09-06 18:11:39  INFO AutoDetector:104 : 完成加载资源，耗时11447 毫秒
+2019-09-06 18:11:39  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.MaximumMatching
+2019-09-06 18:11:39  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.ReverseMaximumMatching
+2019-09-06 18:11:39  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:11:39  INFO AutoDetector:79 : classpath:punctuation.txt
+2019-09-06 18:11:39  INFO AutoDetector:116 : 类路径资源：punctuation.txt
+2019-09-06 18:11:39  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/punctuation.txt
+2019-09-06 18:11:39  INFO AutoDetector:350 : 加载资源：classpath:punctuation.txt
+2019-09-06 18:11:39  INFO AutoDetector:99 : 加载资源 48 行
+2019-09-06 18:11:39  INFO Punctuation:55 : 初始化标点符号
+2019-09-06 18:11:39  INFO Punctuation:80 : 标点符号初始化完毕，标点符号个数：52
+2019-09-06 18:11:39  INFO AutoDetector:104 : 完成加载资源，耗时4 毫秒
+2019-09-06 18:11:39  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:11:39  INFO AutoDetector:79 : classpath:quantifier.txt
+2019-09-06 18:11:39  INFO AutoDetector:116 : 类路径资源：quantifier.txt
+2019-09-06 18:11:39  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/quantifier.txt
+2019-09-06 18:11:39  INFO AutoDetector:350 : 加载资源：classpath:quantifier.txt
+2019-09-06 18:11:39  INFO AutoDetector:99 : 加载资源 164 行
+2019-09-06 18:11:39  INFO Quantifier:52 : 初始化数量词
+2019-09-06 18:11:39  INFO Quantifier:65 : 数量词初始化完毕，数量词个数：164
+2019-09-06 18:11:39  INFO AutoDetector:104 : 完成加载资源，耗时1 毫秒
+2019-09-06 18:11:39  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:11:39  INFO AutoDetector:79 : classpath:bigram.txt
+2019-09-06 18:11:39  INFO AutoDetector:116 : 类路径资源：bigram.txt
+2019-09-06 18:11:39  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/bigram.txt
+2019-09-06 18:11:39  INFO AutoDetector:350 : 加载资源：classpath:bigram.txt
+2019-09-06 18:11:39  INFO AutoDetector:99 : 加载资源 1519443 行
+2019-09-06 18:11:39  INFO Bigram:52 : 初始化bigram
+2019-09-06 18:12:04  INFO Bigram:63 : bigram初始化完毕，bigram数据条数：1519443
+2019-09-06 18:12:04  INFO AutoDetector:104 : 完成加载资源，耗时24693 毫秒
+2019-09-06 18:12:04  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:12:04  INFO AutoDetector:79 : classpath:stopwords.txt,classpath:custom_stopwords_dic.txt
+2019-09-06 18:12:04  INFO AutoDetector:116 : 类路径资源：stopwords.txt
+2019-09-06 18:12:04  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/stopwords.txt
+2019-09-06 18:12:04  INFO AutoDetector:350 : 加载资源：classpath:stopwords.txt
+2019-09-06 18:12:04  INFO AutoDetector:116 : 类路径资源：custom_stopwords_dic.txt
+2019-09-06 18:12:04  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/custom_stopwords_dic.txt
+2019-09-06 18:12:04  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\custom_stopwords_dic.txt
+2019-09-06 18:12:04  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\custom_stopwords_dic.txt
+2019-09-06 18:12:04  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-06 18:12:04  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-06 18:12:04  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-06 18:12:04  INFO AutoDetector:99 : 加载资源 1482 行
+2019-09-06 18:12:04  INFO StopWord:64 : 初始化停用词
+2019-09-06 18:12:04  INFO StopWord:70 : 停用词初始化完毕，停用词个数：1482
+2019-09-06 18:12:04  INFO AutoDetector:104 : 完成加载资源，耗时4 毫秒
+2019-09-06 18:12:04  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:12:04  INFO AutoDetector:79 : classpath:word_refine.txt
+2019-09-06 18:12:04  INFO AutoDetector:116 : 类路径资源：word_refine.txt
+2019-09-06 18:12:04  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/word_refine.txt
+2019-09-06 18:12:04  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\word_refine.txt
+2019-09-06 18:12:04  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\word_refine.txt
+2019-09-06 18:12:04  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-06 18:12:04  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-06 18:12:04  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-06 18:12:04  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_refine.txt
+2019-09-06 18:12:04  INFO AutoDetector:350 : 加载资源：classpath:word_refine.txt
+2019-09-06 18:12:04  INFO AutoDetector:99 : 加载资源 2 行
+2019-09-06 18:12:04  INFO WordRefiner:55 : 初始化WordRefiner
+2019-09-06 18:12:04  INFO WordRefiner:66 : WordRefiner初始化完毕，数据条数：2
+2019-09-06 18:12:04  INFO AutoDetector:104 : 完成加载资源，耗时3 毫秒
+2019-09-06 18:12:31  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.BidirectionalMaximumMatching
+2019-09-06 18:12:31  INFO WordConfTools:88 : 开始加载配置文件
+2019-09-06 18:12:31  INFO WordConfTools:128 : 加载配置文件：word.conf
+2019-09-06 18:12:31  INFO WordConfTools:128 : 加载配置文件：word.local.conf
+2019-09-06 18:12:31  INFO WordConfTools:94 : 配置文件加载完毕，耗时3 毫秒，配置项数目：33
+2019-09-06 18:12:31  INFO WordConfTools:95 : 配置信息：
+2019-09-06 18:12:31  INFO WordConfTools:98 : 1、auto.detect=true
+2019-09-06 18:12:31  INFO WordConfTools:98 : 2、bigram.double.array.trie.size=5300000
+2019-09-06 18:12:31  INFO WordConfTools:98 : 3、bigram.path=classpath:bigram.txt
+2019-09-06 18:12:31  INFO WordConfTools:98 : 4、dic.class=org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-06 18:12:31  INFO WordConfTools:98 : 5、dic.dump.path=
+2019-09-06 18:12:31  INFO WordConfTools:98 : 6、dic.path=classpath:dic.txt,classpath:custom_dic.txt
+2019-09-06 18:12:31  INFO WordConfTools:98 : 7、dictionary.trie.index.size=24000
+2019-09-06 18:12:31  INFO WordConfTools:98 : 8、double.array.dictionary.trie.size=2600000
+2019-09-06 18:12:31  INFO WordConfTools:98 : 9、intercept.length=16
+2019-09-06 18:12:31  INFO WordConfTools:98 : 10、keep.punctuation=false
+2019-09-06 18:12:31  INFO WordConfTools:98 : 11、keep.whitespace=false
+2019-09-06 18:12:31  INFO WordConfTools:98 : 12、ngram=bigram
+2019-09-06 18:12:31  INFO WordConfTools:98 : 13、parallel.seg=true
+2019-09-06 18:12:31  INFO WordConfTools:98 : 14、part.of.speech.des.path=classpath:part_of_speech_des.txt
+2019-09-06 18:12:31  INFO WordConfTools:98 : 15、part.of.speech.dic.path=classpath:part_of_speech_dic.txt
+2019-09-06 18:12:31  INFO WordConfTools:98 : 16、person.name.recognize=true
+2019-09-06 18:12:31  INFO WordConfTools:98 : 17、punctuation.path=classpath:punctuation.txt
+2019-09-06 18:12:31  INFO WordConfTools:98 : 18、quantifier.path=classpath:quantifier.txt
+2019-09-06 18:12:31  INFO WordConfTools:98 : 19、recognition.tool.enabled=true
+2019-09-06 18:12:31  INFO WordConfTools:98 : 20、redis.host=localhost
+2019-09-06 18:12:31  INFO WordConfTools:98 : 21、redis.port=6379
+2019-09-06 18:12:31  INFO WordConfTools:98 : 22、stopwords.path=classpath:stopwords.txt,classpath:custom_stopwords_dic.txt
+2019-09-06 18:12:31  INFO WordConfTools:98 : 23、surname.path=classpath:surname.txt
+2019-09-06 18:12:31  INFO WordConfTools:98 : 24、tagging.antonym=false
+2019-09-06 18:12:31  INFO WordConfTools:98 : 25、tagging.pinyin.acronym=false
+2019-09-06 18:12:31  INFO WordConfTools:98 : 26、tagging.pinyin.full=false
+2019-09-06 18:12:31  INFO WordConfTools:98 : 27、tagging.synonym=false
+2019-09-06 18:12:31  INFO WordConfTools:98 : 28、trigram.double.array.trie.size=9800000
+2019-09-06 18:12:31  INFO WordConfTools:98 : 29、trigram.path=classpath:trigram.txt
+2019-09-06 18:12:31  INFO WordConfTools:98 : 30、word.antonym.path=classpath:word_antonym.txt
+2019-09-06 18:12:31  INFO WordConfTools:98 : 31、word.refine.combine.max.length=3
+2019-09-06 18:12:31  INFO WordConfTools:98 : 32、word.refine.path=classpath:word_refine.txt
+2019-09-06 18:12:31  INFO WordConfTools:98 : 33、word.synonym.path=classpath:word_synonym.txt
+2019-09-06 18:12:31  INFO DictionaryFactory:72 : dic.class=org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-06 18:12:31  INFO DoubleArrayDictionaryTrie:69 : 初始化词典：org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-06 18:12:31  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:12:31  INFO AutoDetector:79 : classpath:dic.txt,classpath:custom_dic.txt,classpath:punctuation.txt,classpath:part_of_speech_dic.txt,classpath:word_synonym.txt,classpath:word_antonym.txt
+2019-09-06 18:12:31  INFO AutoDetector:116 : 类路径资源：dic.txt
+2019-09-06 18:12:31  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/dic.txt
+2019-09-06 18:12:31  INFO AutoDetector:350 : 加载资源：classpath:dic.txt
+2019-09-06 18:12:31  INFO AutoDetector:116 : 类路径资源：custom_dic.txt
+2019-09-06 18:12:31  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/custom_dic.txt
+2019-09-06 18:12:31  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\custom_dic.txt
+2019-09-06 18:12:31  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\custom_dic.txt
+2019-09-06 18:12:31  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-06 18:12:31  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-06 18:12:31  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-06 18:12:31  INFO AutoDetector:116 : 类路径资源：punctuation.txt
+2019-09-06 18:12:31  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/punctuation.txt
+2019-09-06 18:12:31  INFO AutoDetector:350 : 加载资源：classpath:punctuation.txt
+2019-09-06 18:12:31  INFO AutoDetector:116 : 类路径资源：part_of_speech_dic.txt
+2019-09-06 18:12:31  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/part_of_speech_dic.txt
+2019-09-06 18:12:31  INFO AutoDetector:350 : 加载资源：classpath:part_of_speech_dic.txt
+2019-09-06 18:12:31  INFO AutoDetector:116 : 类路径资源：word_synonym.txt
+2019-09-06 18:12:31  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_synonym.txt
+2019-09-06 18:12:31  INFO AutoDetector:350 : 加载资源：classpath:word_synonym.txt
+2019-09-06 18:12:31  INFO AutoDetector:116 : 类路径资源：word_antonym.txt
+2019-09-06 18:12:31  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_antonym.txt
+2019-09-06 18:12:31  INFO AutoDetector:350 : 加载资源：classpath:word_antonym.txt
+2019-09-06 18:12:31  INFO AutoDetector:99 : 加载资源 1091314 行
+2019-09-06 18:12:31  INFO DictionaryFactory:92 : 初始化词典
+2019-09-06 18:12:31  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:12:31  INFO AutoDetector:79 : classpath:surname.txt
+2019-09-06 18:12:31  INFO AutoDetector:116 : 类路径资源：surname.txt
+2019-09-06 18:12:31  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/surname.txt
+2019-09-06 18:12:31  INFO AutoDetector:350 : 加载资源：classpath:surname.txt
+2019-09-06 18:12:31  INFO AutoDetector:99 : 加载资源 508 行
+2019-09-06 18:12:31  INFO PersonName:61 : 初始化百家姓
+2019-09-06 18:12:31  INFO PersonName:74 : 百家姓初始化完毕，单姓个数：446，复姓个数：60
+2019-09-06 18:12:31  INFO AutoDetector:104 : 完成加载资源，耗时2 毫秒
+2019-09-06 18:12:31  INFO DictionaryFactory:101 : 将 60 个复姓加入词典
+2019-09-06 18:12:42  INFO DictionaryFactory:139 : 词数目：677848，词典最大词长：16
+2019-09-06 18:12:42  INFO DictionaryFactory:142 : 词长  1 的词数为：47
+2019-09-06 18:12:42  INFO DictionaryFactory:142 : 词长  2 的词数为：213335
+2019-09-06 18:12:42  INFO DictionaryFactory:142 : 词长  3 的词数为：289751
+2019-09-06 18:12:42  INFO DictionaryFactory:142 : 词长  4 的词数为：158965
+2019-09-06 18:12:42  INFO DictionaryFactory:142 : 词长  5 的词数为：6139
+2019-09-06 18:12:42  INFO DictionaryFactory:142 : 词长  6 的词数为：3746
+2019-09-06 18:12:42  INFO DictionaryFactory:142 : 词长  7 的词数为：2205
+2019-09-06 18:12:42  INFO DictionaryFactory:142 : 词长  8 的词数为：1321
+2019-09-06 18:12:42  INFO DictionaryFactory:142 : 词长  9 的词数为：797
+2019-09-06 18:12:42  INFO DictionaryFactory:144 : 词长 10 的词数为：632
+2019-09-06 18:12:42  INFO DictionaryFactory:144 : 词长 11 的词数为：312
+2019-09-06 18:12:42  INFO DictionaryFactory:144 : 词长 12 的词数为：282
+2019-09-06 18:12:42  INFO DictionaryFactory:144 : 词长 13 的词数为：124
+2019-09-06 18:12:42  INFO DictionaryFactory:144 : 词长 14 的词数为：116
+2019-09-06 18:12:42  INFO DictionaryFactory:144 : 词长 15 的词数为：51
+2019-09-06 18:12:42  INFO DictionaryFactory:144 : 词长 16 的词数为：25
+2019-09-06 18:12:42  INFO DictionaryFactory:147 : 词典平均词长：3.0032012
+2019-09-06 18:12:42  INFO DictionaryFactory:122 : 词典初始化完毕，耗时：10807 毫秒
+2019-09-06 18:12:42  INFO AutoDetector:104 : 完成加载资源，耗时11123 毫秒
+2019-09-06 18:12:42  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.MaximumMatching
+2019-09-06 18:12:42  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.ReverseMaximumMatching
+2019-09-06 18:12:42  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:12:42  INFO AutoDetector:79 : classpath:punctuation.txt
+2019-09-06 18:12:42  INFO AutoDetector:116 : 类路径资源：punctuation.txt
+2019-09-06 18:12:42  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/punctuation.txt
+2019-09-06 18:12:42  INFO AutoDetector:350 : 加载资源：classpath:punctuation.txt
+2019-09-06 18:12:42  INFO AutoDetector:99 : 加载资源 48 行
+2019-09-06 18:12:42  INFO Punctuation:55 : 初始化标点符号
+2019-09-06 18:12:42  INFO Punctuation:80 : 标点符号初始化完毕，标点符号个数：52
+2019-09-06 18:12:42  INFO AutoDetector:104 : 完成加载资源，耗时2 毫秒
+2019-09-06 18:12:42  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:12:42  INFO AutoDetector:79 : classpath:quantifier.txt
+2019-09-06 18:12:42  INFO AutoDetector:116 : 类路径资源：quantifier.txt
+2019-09-06 18:12:42  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/quantifier.txt
+2019-09-06 18:12:42  INFO AutoDetector:350 : 加载资源：classpath:quantifier.txt
+2019-09-06 18:12:42  INFO AutoDetector:99 : 加载资源 164 行
+2019-09-06 18:12:42  INFO Quantifier:52 : 初始化数量词
+2019-09-06 18:12:42  INFO Quantifier:65 : 数量词初始化完毕，数量词个数：164
+2019-09-06 18:12:42  INFO AutoDetector:104 : 完成加载资源，耗时2 毫秒
+2019-09-06 18:12:42  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:12:42  INFO AutoDetector:79 : classpath:bigram.txt
+2019-09-06 18:12:42  INFO AutoDetector:116 : 类路径资源：bigram.txt
+2019-09-06 18:12:42  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/bigram.txt
+2019-09-06 18:12:42  INFO AutoDetector:350 : 加载资源：classpath:bigram.txt
+2019-09-06 18:12:42  INFO AutoDetector:99 : 加载资源 1519443 行
+2019-09-06 18:12:42  INFO Bigram:52 : 初始化bigram
+2019-09-06 18:13:07  INFO Bigram:63 : bigram初始化完毕，bigram数据条数：1519443
+2019-09-06 18:13:07  INFO AutoDetector:104 : 完成加载资源，耗时24590 毫秒
+2019-09-06 18:13:07  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:13:07  INFO AutoDetector:79 : classpath:stopwords.txt,classpath:custom_stopwords_dic.txt
+2019-09-06 18:13:07  INFO AutoDetector:116 : 类路径资源：stopwords.txt
+2019-09-06 18:13:07  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/stopwords.txt
+2019-09-06 18:13:07  INFO AutoDetector:350 : 加载资源：classpath:stopwords.txt
+2019-09-06 18:13:07  INFO AutoDetector:116 : 类路径资源：custom_stopwords_dic.txt
+2019-09-06 18:13:07  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/custom_stopwords_dic.txt
+2019-09-06 18:13:07  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\custom_stopwords_dic.txt
+2019-09-06 18:13:07  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\custom_stopwords_dic.txt
+2019-09-06 18:13:07  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-06 18:13:07  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-06 18:13:07  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-06 18:13:07  INFO AutoDetector:99 : 加载资源 1482 行
+2019-09-06 18:13:07  INFO StopWord:64 : 初始化停用词
+2019-09-06 18:13:07  INFO StopWord:70 : 停用词初始化完毕，停用词个数：1482
+2019-09-06 18:13:07  INFO AutoDetector:104 : 完成加载资源，耗时5 毫秒
+2019-09-06 18:13:07  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:13:07  INFO AutoDetector:79 : classpath:word_refine.txt
+2019-09-06 18:13:07  INFO AutoDetector:116 : 类路径资源：word_refine.txt
+2019-09-06 18:13:07  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/word_refine.txt
+2019-09-06 18:13:07  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\word_refine.txt
+2019-09-06 18:13:07  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\word_refine.txt
+2019-09-06 18:13:07  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-06 18:13:07  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-06 18:13:07  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-06 18:13:07  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_refine.txt
+2019-09-06 18:13:07  INFO AutoDetector:350 : 加载资源：classpath:word_refine.txt
+2019-09-06 18:13:07  INFO AutoDetector:99 : 加载资源 2 行
+2019-09-06 18:13:07  INFO WordRefiner:55 : 初始化WordRefiner
+2019-09-06 18:13:07  INFO WordRefiner:66 : WordRefiner初始化完毕，数据条数：2
+2019-09-06 18:13:07  INFO AutoDetector:104 : 完成加载资源，耗时2 毫秒
+2019-09-06 18:13:35  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.BidirectionalMaximumMatching
+2019-09-06 18:13:35  INFO WordConfTools:88 : 开始加载配置文件
+2019-09-06 18:13:35  INFO WordConfTools:128 : 加载配置文件：word.conf
+2019-09-06 18:13:35  INFO WordConfTools:128 : 加载配置文件：word.local.conf
+2019-09-06 18:13:35  INFO WordConfTools:94 : 配置文件加载完毕，耗时2 毫秒，配置项数目：33
+2019-09-06 18:13:35  INFO WordConfTools:95 : 配置信息：
+2019-09-06 18:13:35  INFO WordConfTools:98 : 1、auto.detect=true
+2019-09-06 18:13:35  INFO WordConfTools:98 : 2、bigram.double.array.trie.size=5300000
+2019-09-06 18:13:35  INFO WordConfTools:98 : 3、bigram.path=classpath:bigram.txt
+2019-09-06 18:13:35  INFO WordConfTools:98 : 4、dic.class=org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-06 18:13:35  INFO WordConfTools:98 : 5、dic.dump.path=
+2019-09-06 18:13:35  INFO WordConfTools:98 : 6、dic.path=classpath:dic.txt,classpath:custom_dic.txt
+2019-09-06 18:13:35  INFO WordConfTools:98 : 7、dictionary.trie.index.size=24000
+2019-09-06 18:13:35  INFO WordConfTools:98 : 8、double.array.dictionary.trie.size=2600000
+2019-09-06 18:13:35  INFO WordConfTools:98 : 9、intercept.length=16
+2019-09-06 18:13:35  INFO WordConfTools:98 : 10、keep.punctuation=false
+2019-09-06 18:13:35  INFO WordConfTools:98 : 11、keep.whitespace=false
+2019-09-06 18:13:35  INFO WordConfTools:98 : 12、ngram=bigram
+2019-09-06 18:13:35  INFO WordConfTools:98 : 13、parallel.seg=true
+2019-09-06 18:13:35  INFO WordConfTools:98 : 14、part.of.speech.des.path=classpath:part_of_speech_des.txt
+2019-09-06 18:13:35  INFO WordConfTools:98 : 15、part.of.speech.dic.path=classpath:part_of_speech_dic.txt
+2019-09-06 18:13:35  INFO WordConfTools:98 : 16、person.name.recognize=true
+2019-09-06 18:13:35  INFO WordConfTools:98 : 17、punctuation.path=classpath:punctuation.txt
+2019-09-06 18:13:35  INFO WordConfTools:98 : 18、quantifier.path=classpath:quantifier.txt
+2019-09-06 18:13:35  INFO WordConfTools:98 : 19、recognition.tool.enabled=true
+2019-09-06 18:13:35  INFO WordConfTools:98 : 20、redis.host=localhost
+2019-09-06 18:13:35  INFO WordConfTools:98 : 21、redis.port=6379
+2019-09-06 18:13:35  INFO WordConfTools:98 : 22、stopwords.path=classpath:stopwords.txt,classpath:custom_stopwords_dic.txt
+2019-09-06 18:13:35  INFO WordConfTools:98 : 23、surname.path=classpath:surname.txt
+2019-09-06 18:13:35  INFO WordConfTools:98 : 24、tagging.antonym=false
+2019-09-06 18:13:35  INFO WordConfTools:98 : 25、tagging.pinyin.acronym=false
+2019-09-06 18:13:35  INFO WordConfTools:98 : 26、tagging.pinyin.full=false
+2019-09-06 18:13:35  INFO WordConfTools:98 : 27、tagging.synonym=false
+2019-09-06 18:13:35  INFO WordConfTools:98 : 28、trigram.double.array.trie.size=9800000
+2019-09-06 18:13:35  INFO WordConfTools:98 : 29、trigram.path=classpath:trigram.txt
+2019-09-06 18:13:35  INFO WordConfTools:98 : 30、word.antonym.path=classpath:word_antonym.txt
+2019-09-06 18:13:35  INFO WordConfTools:98 : 31、word.refine.combine.max.length=3
+2019-09-06 18:13:35  INFO WordConfTools:98 : 32、word.refine.path=classpath:word_refine.txt
+2019-09-06 18:13:35  INFO WordConfTools:98 : 33、word.synonym.path=classpath:word_synonym.txt
+2019-09-06 18:13:35  INFO DictionaryFactory:72 : dic.class=org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-06 18:13:35  INFO DoubleArrayDictionaryTrie:69 : 初始化词典：org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-06 18:13:35  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:13:35  INFO AutoDetector:79 : classpath:dic.txt,classpath:custom_dic.txt,classpath:punctuation.txt,classpath:part_of_speech_dic.txt,classpath:word_synonym.txt,classpath:word_antonym.txt
+2019-09-06 18:13:35  INFO AutoDetector:116 : 类路径资源：dic.txt
+2019-09-06 18:13:35  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/dic.txt
+2019-09-06 18:13:35  INFO AutoDetector:350 : 加载资源：classpath:dic.txt
+2019-09-06 18:13:35  INFO AutoDetector:116 : 类路径资源：custom_dic.txt
+2019-09-06 18:13:35  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/custom_dic.txt
+2019-09-06 18:13:35  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\custom_dic.txt
+2019-09-06 18:13:35  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\custom_dic.txt
+2019-09-06 18:13:35  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-06 18:13:35  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-06 18:13:35  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-06 18:13:35  INFO AutoDetector:116 : 类路径资源：punctuation.txt
+2019-09-06 18:13:35  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/punctuation.txt
+2019-09-06 18:13:35  INFO AutoDetector:350 : 加载资源：classpath:punctuation.txt
+2019-09-06 18:13:35  INFO AutoDetector:116 : 类路径资源：part_of_speech_dic.txt
+2019-09-06 18:13:35  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/part_of_speech_dic.txt
+2019-09-06 18:13:35  INFO AutoDetector:350 : 加载资源：classpath:part_of_speech_dic.txt
+2019-09-06 18:13:35  INFO AutoDetector:116 : 类路径资源：word_synonym.txt
+2019-09-06 18:13:35  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_synonym.txt
+2019-09-06 18:13:35  INFO AutoDetector:350 : 加载资源：classpath:word_synonym.txt
+2019-09-06 18:13:35  INFO AutoDetector:116 : 类路径资源：word_antonym.txt
+2019-09-06 18:13:35  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_antonym.txt
+2019-09-06 18:13:35  INFO AutoDetector:350 : 加载资源：classpath:word_antonym.txt
+2019-09-06 18:13:35  INFO AutoDetector:99 : 加载资源 1091314 行
+2019-09-06 18:13:35  INFO DictionaryFactory:92 : 初始化词典
+2019-09-06 18:13:35  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:13:35  INFO AutoDetector:79 : classpath:surname.txt
+2019-09-06 18:13:35  INFO AutoDetector:116 : 类路径资源：surname.txt
+2019-09-06 18:13:35  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/surname.txt
+2019-09-06 18:13:35  INFO AutoDetector:350 : 加载资源：classpath:surname.txt
+2019-09-06 18:13:35  INFO AutoDetector:99 : 加载资源 508 行
+2019-09-06 18:13:35  INFO PersonName:61 : 初始化百家姓
+2019-09-06 18:13:35  INFO PersonName:74 : 百家姓初始化完毕，单姓个数：446，复姓个数：60
+2019-09-06 18:13:35  INFO AutoDetector:104 : 完成加载资源，耗时2 毫秒
+2019-09-06 18:13:35  INFO DictionaryFactory:101 : 将 60 个复姓加入词典
+2019-09-06 18:13:45  INFO DictionaryFactory:139 : 词数目：677848，词典最大词长：16
+2019-09-06 18:13:45  INFO DictionaryFactory:142 : 词长  1 的词数为：47
+2019-09-06 18:13:45  INFO DictionaryFactory:142 : 词长  2 的词数为：213335
+2019-09-06 18:13:45  INFO DictionaryFactory:142 : 词长  3 的词数为：289751
+2019-09-06 18:13:45  INFO DictionaryFactory:142 : 词长  4 的词数为：158965
+2019-09-06 18:13:45  INFO DictionaryFactory:142 : 词长  5 的词数为：6139
+2019-09-06 18:13:45  INFO DictionaryFactory:142 : 词长  6 的词数为：3746
+2019-09-06 18:13:45  INFO DictionaryFactory:142 : 词长  7 的词数为：2205
+2019-09-06 18:13:45  INFO DictionaryFactory:142 : 词长  8 的词数为：1321
+2019-09-06 18:13:45  INFO DictionaryFactory:142 : 词长  9 的词数为：797
+2019-09-06 18:13:45  INFO DictionaryFactory:144 : 词长 10 的词数为：632
+2019-09-06 18:13:45  INFO DictionaryFactory:144 : 词长 11 的词数为：312
+2019-09-06 18:13:45  INFO DictionaryFactory:144 : 词长 12 的词数为：282
+2019-09-06 18:13:45  INFO DictionaryFactory:144 : 词长 13 的词数为：124
+2019-09-06 18:13:45  INFO DictionaryFactory:144 : 词长 14 的词数为：116
+2019-09-06 18:13:45  INFO DictionaryFactory:144 : 词长 15 的词数为：51
+2019-09-06 18:13:45  INFO DictionaryFactory:144 : 词长 16 的词数为：25
+2019-09-06 18:13:45  INFO DictionaryFactory:147 : 词典平均词长：3.0032012
+2019-09-06 18:13:46  INFO DictionaryFactory:122 : 词典初始化完毕，耗时：10550 毫秒
+2019-09-06 18:13:46  INFO AutoDetector:104 : 完成加载资源，耗时10826 毫秒
+2019-09-06 18:13:46  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.MaximumMatching
+2019-09-06 18:13:46  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.ReverseMaximumMatching
+2019-09-06 18:13:46  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:13:46  INFO AutoDetector:79 : classpath:punctuation.txt
+2019-09-06 18:13:46  INFO AutoDetector:116 : 类路径资源：punctuation.txt
+2019-09-06 18:13:46  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/punctuation.txt
+2019-09-06 18:13:46  INFO AutoDetector:350 : 加载资源：classpath:punctuation.txt
+2019-09-06 18:13:46  INFO AutoDetector:99 : 加载资源 48 行
+2019-09-06 18:13:46  INFO Punctuation:55 : 初始化标点符号
+2019-09-06 18:13:46  INFO Punctuation:80 : 标点符号初始化完毕，标点符号个数：52
+2019-09-06 18:13:46  INFO AutoDetector:104 : 完成加载资源，耗时2 毫秒
+2019-09-06 18:13:46  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:13:46  INFO AutoDetector:79 : classpath:quantifier.txt
+2019-09-06 18:13:46  INFO AutoDetector:116 : 类路径资源：quantifier.txt
+2019-09-06 18:13:46  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/quantifier.txt
+2019-09-06 18:13:46  INFO AutoDetector:350 : 加载资源：classpath:quantifier.txt
+2019-09-06 18:13:46  INFO AutoDetector:99 : 加载资源 164 行
+2019-09-06 18:13:46  INFO Quantifier:52 : 初始化数量词
+2019-09-06 18:13:46  INFO Quantifier:65 : 数量词初始化完毕，数量词个数：164
+2019-09-06 18:13:46  INFO AutoDetector:104 : 完成加载资源，耗时1 毫秒
+2019-09-06 18:13:46  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:13:46  INFO AutoDetector:79 : classpath:bigram.txt
+2019-09-06 18:13:46  INFO AutoDetector:116 : 类路径资源：bigram.txt
+2019-09-06 18:13:46  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/bigram.txt
+2019-09-06 18:13:46  INFO AutoDetector:350 : 加载资源：classpath:bigram.txt
+2019-09-06 18:13:46  INFO AutoDetector:99 : 加载资源 1519443 行
+2019-09-06 18:13:46  INFO Bigram:52 : 初始化bigram
+2019-09-06 18:14:10  INFO Bigram:63 : bigram初始化完毕，bigram数据条数：1519443
+2019-09-06 18:14:10  INFO AutoDetector:104 : 完成加载资源，耗时24470 毫秒
+2019-09-06 18:14:10  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:14:10  INFO AutoDetector:79 : classpath:stopwords.txt,classpath:custom_stopwords_dic.txt
+2019-09-06 18:14:10  INFO AutoDetector:116 : 类路径资源：stopwords.txt
+2019-09-06 18:14:10  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/stopwords.txt
+2019-09-06 18:14:10  INFO AutoDetector:350 : 加载资源：classpath:stopwords.txt
+2019-09-06 18:14:10  INFO AutoDetector:116 : 类路径资源：custom_stopwords_dic.txt
+2019-09-06 18:14:10  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/custom_stopwords_dic.txt
+2019-09-06 18:14:10  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\custom_stopwords_dic.txt
+2019-09-06 18:14:10  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\custom_stopwords_dic.txt
+2019-09-06 18:14:10  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-06 18:14:10  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-06 18:14:10  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-06 18:14:10  INFO AutoDetector:99 : 加载资源 1482 行
+2019-09-06 18:14:10  INFO StopWord:64 : 初始化停用词
+2019-09-06 18:14:10  INFO StopWord:70 : 停用词初始化完毕，停用词个数：1482
+2019-09-06 18:14:10  INFO AutoDetector:104 : 完成加载资源，耗时5 毫秒
+2019-09-06 18:14:10  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:14:10  INFO AutoDetector:79 : classpath:word_refine.txt
+2019-09-06 18:14:10  INFO AutoDetector:116 : 类路径资源：word_refine.txt
+2019-09-06 18:14:10  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/word_refine.txt
+2019-09-06 18:14:10  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\word_refine.txt
+2019-09-06 18:14:10  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\word_refine.txt
+2019-09-06 18:14:10  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-06 18:14:10  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-06 18:14:10  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-06 18:14:10  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_refine.txt
+2019-09-06 18:14:10  INFO AutoDetector:350 : 加载资源：classpath:word_refine.txt
+2019-09-06 18:14:10  INFO AutoDetector:99 : 加载资源 2 行
+2019-09-06 18:14:10  INFO WordRefiner:55 : 初始化WordRefiner
+2019-09-06 18:14:10  INFO WordRefiner:66 : WordRefiner初始化完毕，数据条数：2
+2019-09-06 18:14:10  INFO AutoDetector:104 : 完成加载资源，耗时4 毫秒
+2019-09-06 18:14:10  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.MaxNgramScore
+2019-09-06 18:14:18  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.BidirectionalMaximumMatching
+2019-09-06 18:14:18  INFO WordConfTools:88 : 开始加载配置文件
+2019-09-06 18:14:18  INFO WordConfTools:128 : 加载配置文件：word.conf
+2019-09-06 18:14:18  INFO WordConfTools:128 : 加载配置文件：word.local.conf
+2019-09-06 18:14:18  INFO WordConfTools:94 : 配置文件加载完毕，耗时2 毫秒，配置项数目：33
+2019-09-06 18:14:18  INFO WordConfTools:95 : 配置信息：
+2019-09-06 18:14:18  INFO WordConfTools:98 : 1、auto.detect=true
+2019-09-06 18:14:18  INFO WordConfTools:98 : 2、bigram.double.array.trie.size=5300000
+2019-09-06 18:14:18  INFO WordConfTools:98 : 3、bigram.path=classpath:bigram.txt
+2019-09-06 18:14:18  INFO WordConfTools:98 : 4、dic.class=org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-06 18:14:18  INFO WordConfTools:98 : 5、dic.dump.path=
+2019-09-06 18:14:18  INFO WordConfTools:98 : 6、dic.path=classpath:dic.txt,classpath:custom_dic.txt
+2019-09-06 18:14:18  INFO WordConfTools:98 : 7、dictionary.trie.index.size=24000
+2019-09-06 18:14:18  INFO WordConfTools:98 : 8、double.array.dictionary.trie.size=2600000
+2019-09-06 18:14:18  INFO WordConfTools:98 : 9、intercept.length=16
+2019-09-06 18:14:18  INFO WordConfTools:98 : 10、keep.punctuation=false
+2019-09-06 18:14:18  INFO WordConfTools:98 : 11、keep.whitespace=false
+2019-09-06 18:14:18  INFO WordConfTools:98 : 12、ngram=bigram
+2019-09-06 18:14:18  INFO WordConfTools:98 : 13、parallel.seg=true
+2019-09-06 18:14:18  INFO WordConfTools:98 : 14、part.of.speech.des.path=classpath:part_of_speech_des.txt
+2019-09-06 18:14:18  INFO WordConfTools:98 : 15、part.of.speech.dic.path=classpath:part_of_speech_dic.txt
+2019-09-06 18:14:18  INFO WordConfTools:98 : 16、person.name.recognize=true
+2019-09-06 18:14:18  INFO WordConfTools:98 : 17、punctuation.path=classpath:punctuation.txt
+2019-09-06 18:14:18  INFO WordConfTools:98 : 18、quantifier.path=classpath:quantifier.txt
+2019-09-06 18:14:18  INFO WordConfTools:98 : 19、recognition.tool.enabled=true
+2019-09-06 18:14:18  INFO WordConfTools:98 : 20、redis.host=localhost
+2019-09-06 18:14:18  INFO WordConfTools:98 : 21、redis.port=6379
+2019-09-06 18:14:18  INFO WordConfTools:98 : 22、stopwords.path=classpath:stopwords.txt,classpath:custom_stopwords_dic.txt
+2019-09-06 18:14:18  INFO WordConfTools:98 : 23、surname.path=classpath:surname.txt
+2019-09-06 18:14:18  INFO WordConfTools:98 : 24、tagging.antonym=false
+2019-09-06 18:14:18  INFO WordConfTools:98 : 25、tagging.pinyin.acronym=false
+2019-09-06 18:14:18  INFO WordConfTools:98 : 26、tagging.pinyin.full=false
+2019-09-06 18:14:18  INFO WordConfTools:98 : 27、tagging.synonym=false
+2019-09-06 18:14:18  INFO WordConfTools:98 : 28、trigram.double.array.trie.size=9800000
+2019-09-06 18:14:18  INFO WordConfTools:98 : 29、trigram.path=classpath:trigram.txt
+2019-09-06 18:14:18  INFO WordConfTools:98 : 30、word.antonym.path=classpath:word_antonym.txt
+2019-09-06 18:14:18  INFO WordConfTools:98 : 31、word.refine.combine.max.length=3
+2019-09-06 18:14:18  INFO WordConfTools:98 : 32、word.refine.path=classpath:word_refine.txt
+2019-09-06 18:14:18  INFO WordConfTools:98 : 33、word.synonym.path=classpath:word_synonym.txt
+2019-09-06 18:14:18  INFO DictionaryFactory:72 : dic.class=org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-06 18:14:18  INFO DoubleArrayDictionaryTrie:69 : 初始化词典：org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-06 18:14:18  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:14:18  INFO AutoDetector:79 : classpath:dic.txt,classpath:custom_dic.txt,classpath:punctuation.txt,classpath:part_of_speech_dic.txt,classpath:word_synonym.txt,classpath:word_antonym.txt
+2019-09-06 18:14:18  INFO AutoDetector:116 : 类路径资源：dic.txt
+2019-09-06 18:14:18  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/dic.txt
+2019-09-06 18:14:18  INFO AutoDetector:350 : 加载资源：classpath:dic.txt
+2019-09-06 18:14:18  INFO AutoDetector:116 : 类路径资源：custom_dic.txt
+2019-09-06 18:14:18  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/custom_dic.txt
+2019-09-06 18:14:18  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\custom_dic.txt
+2019-09-06 18:14:18  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\custom_dic.txt
+2019-09-06 18:14:18  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-06 18:14:18  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-06 18:14:18  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-06 18:14:18  INFO AutoDetector:116 : 类路径资源：punctuation.txt
+2019-09-06 18:14:18  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/punctuation.txt
+2019-09-06 18:14:18  INFO AutoDetector:350 : 加载资源：classpath:punctuation.txt
+2019-09-06 18:14:18  INFO AutoDetector:116 : 类路径资源：part_of_speech_dic.txt
+2019-09-06 18:14:18  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/part_of_speech_dic.txt
+2019-09-06 18:14:18  INFO AutoDetector:350 : 加载资源：classpath:part_of_speech_dic.txt
+2019-09-06 18:14:19  INFO AutoDetector:116 : 类路径资源：word_synonym.txt
+2019-09-06 18:14:19  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_synonym.txt
+2019-09-06 18:14:19  INFO AutoDetector:350 : 加载资源：classpath:word_synonym.txt
+2019-09-06 18:14:19  INFO AutoDetector:116 : 类路径资源：word_antonym.txt
+2019-09-06 18:14:19  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_antonym.txt
+2019-09-06 18:14:19  INFO AutoDetector:350 : 加载资源：classpath:word_antonym.txt
+2019-09-06 18:14:19  INFO AutoDetector:99 : 加载资源 1091314 行
+2019-09-06 18:14:19  INFO DictionaryFactory:92 : 初始化词典
+2019-09-06 18:14:19  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:14:19  INFO AutoDetector:79 : classpath:surname.txt
+2019-09-06 18:14:19  INFO AutoDetector:116 : 类路径资源：surname.txt
+2019-09-06 18:14:19  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/surname.txt
+2019-09-06 18:14:19  INFO AutoDetector:350 : 加载资源：classpath:surname.txt
+2019-09-06 18:14:19  INFO AutoDetector:99 : 加载资源 508 行
+2019-09-06 18:14:19  INFO PersonName:61 : 初始化百家姓
+2019-09-06 18:14:19  INFO PersonName:74 : 百家姓初始化完毕，单姓个数：446，复姓个数：60
+2019-09-06 18:14:19  INFO AutoDetector:104 : 完成加载资源，耗时4 毫秒
+2019-09-06 18:14:19  INFO DictionaryFactory:101 : 将 60 个复姓加入词典
+2019-09-06 18:14:29  INFO DictionaryFactory:139 : 词数目：677848，词典最大词长：16
+2019-09-06 18:14:29  INFO DictionaryFactory:142 : 词长  1 的词数为：47
+2019-09-06 18:14:29  INFO DictionaryFactory:142 : 词长  2 的词数为：213335
+2019-09-06 18:14:29  INFO DictionaryFactory:142 : 词长  3 的词数为：289751
+2019-09-06 18:14:29  INFO DictionaryFactory:142 : 词长  4 的词数为：158965
+2019-09-06 18:14:29  INFO DictionaryFactory:142 : 词长  5 的词数为：6139
+2019-09-06 18:14:29  INFO DictionaryFactory:142 : 词长  6 的词数为：3746
+2019-09-06 18:14:29  INFO DictionaryFactory:142 : 词长  7 的词数为：2205
+2019-09-06 18:14:29  INFO DictionaryFactory:142 : 词长  8 的词数为：1321
+2019-09-06 18:14:29  INFO DictionaryFactory:142 : 词长  9 的词数为：797
+2019-09-06 18:14:29  INFO DictionaryFactory:144 : 词长 10 的词数为：632
+2019-09-06 18:14:29  INFO DictionaryFactory:144 : 词长 11 的词数为：312
+2019-09-06 18:14:29  INFO DictionaryFactory:144 : 词长 12 的词数为：282
+2019-09-06 18:14:29  INFO DictionaryFactory:144 : 词长 13 的词数为：124
+2019-09-06 18:14:29  INFO DictionaryFactory:144 : 词长 14 的词数为：116
+2019-09-06 18:14:29  INFO DictionaryFactory:144 : 词长 15 的词数为：51
+2019-09-06 18:14:29  INFO DictionaryFactory:144 : 词长 16 的词数为：25
+2019-09-06 18:14:29  INFO DictionaryFactory:147 : 词典平均词长：3.0032012
+2019-09-06 18:14:29  INFO DictionaryFactory:122 : 词典初始化完毕，耗时：10651 毫秒
+2019-09-06 18:14:29  INFO AutoDetector:104 : 完成加载资源，耗时10960 毫秒
+2019-09-06 18:14:29  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.MaximumMatching
+2019-09-06 18:14:29  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.ReverseMaximumMatching
+2019-09-06 18:14:29  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:14:29  INFO AutoDetector:79 : classpath:punctuation.txt
+2019-09-06 18:14:29  INFO AutoDetector:116 : 类路径资源：punctuation.txt
+2019-09-06 18:14:29  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/punctuation.txt
+2019-09-06 18:14:29  INFO AutoDetector:350 : 加载资源：classpath:punctuation.txt
+2019-09-06 18:14:29  INFO AutoDetector:99 : 加载资源 48 行
+2019-09-06 18:14:29  INFO Punctuation:55 : 初始化标点符号
+2019-09-06 18:14:29  INFO Punctuation:80 : 标点符号初始化完毕，标点符号个数：52
+2019-09-06 18:14:29  INFO AutoDetector:104 : 完成加载资源，耗时3 毫秒
+2019-09-06 18:14:29  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:14:29  INFO AutoDetector:79 : classpath:quantifier.txt
+2019-09-06 18:14:29  INFO AutoDetector:116 : 类路径资源：quantifier.txt
+2019-09-06 18:14:29  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/quantifier.txt
+2019-09-06 18:14:29  INFO AutoDetector:350 : 加载资源：classpath:quantifier.txt
+2019-09-06 18:14:29  INFO AutoDetector:99 : 加载资源 164 行
+2019-09-06 18:14:29  INFO Quantifier:52 : 初始化数量词
+2019-09-06 18:14:29  INFO Quantifier:65 : 数量词初始化完毕，数量词个数：164
+2019-09-06 18:14:29  INFO AutoDetector:104 : 完成加载资源，耗时1 毫秒
+2019-09-06 18:14:29  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:14:29  INFO AutoDetector:79 : classpath:bigram.txt
+2019-09-06 18:14:29  INFO AutoDetector:116 : 类路径资源：bigram.txt
+2019-09-06 18:14:29  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/bigram.txt
+2019-09-06 18:14:29  INFO AutoDetector:350 : 加载资源：classpath:bigram.txt
+2019-09-06 18:14:30  INFO AutoDetector:99 : 加载资源 1519443 行
+2019-09-06 18:14:30  INFO Bigram:52 : 初始化bigram
+2019-09-06 18:14:54  INFO Bigram:63 : bigram初始化完毕，bigram数据条数：1519443
+2019-09-06 18:14:54  INFO AutoDetector:104 : 完成加载资源，耗时24393 毫秒
+2019-09-06 18:14:54  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:14:54  INFO AutoDetector:79 : classpath:stopwords.txt,classpath:custom_stopwords_dic.txt
+2019-09-06 18:14:54  INFO AutoDetector:116 : 类路径资源：stopwords.txt
+2019-09-06 18:14:54  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/stopwords.txt
+2019-09-06 18:14:54  INFO AutoDetector:350 : 加载资源：classpath:stopwords.txt
+2019-09-06 18:14:54  INFO AutoDetector:116 : 类路径资源：custom_stopwords_dic.txt
+2019-09-06 18:14:54  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/custom_stopwords_dic.txt
+2019-09-06 18:14:54  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\custom_stopwords_dic.txt
+2019-09-06 18:14:54  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\custom_stopwords_dic.txt
+2019-09-06 18:14:54  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-06 18:14:54  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-06 18:14:54  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-06 18:14:54  INFO AutoDetector:99 : 加载资源 1482 行
+2019-09-06 18:14:54  INFO StopWord:64 : 初始化停用词
+2019-09-06 18:14:54  INFO StopWord:70 : 停用词初始化完毕，停用词个数：1482
+2019-09-06 18:14:54  INFO AutoDetector:104 : 完成加载资源，耗时4 毫秒
+2019-09-06 18:14:54  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:14:54  INFO AutoDetector:79 : classpath:word_refine.txt
+2019-09-06 18:14:54  INFO AutoDetector:116 : 类路径资源：word_refine.txt
+2019-09-06 18:14:54  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/word_refine.txt
+2019-09-06 18:14:54  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\word_refine.txt
+2019-09-06 18:14:54  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\word_refine.txt
+2019-09-06 18:14:54  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-06 18:14:54  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-06 18:14:54  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-06 18:14:54  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_refine.txt
+2019-09-06 18:14:54  INFO AutoDetector:350 : 加载资源：classpath:word_refine.txt
+2019-09-06 18:14:54  INFO AutoDetector:99 : 加载资源 2 行
+2019-09-06 18:14:54  INFO WordRefiner:55 : 初始化WordRefiner
+2019-09-06 18:14:54  INFO WordRefiner:66 : WordRefiner初始化完毕，数据条数：2
+2019-09-06 18:14:54  INFO AutoDetector:104 : 完成加载资源，耗时3 毫秒
+2019-09-06 18:15:21  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.BidirectionalMaximumMatching
+2019-09-06 18:15:21  INFO WordConfTools:88 : 开始加载配置文件
+2019-09-06 18:15:21  INFO WordConfTools:128 : 加载配置文件：word.conf
+2019-09-06 18:15:21  INFO WordConfTools:128 : 加载配置文件：word.local.conf
+2019-09-06 18:15:21  INFO WordConfTools:94 : 配置文件加载完毕，耗时2 毫秒，配置项数目：33
+2019-09-06 18:15:21  INFO WordConfTools:95 : 配置信息：
+2019-09-06 18:15:21  INFO WordConfTools:98 : 1、auto.detect=true
+2019-09-06 18:15:21  INFO WordConfTools:98 : 2、bigram.double.array.trie.size=5300000
+2019-09-06 18:15:21  INFO WordConfTools:98 : 3、bigram.path=classpath:bigram.txt
+2019-09-06 18:15:21  INFO WordConfTools:98 : 4、dic.class=org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-06 18:15:21  INFO WordConfTools:98 : 5、dic.dump.path=
+2019-09-06 18:15:21  INFO WordConfTools:98 : 6、dic.path=classpath:dic.txt,classpath:custom_dic.txt
+2019-09-06 18:15:21  INFO WordConfTools:98 : 7、dictionary.trie.index.size=24000
+2019-09-06 18:15:21  INFO WordConfTools:98 : 8、double.array.dictionary.trie.size=2600000
+2019-09-06 18:15:21  INFO WordConfTools:98 : 9、intercept.length=16
+2019-09-06 18:15:21  INFO WordConfTools:98 : 10、keep.punctuation=false
+2019-09-06 18:15:21  INFO WordConfTools:98 : 11、keep.whitespace=false
+2019-09-06 18:15:21  INFO WordConfTools:98 : 12、ngram=bigram
+2019-09-06 18:15:21  INFO WordConfTools:98 : 13、parallel.seg=true
+2019-09-06 18:15:21  INFO WordConfTools:98 : 14、part.of.speech.des.path=classpath:part_of_speech_des.txt
+2019-09-06 18:15:21  INFO WordConfTools:98 : 15、part.of.speech.dic.path=classpath:part_of_speech_dic.txt
+2019-09-06 18:15:21  INFO WordConfTools:98 : 16、person.name.recognize=true
+2019-09-06 18:15:21  INFO WordConfTools:98 : 17、punctuation.path=classpath:punctuation.txt
+2019-09-06 18:15:21  INFO WordConfTools:98 : 18、quantifier.path=classpath:quantifier.txt
+2019-09-06 18:15:21  INFO WordConfTools:98 : 19、recognition.tool.enabled=true
+2019-09-06 18:15:21  INFO WordConfTools:98 : 20、redis.host=localhost
+2019-09-06 18:15:21  INFO WordConfTools:98 : 21、redis.port=6379
+2019-09-06 18:15:21  INFO WordConfTools:98 : 22、stopwords.path=classpath:stopwords.txt,classpath:custom_stopwords_dic.txt
+2019-09-06 18:15:21  INFO WordConfTools:98 : 23、surname.path=classpath:surname.txt
+2019-09-06 18:15:21  INFO WordConfTools:98 : 24、tagging.antonym=false
+2019-09-06 18:15:21  INFO WordConfTools:98 : 25、tagging.pinyin.acronym=false
+2019-09-06 18:15:21  INFO WordConfTools:98 : 26、tagging.pinyin.full=false
+2019-09-06 18:15:21  INFO WordConfTools:98 : 27、tagging.synonym=false
+2019-09-06 18:15:21  INFO WordConfTools:98 : 28、trigram.double.array.trie.size=9800000
+2019-09-06 18:15:21  INFO WordConfTools:98 : 29、trigram.path=classpath:trigram.txt
+2019-09-06 18:15:21  INFO WordConfTools:98 : 30、word.antonym.path=classpath:word_antonym.txt
+2019-09-06 18:15:21  INFO WordConfTools:98 : 31、word.refine.combine.max.length=3
+2019-09-06 18:15:21  INFO WordConfTools:98 : 32、word.refine.path=classpath:word_refine.txt
+2019-09-06 18:15:21  INFO WordConfTools:98 : 33、word.synonym.path=classpath:word_synonym.txt
+2019-09-06 18:15:21  INFO DictionaryFactory:72 : dic.class=org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-06 18:15:21  INFO DoubleArrayDictionaryTrie:69 : 初始化词典：org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-06 18:15:21  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:15:21  INFO AutoDetector:79 : classpath:dic.txt,classpath:custom_dic.txt,classpath:punctuation.txt,classpath:part_of_speech_dic.txt,classpath:word_synonym.txt,classpath:word_antonym.txt
+2019-09-06 18:15:21  INFO AutoDetector:116 : 类路径资源：dic.txt
+2019-09-06 18:15:21  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/dic.txt
+2019-09-06 18:15:21  INFO AutoDetector:350 : 加载资源：classpath:dic.txt
+2019-09-06 18:15:21  INFO AutoDetector:116 : 类路径资源：custom_dic.txt
+2019-09-06 18:15:21  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/custom_dic.txt
+2019-09-06 18:15:21  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\custom_dic.txt
+2019-09-06 18:15:21  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\custom_dic.txt
+2019-09-06 18:15:21  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-06 18:15:21  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-06 18:15:21  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-06 18:15:21  INFO AutoDetector:116 : 类路径资源：punctuation.txt
+2019-09-06 18:15:21  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/punctuation.txt
+2019-09-06 18:15:21  INFO AutoDetector:350 : 加载资源：classpath:punctuation.txt
+2019-09-06 18:15:21  INFO AutoDetector:116 : 类路径资源：part_of_speech_dic.txt
+2019-09-06 18:15:21  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/part_of_speech_dic.txt
+2019-09-06 18:15:21  INFO AutoDetector:350 : 加载资源：classpath:part_of_speech_dic.txt
+2019-09-06 18:15:21  INFO AutoDetector:116 : 类路径资源：word_synonym.txt
+2019-09-06 18:15:21  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_synonym.txt
+2019-09-06 18:15:21  INFO AutoDetector:350 : 加载资源：classpath:word_synonym.txt
+2019-09-06 18:15:21  INFO AutoDetector:116 : 类路径资源：word_antonym.txt
+2019-09-06 18:15:21  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_antonym.txt
+2019-09-06 18:15:21  INFO AutoDetector:350 : 加载资源：classpath:word_antonym.txt
+2019-09-06 18:15:21  INFO AutoDetector:99 : 加载资源 1091314 行
+2019-09-06 18:15:21  INFO DictionaryFactory:92 : 初始化词典
+2019-09-06 18:15:21  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:15:21  INFO AutoDetector:79 : classpath:surname.txt
+2019-09-06 18:15:21  INFO AutoDetector:116 : 类路径资源：surname.txt
+2019-09-06 18:15:21  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/surname.txt
+2019-09-06 18:15:21  INFO AutoDetector:350 : 加载资源：classpath:surname.txt
+2019-09-06 18:15:21  INFO AutoDetector:99 : 加载资源 508 行
+2019-09-06 18:15:21  INFO PersonName:61 : 初始化百家姓
+2019-09-06 18:15:21  INFO PersonName:74 : 百家姓初始化完毕，单姓个数：446，复姓个数：60
+2019-09-06 18:15:21  INFO AutoDetector:104 : 完成加载资源，耗时3 毫秒
+2019-09-06 18:15:21  INFO DictionaryFactory:101 : 将 60 个复姓加入词典
+2019-09-06 18:15:32  INFO DictionaryFactory:139 : 词数目：677848，词典最大词长：16
+2019-09-06 18:15:32  INFO DictionaryFactory:142 : 词长  1 的词数为：47
+2019-09-06 18:15:32  INFO DictionaryFactory:142 : 词长  2 的词数为：213335
+2019-09-06 18:15:32  INFO DictionaryFactory:142 : 词长  3 的词数为：289751
+2019-09-06 18:15:32  INFO DictionaryFactory:142 : 词长  4 的词数为：158965
+2019-09-06 18:15:32  INFO DictionaryFactory:142 : 词长  5 的词数为：6139
+2019-09-06 18:15:32  INFO DictionaryFactory:142 : 词长  6 的词数为：3746
+2019-09-06 18:15:32  INFO DictionaryFactory:142 : 词长  7 的词数为：2205
+2019-09-06 18:15:32  INFO DictionaryFactory:142 : 词长  8 的词数为：1321
+2019-09-06 18:15:32  INFO DictionaryFactory:142 : 词长  9 的词数为：797
+2019-09-06 18:15:32  INFO DictionaryFactory:144 : 词长 10 的词数为：632
+2019-09-06 18:15:32  INFO DictionaryFactory:144 : 词长 11 的词数为：312
+2019-09-06 18:15:32  INFO DictionaryFactory:144 : 词长 12 的词数为：282
+2019-09-06 18:15:32  INFO DictionaryFactory:144 : 词长 13 的词数为：124
+2019-09-06 18:15:32  INFO DictionaryFactory:144 : 词长 14 的词数为：116
+2019-09-06 18:15:32  INFO DictionaryFactory:144 : 词长 15 的词数为：51
+2019-09-06 18:15:32  INFO DictionaryFactory:144 : 词长 16 的词数为：25
+2019-09-06 18:15:32  INFO DictionaryFactory:147 : 词典平均词长：3.0032012
+2019-09-06 18:15:32  INFO DictionaryFactory:122 : 词典初始化完毕，耗时：10679 毫秒
+2019-09-06 18:15:32  INFO AutoDetector:104 : 完成加载资源，耗时10981 毫秒
+2019-09-06 18:15:32  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.MaximumMatching
+2019-09-06 18:15:32  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.ReverseMaximumMatching
+2019-09-06 18:15:32  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:15:32  INFO AutoDetector:79 : classpath:punctuation.txt
+2019-09-06 18:15:32  INFO AutoDetector:116 : 类路径资源：punctuation.txt
+2019-09-06 18:15:32  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/punctuation.txt
+2019-09-06 18:15:32  INFO AutoDetector:350 : 加载资源：classpath:punctuation.txt
+2019-09-06 18:15:32  INFO AutoDetector:99 : 加载资源 48 行
+2019-09-06 18:15:32  INFO Punctuation:55 : 初始化标点符号
+2019-09-06 18:15:32  INFO Punctuation:80 : 标点符号初始化完毕，标点符号个数：52
+2019-09-06 18:15:32  INFO AutoDetector:104 : 完成加载资源，耗时1 毫秒
+2019-09-06 18:15:32  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:15:32  INFO AutoDetector:79 : classpath:quantifier.txt
+2019-09-06 18:15:32  INFO AutoDetector:116 : 类路径资源：quantifier.txt
+2019-09-06 18:15:32  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/quantifier.txt
+2019-09-06 18:15:32  INFO AutoDetector:350 : 加载资源：classpath:quantifier.txt
+2019-09-06 18:15:32  INFO AutoDetector:99 : 加载资源 164 行
+2019-09-06 18:15:32  INFO Quantifier:52 : 初始化数量词
+2019-09-06 18:15:32  INFO Quantifier:65 : 数量词初始化完毕，数量词个数：164
+2019-09-06 18:15:32  INFO AutoDetector:104 : 完成加载资源，耗时2 毫秒
+2019-09-06 18:15:32  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:15:32  INFO AutoDetector:79 : classpath:bigram.txt
+2019-09-06 18:15:32  INFO AutoDetector:116 : 类路径资源：bigram.txt
+2019-09-06 18:15:32  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/bigram.txt
+2019-09-06 18:15:32  INFO AutoDetector:350 : 加载资源：classpath:bigram.txt
+2019-09-06 18:15:32  INFO AutoDetector:99 : 加载资源 1519443 行
+2019-09-06 18:15:32  INFO Bigram:52 : 初始化bigram
+2019-09-06 18:15:56  INFO Bigram:63 : bigram初始化完毕，bigram数据条数：1519443
+2019-09-06 18:15:56  INFO AutoDetector:104 : 完成加载资源，耗时24423 毫秒
+2019-09-06 18:15:56  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:15:56  INFO AutoDetector:79 : classpath:stopwords.txt,classpath:custom_stopwords_dic.txt
+2019-09-06 18:15:56  INFO AutoDetector:116 : 类路径资源：stopwords.txt
+2019-09-06 18:15:56  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/stopwords.txt
+2019-09-06 18:15:56  INFO AutoDetector:350 : 加载资源：classpath:stopwords.txt
+2019-09-06 18:15:56  INFO AutoDetector:116 : 类路径资源：custom_stopwords_dic.txt
+2019-09-06 18:15:56  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/custom_stopwords_dic.txt
+2019-09-06 18:15:56  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\custom_stopwords_dic.txt
+2019-09-06 18:15:56  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\custom_stopwords_dic.txt
+2019-09-06 18:15:56  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-06 18:15:56  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-06 18:15:56  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-06 18:15:56  INFO AutoDetector:99 : 加载资源 1482 行
+2019-09-06 18:15:56  INFO StopWord:64 : 初始化停用词
+2019-09-06 18:15:56  INFO StopWord:70 : 停用词初始化完毕，停用词个数：1482
+2019-09-06 18:15:56  INFO AutoDetector:104 : 完成加载资源，耗时5 毫秒
+2019-09-06 18:15:56  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:15:56  INFO AutoDetector:79 : classpath:word_refine.txt
+2019-09-06 18:15:56  INFO AutoDetector:116 : 类路径资源：word_refine.txt
+2019-09-06 18:15:56  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/word_refine.txt
+2019-09-06 18:15:56  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\word_refine.txt
+2019-09-06 18:15:56  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\word_refine.txt
+2019-09-06 18:15:56  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-06 18:15:56  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-06 18:15:56  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-06 18:15:56  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_refine.txt
+2019-09-06 18:15:56  INFO AutoDetector:350 : 加载资源：classpath:word_refine.txt
+2019-09-06 18:15:56  INFO AutoDetector:99 : 加载资源 2 行
+2019-09-06 18:15:56  INFO WordRefiner:55 : 初始化WordRefiner
+2019-09-06 18:15:56  INFO WordRefiner:66 : WordRefiner初始化完毕，数据条数：2
+2019-09-06 18:15:56  INFO AutoDetector:104 : 完成加载资源，耗时2 毫秒
+2019-09-06 18:15:56  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.MaxNgramScore
+2019-09-06 18:39:52  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.BidirectionalMaximumMatching
+2019-09-06 18:39:52  INFO WordConfTools:88 : 开始加载配置文件
+2019-09-06 18:39:52  INFO WordConfTools:128 : 加载配置文件：word.conf
+2019-09-06 18:39:52  INFO WordConfTools:128 : 加载配置文件：word.local.conf
+2019-09-06 18:39:52  INFO WordConfTools:94 : 配置文件加载完毕，耗时1 毫秒，配置项数目：33
+2019-09-06 18:39:52  INFO WordConfTools:95 : 配置信息：
+2019-09-06 18:39:52  INFO WordConfTools:98 : 1、auto.detect=true
+2019-09-06 18:39:52  INFO WordConfTools:98 : 2、bigram.double.array.trie.size=5300000
+2019-09-06 18:39:52  INFO WordConfTools:98 : 3、bigram.path=classpath:bigram.txt
+2019-09-06 18:39:52  INFO WordConfTools:98 : 4、dic.class=org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-06 18:39:52  INFO WordConfTools:98 : 5、dic.dump.path=
+2019-09-06 18:39:52  INFO WordConfTools:98 : 6、dic.path=classpath:dic.txt,classpath:custom_dic.txt
+2019-09-06 18:39:52  INFO WordConfTools:98 : 7、dictionary.trie.index.size=24000
+2019-09-06 18:39:52  INFO WordConfTools:98 : 8、double.array.dictionary.trie.size=2600000
+2019-09-06 18:39:52  INFO WordConfTools:98 : 9、intercept.length=16
+2019-09-06 18:39:52  INFO WordConfTools:98 : 10、keep.punctuation=false
+2019-09-06 18:39:52  INFO WordConfTools:98 : 11、keep.whitespace=false
+2019-09-06 18:39:52  INFO WordConfTools:98 : 12、ngram=bigram
+2019-09-06 18:39:52  INFO WordConfTools:98 : 13、parallel.seg=true
+2019-09-06 18:39:52  INFO WordConfTools:98 : 14、part.of.speech.des.path=classpath:part_of_speech_des.txt
+2019-09-06 18:39:52  INFO WordConfTools:98 : 15、part.of.speech.dic.path=classpath:part_of_speech_dic.txt
+2019-09-06 18:39:52  INFO WordConfTools:98 : 16、person.name.recognize=true
+2019-09-06 18:39:52  INFO WordConfTools:98 : 17、punctuation.path=classpath:punctuation.txt
+2019-09-06 18:39:52  INFO WordConfTools:98 : 18、quantifier.path=classpath:quantifier.txt
+2019-09-06 18:39:52  INFO WordConfTools:98 : 19、recognition.tool.enabled=true
+2019-09-06 18:39:52  INFO WordConfTools:98 : 20、redis.host=localhost
+2019-09-06 18:39:52  INFO WordConfTools:98 : 21、redis.port=6379
+2019-09-06 18:39:52  INFO WordConfTools:98 : 22、stopwords.path=classpath:stopwords.txt,classpath:custom_stopwords_dic.txt
+2019-09-06 18:39:52  INFO WordConfTools:98 : 23、surname.path=classpath:surname.txt
+2019-09-06 18:39:52  INFO WordConfTools:98 : 24、tagging.antonym=false
+2019-09-06 18:39:52  INFO WordConfTools:98 : 25、tagging.pinyin.acronym=false
+2019-09-06 18:39:52  INFO WordConfTools:98 : 26、tagging.pinyin.full=false
+2019-09-06 18:39:52  INFO WordConfTools:98 : 27、tagging.synonym=false
+2019-09-06 18:39:52  INFO WordConfTools:98 : 28、trigram.double.array.trie.size=9800000
+2019-09-06 18:39:52  INFO WordConfTools:98 : 29、trigram.path=classpath:trigram.txt
+2019-09-06 18:39:52  INFO WordConfTools:98 : 30、word.antonym.path=classpath:word_antonym.txt
+2019-09-06 18:39:52  INFO WordConfTools:98 : 31、word.refine.combine.max.length=3
+2019-09-06 18:39:52  INFO WordConfTools:98 : 32、word.refine.path=classpath:word_refine.txt
+2019-09-06 18:39:52  INFO WordConfTools:98 : 33、word.synonym.path=classpath:word_synonym.txt
+2019-09-06 18:39:52  INFO DictionaryFactory:72 : dic.class=org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-06 18:39:52  INFO DoubleArrayDictionaryTrie:69 : 初始化词典：org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-06 18:39:52  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:39:52  INFO AutoDetector:79 : classpath:dic.txt,classpath:custom_dic.txt,classpath:punctuation.txt,classpath:part_of_speech_dic.txt,classpath:word_synonym.txt,classpath:word_antonym.txt
+2019-09-06 18:39:52  INFO AutoDetector:116 : 类路径资源：dic.txt
+2019-09-06 18:39:52  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/dic.txt
+2019-09-06 18:39:52  INFO AutoDetector:350 : 加载资源：classpath:dic.txt
+2019-09-06 18:39:52  INFO AutoDetector:116 : 类路径资源：custom_dic.txt
+2019-09-06 18:39:52  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/custom_dic.txt
+2019-09-06 18:39:52  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\custom_dic.txt
+2019-09-06 18:39:52  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\custom_dic.txt
+2019-09-06 18:39:52  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-06 18:39:52  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-06 18:39:52  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-06 18:39:52  INFO AutoDetector:116 : 类路径资源：punctuation.txt
+2019-09-06 18:39:52  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/punctuation.txt
+2019-09-06 18:39:52  INFO AutoDetector:350 : 加载资源：classpath:punctuation.txt
+2019-09-06 18:39:52  INFO AutoDetector:116 : 类路径资源：part_of_speech_dic.txt
+2019-09-06 18:39:52  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/part_of_speech_dic.txt
+2019-09-06 18:39:52  INFO AutoDetector:350 : 加载资源：classpath:part_of_speech_dic.txt
+2019-09-06 18:39:52  INFO AutoDetector:116 : 类路径资源：word_synonym.txt
+2019-09-06 18:39:52  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_synonym.txt
+2019-09-06 18:39:52  INFO AutoDetector:350 : 加载资源：classpath:word_synonym.txt
+2019-09-06 18:39:52  INFO AutoDetector:116 : 类路径资源：word_antonym.txt
+2019-09-06 18:39:52  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_antonym.txt
+2019-09-06 18:39:52  INFO AutoDetector:350 : 加载资源：classpath:word_antonym.txt
+2019-09-06 18:39:52  INFO AutoDetector:99 : 加载资源 1091314 行
+2019-09-06 18:39:52  INFO DictionaryFactory:92 : 初始化词典
+2019-09-06 18:39:52  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:39:52  INFO AutoDetector:79 : classpath:surname.txt
+2019-09-06 18:39:52  INFO AutoDetector:116 : 类路径资源：surname.txt
+2019-09-06 18:39:52  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/surname.txt
+2019-09-06 18:39:52  INFO AutoDetector:350 : 加载资源：classpath:surname.txt
+2019-09-06 18:39:52  INFO AutoDetector:99 : 加载资源 508 行
+2019-09-06 18:39:52  INFO PersonName:61 : 初始化百家姓
+2019-09-06 18:39:52  INFO PersonName:74 : 百家姓初始化完毕，单姓个数：446，复姓个数：60
+2019-09-06 18:39:52  INFO AutoDetector:104 : 完成加载资源，耗时2 毫秒
+2019-09-06 18:39:52  INFO DictionaryFactory:101 : 将 60 个复姓加入词典
+2019-09-06 18:40:03  INFO DictionaryFactory:139 : 词数目：677848，词典最大词长：16
+2019-09-06 18:40:03  INFO DictionaryFactory:142 : 词长  1 的词数为：47
+2019-09-06 18:40:03  INFO DictionaryFactory:142 : 词长  2 的词数为：213335
+2019-09-06 18:40:03  INFO DictionaryFactory:142 : 词长  3 的词数为：289751
+2019-09-06 18:40:03  INFO DictionaryFactory:142 : 词长  4 的词数为：158965
+2019-09-06 18:40:03  INFO DictionaryFactory:142 : 词长  5 的词数为：6139
+2019-09-06 18:40:03  INFO DictionaryFactory:142 : 词长  6 的词数为：3746
+2019-09-06 18:40:03  INFO DictionaryFactory:142 : 词长  7 的词数为：2205
+2019-09-06 18:40:03  INFO DictionaryFactory:142 : 词长  8 的词数为：1321
+2019-09-06 18:40:03  INFO DictionaryFactory:142 : 词长  9 的词数为：797
+2019-09-06 18:40:03  INFO DictionaryFactory:144 : 词长 10 的词数为：632
+2019-09-06 18:40:03  INFO DictionaryFactory:144 : 词长 11 的词数为：312
+2019-09-06 18:40:03  INFO DictionaryFactory:144 : 词长 12 的词数为：282
+2019-09-06 18:40:03  INFO DictionaryFactory:144 : 词长 13 的词数为：124
+2019-09-06 18:40:03  INFO DictionaryFactory:144 : 词长 14 的词数为：116
+2019-09-06 18:40:03  INFO DictionaryFactory:144 : 词长 15 的词数为：51
+2019-09-06 18:40:03  INFO DictionaryFactory:144 : 词长 16 的词数为：25
+2019-09-06 18:40:03  INFO DictionaryFactory:147 : 词典平均词长：3.0032012
+2019-09-06 18:40:03  INFO DictionaryFactory:122 : 词典初始化完毕，耗时：10694 毫秒
+2019-09-06 18:40:03  INFO AutoDetector:104 : 完成加载资源，耗时11051 毫秒
+2019-09-06 18:40:03  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.MaximumMatching
+2019-09-06 18:40:03  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.ReverseMaximumMatching
+2019-09-06 18:40:03  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:40:03  INFO AutoDetector:79 : classpath:punctuation.txt
+2019-09-06 18:40:03  INFO AutoDetector:116 : 类路径资源：punctuation.txt
+2019-09-06 18:40:03  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/punctuation.txt
+2019-09-06 18:40:03  INFO AutoDetector:350 : 加载资源：classpath:punctuation.txt
+2019-09-06 18:40:03  INFO AutoDetector:99 : 加载资源 48 行
+2019-09-06 18:40:03  INFO Punctuation:55 : 初始化标点符号
+2019-09-06 18:40:03  INFO Punctuation:80 : 标点符号初始化完毕，标点符号个数：52
+2019-09-06 18:40:03  INFO AutoDetector:104 : 完成加载资源，耗时2 毫秒
+2019-09-06 18:40:03  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:40:03  INFO AutoDetector:79 : classpath:quantifier.txt
+2019-09-06 18:40:03  INFO AutoDetector:116 : 类路径资源：quantifier.txt
+2019-09-06 18:40:03  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/quantifier.txt
+2019-09-06 18:40:03  INFO AutoDetector:350 : 加载资源：classpath:quantifier.txt
+2019-09-06 18:40:03  INFO AutoDetector:99 : 加载资源 164 行
+2019-09-06 18:40:03  INFO Quantifier:52 : 初始化数量词
+2019-09-06 18:40:03  INFO Quantifier:65 : 数量词初始化完毕，数量词个数：164
+2019-09-06 18:40:03  INFO AutoDetector:104 : 完成加载资源，耗时2 毫秒
+2019-09-06 18:40:03  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:40:03  INFO AutoDetector:79 : classpath:bigram.txt
+2019-09-06 18:40:03  INFO AutoDetector:116 : 类路径资源：bigram.txt
+2019-09-06 18:40:03  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/bigram.txt
+2019-09-06 18:40:03  INFO AutoDetector:350 : 加载资源：classpath:bigram.txt
+2019-09-06 18:40:03  INFO AutoDetector:99 : 加载资源 1519443 行
+2019-09-06 18:40:03  INFO Bigram:52 : 初始化bigram
+2019-09-06 18:40:28  INFO Bigram:63 : bigram初始化完毕，bigram数据条数：1519443
+2019-09-06 18:40:28  INFO AutoDetector:104 : 完成加载资源，耗时24651 毫秒
+2019-09-06 18:40:28  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:40:28  INFO AutoDetector:79 : classpath:stopwords.txt,classpath:custom_stopwords_dic.txt
+2019-09-06 18:40:28  INFO AutoDetector:116 : 类路径资源：stopwords.txt
+2019-09-06 18:40:28  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/stopwords.txt
+2019-09-06 18:40:28  INFO AutoDetector:350 : 加载资源：classpath:stopwords.txt
+2019-09-06 18:40:28  INFO AutoDetector:116 : 类路径资源：custom_stopwords_dic.txt
+2019-09-06 18:40:28  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/custom_stopwords_dic.txt
+2019-09-06 18:40:28  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\custom_stopwords_dic.txt
+2019-09-06 18:40:28  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\custom_stopwords_dic.txt
+2019-09-06 18:40:28  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-06 18:40:28  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-06 18:40:28  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-06 18:40:28  INFO AutoDetector:99 : 加载资源 1482 行
+2019-09-06 18:40:28  INFO StopWord:64 : 初始化停用词
+2019-09-06 18:40:28  INFO StopWord:70 : 停用词初始化完毕，停用词个数：1482
+2019-09-06 18:40:28  INFO AutoDetector:104 : 完成加载资源，耗时5 毫秒
+2019-09-06 18:40:28  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:40:28  INFO AutoDetector:79 : classpath:word_refine.txt
+2019-09-06 18:40:28  INFO AutoDetector:116 : 类路径资源：word_refine.txt
+2019-09-06 18:40:28  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/word_refine.txt
+2019-09-06 18:40:28  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\word_refine.txt
+2019-09-06 18:40:28  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\word_refine.txt
+2019-09-06 18:40:28  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-06 18:40:28  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-06 18:40:28  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-06 18:40:28  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_refine.txt
+2019-09-06 18:40:28  INFO AutoDetector:350 : 加载资源：classpath:word_refine.txt
+2019-09-06 18:40:28  INFO AutoDetector:99 : 加载资源 2 行
+2019-09-06 18:40:28  INFO WordRefiner:55 : 初始化WordRefiner
+2019-09-06 18:40:28  INFO WordRefiner:66 : WordRefiner初始化完毕，数据条数：2
+2019-09-06 18:40:28  INFO AutoDetector:104 : 完成加载资源，耗时6 毫秒
+2019-09-06 18:41:03  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.BidirectionalMaximumMatching
+2019-09-06 18:41:03  INFO WordConfTools:88 : 开始加载配置文件
+2019-09-06 18:41:03  INFO WordConfTools:128 : 加载配置文件：word.conf
+2019-09-06 18:41:03  INFO WordConfTools:128 : 加载配置文件：word.local.conf
+2019-09-06 18:41:03  INFO WordConfTools:94 : 配置文件加载完毕，耗时1 毫秒，配置项数目：33
+2019-09-06 18:41:03  INFO WordConfTools:95 : 配置信息：
+2019-09-06 18:41:03  INFO WordConfTools:98 : 1、auto.detect=true
+2019-09-06 18:41:03  INFO WordConfTools:98 : 2、bigram.double.array.trie.size=5300000
+2019-09-06 18:41:03  INFO WordConfTools:98 : 3、bigram.path=classpath:bigram.txt
+2019-09-06 18:41:03  INFO WordConfTools:98 : 4、dic.class=org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-06 18:41:03  INFO WordConfTools:98 : 5、dic.dump.path=
+2019-09-06 18:41:03  INFO WordConfTools:98 : 6、dic.path=classpath:dic.txt,classpath:custom_dic.txt
+2019-09-06 18:41:03  INFO WordConfTools:98 : 7、dictionary.trie.index.size=24000
+2019-09-06 18:41:03  INFO WordConfTools:98 : 8、double.array.dictionary.trie.size=2600000
+2019-09-06 18:41:03  INFO WordConfTools:98 : 9、intercept.length=16
+2019-09-06 18:41:03  INFO WordConfTools:98 : 10、keep.punctuation=false
+2019-09-06 18:41:03  INFO WordConfTools:98 : 11、keep.whitespace=false
+2019-09-06 18:41:03  INFO WordConfTools:98 : 12、ngram=bigram
+2019-09-06 18:41:03  INFO WordConfTools:98 : 13、parallel.seg=true
+2019-09-06 18:41:03  INFO WordConfTools:98 : 14、part.of.speech.des.path=classpath:part_of_speech_des.txt
+2019-09-06 18:41:03  INFO WordConfTools:98 : 15、part.of.speech.dic.path=classpath:part_of_speech_dic.txt
+2019-09-06 18:41:03  INFO WordConfTools:98 : 16、person.name.recognize=true
+2019-09-06 18:41:03  INFO WordConfTools:98 : 17、punctuation.path=classpath:punctuation.txt
+2019-09-06 18:41:03  INFO WordConfTools:98 : 18、quantifier.path=classpath:quantifier.txt
+2019-09-06 18:41:03  INFO WordConfTools:98 : 19、recognition.tool.enabled=true
+2019-09-06 18:41:03  INFO WordConfTools:98 : 20、redis.host=localhost
+2019-09-06 18:41:03  INFO WordConfTools:98 : 21、redis.port=6379
+2019-09-06 18:41:03  INFO WordConfTools:98 : 22、stopwords.path=classpath:stopwords.txt,classpath:custom_stopwords_dic.txt
+2019-09-06 18:41:03  INFO WordConfTools:98 : 23、surname.path=classpath:surname.txt
+2019-09-06 18:41:03  INFO WordConfTools:98 : 24、tagging.antonym=false
+2019-09-06 18:41:03  INFO WordConfTools:98 : 25、tagging.pinyin.acronym=false
+2019-09-06 18:41:03  INFO WordConfTools:98 : 26、tagging.pinyin.full=false
+2019-09-06 18:41:03  INFO WordConfTools:98 : 27、tagging.synonym=false
+2019-09-06 18:41:03  INFO WordConfTools:98 : 28、trigram.double.array.trie.size=9800000
+2019-09-06 18:41:03  INFO WordConfTools:98 : 29、trigram.path=classpath:trigram.txt
+2019-09-06 18:41:03  INFO WordConfTools:98 : 30、word.antonym.path=classpath:word_antonym.txt
+2019-09-06 18:41:03  INFO WordConfTools:98 : 31、word.refine.combine.max.length=3
+2019-09-06 18:41:03  INFO WordConfTools:98 : 32、word.refine.path=classpath:word_refine.txt
+2019-09-06 18:41:03  INFO WordConfTools:98 : 33、word.synonym.path=classpath:word_synonym.txt
+2019-09-06 18:41:03  INFO DictionaryFactory:72 : dic.class=org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-06 18:41:03  INFO DoubleArrayDictionaryTrie:69 : 初始化词典：org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-06 18:41:03  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:41:03  INFO AutoDetector:79 : classpath:dic.txt,classpath:custom_dic.txt,classpath:punctuation.txt,classpath:part_of_speech_dic.txt,classpath:word_synonym.txt,classpath:word_antonym.txt
+2019-09-06 18:41:03  INFO AutoDetector:116 : 类路径资源：dic.txt
+2019-09-06 18:41:03  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/dic.txt
+2019-09-06 18:41:03  INFO AutoDetector:350 : 加载资源：classpath:dic.txt
+2019-09-06 18:41:03  INFO AutoDetector:116 : 类路径资源：custom_dic.txt
+2019-09-06 18:41:03  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/custom_dic.txt
+2019-09-06 18:41:03  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\custom_dic.txt
+2019-09-06 18:41:03  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\custom_dic.txt
+2019-09-06 18:41:03  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-06 18:41:03  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-06 18:41:03  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-06 18:41:03  INFO AutoDetector:116 : 类路径资源：punctuation.txt
+2019-09-06 18:41:03  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/punctuation.txt
+2019-09-06 18:41:03  INFO AutoDetector:350 : 加载资源：classpath:punctuation.txt
+2019-09-06 18:41:03  INFO AutoDetector:116 : 类路径资源：part_of_speech_dic.txt
+2019-09-06 18:41:03  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/part_of_speech_dic.txt
+2019-09-06 18:41:03  INFO AutoDetector:350 : 加载资源：classpath:part_of_speech_dic.txt
+2019-09-06 18:41:03  INFO AutoDetector:116 : 类路径资源：word_synonym.txt
+2019-09-06 18:41:03  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_synonym.txt
+2019-09-06 18:41:03  INFO AutoDetector:350 : 加载资源：classpath:word_synonym.txt
+2019-09-06 18:41:03  INFO AutoDetector:116 : 类路径资源：word_antonym.txt
+2019-09-06 18:41:03  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_antonym.txt
+2019-09-06 18:41:03  INFO AutoDetector:350 : 加载资源：classpath:word_antonym.txt
+2019-09-06 18:41:03  INFO AutoDetector:99 : 加载资源 1091314 行
+2019-09-06 18:41:03  INFO DictionaryFactory:92 : 初始化词典
+2019-09-06 18:41:03  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:41:03  INFO AutoDetector:79 : classpath:surname.txt
+2019-09-06 18:41:03  INFO AutoDetector:116 : 类路径资源：surname.txt
+2019-09-06 18:41:03  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/surname.txt
+2019-09-06 18:41:03  INFO AutoDetector:350 : 加载资源：classpath:surname.txt
+2019-09-06 18:41:03  INFO AutoDetector:99 : 加载资源 508 行
+2019-09-06 18:41:03  INFO PersonName:61 : 初始化百家姓
+2019-09-06 18:41:03  INFO PersonName:74 : 百家姓初始化完毕，单姓个数：446，复姓个数：60
+2019-09-06 18:41:03  INFO AutoDetector:104 : 完成加载资源，耗时2 毫秒
+2019-09-06 18:41:03  INFO DictionaryFactory:101 : 将 60 个复姓加入词典
+2019-09-06 18:41:14  INFO DictionaryFactory:139 : 词数目：677848，词典最大词长：16
+2019-09-06 18:41:14  INFO DictionaryFactory:142 : 词长  1 的词数为：47
+2019-09-06 18:41:14  INFO DictionaryFactory:142 : 词长  2 的词数为：213335
+2019-09-06 18:41:14  INFO DictionaryFactory:142 : 词长  3 的词数为：289751
+2019-09-06 18:41:14  INFO DictionaryFactory:142 : 词长  4 的词数为：158965
+2019-09-06 18:41:14  INFO DictionaryFactory:142 : 词长  5 的词数为：6139
+2019-09-06 18:41:14  INFO DictionaryFactory:142 : 词长  6 的词数为：3746
+2019-09-06 18:41:14  INFO DictionaryFactory:142 : 词长  7 的词数为：2205
+2019-09-06 18:41:14  INFO DictionaryFactory:142 : 词长  8 的词数为：1321
+2019-09-06 18:41:14  INFO DictionaryFactory:142 : 词长  9 的词数为：797
+2019-09-06 18:41:14  INFO DictionaryFactory:144 : 词长 10 的词数为：632
+2019-09-06 18:41:14  INFO DictionaryFactory:144 : 词长 11 的词数为：312
+2019-09-06 18:41:14  INFO DictionaryFactory:144 : 词长 12 的词数为：282
+2019-09-06 18:41:14  INFO DictionaryFactory:144 : 词长 13 的词数为：124
+2019-09-06 18:41:14  INFO DictionaryFactory:144 : 词长 14 的词数为：116
+2019-09-06 18:41:14  INFO DictionaryFactory:144 : 词长 15 的词数为：51
+2019-09-06 18:41:14  INFO DictionaryFactory:144 : 词长 16 的词数为：25
+2019-09-06 18:41:14  INFO DictionaryFactory:147 : 词典平均词长：3.0032012
+2019-09-06 18:41:14  INFO DictionaryFactory:122 : 词典初始化完毕，耗时：11000 毫秒
+2019-09-06 18:41:14  INFO AutoDetector:104 : 完成加载资源，耗时11300 毫秒
+2019-09-06 18:41:14  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.MaximumMatching
+2019-09-06 18:41:14  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.ReverseMaximumMatching
+2019-09-06 18:41:14  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:41:14  INFO AutoDetector:79 : classpath:punctuation.txt
+2019-09-06 18:41:14  INFO AutoDetector:116 : 类路径资源：punctuation.txt
+2019-09-06 18:41:14  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/punctuation.txt
+2019-09-06 18:41:14  INFO AutoDetector:350 : 加载资源：classpath:punctuation.txt
+2019-09-06 18:41:14  INFO AutoDetector:99 : 加载资源 48 行
+2019-09-06 18:41:14  INFO Punctuation:55 : 初始化标点符号
+2019-09-06 18:41:14  INFO Punctuation:80 : 标点符号初始化完毕，标点符号个数：52
+2019-09-06 18:41:14  INFO AutoDetector:104 : 完成加载资源，耗时1 毫秒
+2019-09-06 18:41:14  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:41:14  INFO AutoDetector:79 : classpath:quantifier.txt
+2019-09-06 18:41:14  INFO AutoDetector:116 : 类路径资源：quantifier.txt
+2019-09-06 18:41:14  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/quantifier.txt
+2019-09-06 18:41:14  INFO AutoDetector:350 : 加载资源：classpath:quantifier.txt
+2019-09-06 18:41:14  INFO AutoDetector:99 : 加载资源 164 行
+2019-09-06 18:41:14  INFO Quantifier:52 : 初始化数量词
+2019-09-06 18:41:14  INFO Quantifier:65 : 数量词初始化完毕，数量词个数：164
+2019-09-06 18:41:14  INFO AutoDetector:104 : 完成加载资源，耗时1 毫秒
+2019-09-06 18:41:14  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:41:14  INFO AutoDetector:79 : classpath:bigram.txt
+2019-09-06 18:41:14  INFO AutoDetector:116 : 类路径资源：bigram.txt
+2019-09-06 18:41:14  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/bigram.txt
+2019-09-06 18:41:14  INFO AutoDetector:350 : 加载资源：classpath:bigram.txt
+2019-09-06 18:41:14  INFO AutoDetector:99 : 加载资源 1519443 行
+2019-09-06 18:41:14  INFO Bigram:52 : 初始化bigram
+2019-09-06 18:41:38  INFO Bigram:63 : bigram初始化完毕，bigram数据条数：1519443
+2019-09-06 18:41:38  INFO AutoDetector:104 : 完成加载资源，耗时24423 毫秒
+2019-09-06 18:41:38  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:41:38  INFO AutoDetector:79 : classpath:stopwords.txt,classpath:custom_stopwords_dic.txt
+2019-09-06 18:41:38  INFO AutoDetector:116 : 类路径资源：stopwords.txt
+2019-09-06 18:41:38  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/stopwords.txt
+2019-09-06 18:41:38  INFO AutoDetector:350 : 加载资源：classpath:stopwords.txt
+2019-09-06 18:41:38  INFO AutoDetector:116 : 类路径资源：custom_stopwords_dic.txt
+2019-09-06 18:41:38  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/custom_stopwords_dic.txt
+2019-09-06 18:41:38  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\custom_stopwords_dic.txt
+2019-09-06 18:41:38  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\custom_stopwords_dic.txt
+2019-09-06 18:41:38  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-06 18:41:38  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-06 18:41:38  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-06 18:41:38  INFO AutoDetector:99 : 加载资源 1482 行
+2019-09-06 18:41:38  INFO StopWord:64 : 初始化停用词
+2019-09-06 18:41:38  INFO StopWord:70 : 停用词初始化完毕，停用词个数：1482
+2019-09-06 18:41:38  INFO AutoDetector:104 : 完成加载资源，耗时4 毫秒
+2019-09-06 18:41:38  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:41:38  INFO AutoDetector:79 : classpath:word_refine.txt
+2019-09-06 18:41:38  INFO AutoDetector:116 : 类路径资源：word_refine.txt
+2019-09-06 18:41:38  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/word_refine.txt
+2019-09-06 18:41:38  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\word_refine.txt
+2019-09-06 18:41:38  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\word_refine.txt
+2019-09-06 18:41:38  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-06 18:41:38  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-06 18:41:38  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-06 18:41:38  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_refine.txt
+2019-09-06 18:41:38  INFO AutoDetector:350 : 加载资源：classpath:word_refine.txt
+2019-09-06 18:41:38  INFO AutoDetector:99 : 加载资源 2 行
+2019-09-06 18:41:38  INFO WordRefiner:55 : 初始化WordRefiner
+2019-09-06 18:41:38  INFO WordRefiner:66 : WordRefiner初始化完毕，数据条数：2
+2019-09-06 18:41:38  INFO AutoDetector:104 : 完成加载资源，耗时3 毫秒
+2019-09-06 18:42:37  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.BidirectionalMaximumMatching
+2019-09-06 18:42:37  INFO WordConfTools:88 : 开始加载配置文件
+2019-09-06 18:42:37  INFO WordConfTools:128 : 加载配置文件：word.conf
+2019-09-06 18:42:37  INFO WordConfTools:128 : 加载配置文件：word.local.conf
+2019-09-06 18:42:37  INFO WordConfTools:94 : 配置文件加载完毕，耗时2 毫秒，配置项数目：33
+2019-09-06 18:42:37  INFO WordConfTools:95 : 配置信息：
+2019-09-06 18:42:37  INFO WordConfTools:98 : 1、auto.detect=true
+2019-09-06 18:42:37  INFO WordConfTools:98 : 2、bigram.double.array.trie.size=5300000
+2019-09-06 18:42:37  INFO WordConfTools:98 : 3、bigram.path=classpath:bigram.txt
+2019-09-06 18:42:37  INFO WordConfTools:98 : 4、dic.class=org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-06 18:42:37  INFO WordConfTools:98 : 5、dic.dump.path=
+2019-09-06 18:42:37  INFO WordConfTools:98 : 6、dic.path=classpath:dic.txt,classpath:custom_dic.txt
+2019-09-06 18:42:37  INFO WordConfTools:98 : 7、dictionary.trie.index.size=24000
+2019-09-06 18:42:37  INFO WordConfTools:98 : 8、double.array.dictionary.trie.size=2600000
+2019-09-06 18:42:37  INFO WordConfTools:98 : 9、intercept.length=16
+2019-09-06 18:42:37  INFO WordConfTools:98 : 10、keep.punctuation=false
+2019-09-06 18:42:37  INFO WordConfTools:98 : 11、keep.whitespace=false
+2019-09-06 18:42:37  INFO WordConfTools:98 : 12、ngram=bigram
+2019-09-06 18:42:37  INFO WordConfTools:98 : 13、parallel.seg=true
+2019-09-06 18:42:37  INFO WordConfTools:98 : 14、part.of.speech.des.path=classpath:part_of_speech_des.txt
+2019-09-06 18:42:37  INFO WordConfTools:98 : 15、part.of.speech.dic.path=classpath:part_of_speech_dic.txt
+2019-09-06 18:42:37  INFO WordConfTools:98 : 16、person.name.recognize=true
+2019-09-06 18:42:37  INFO WordConfTools:98 : 17、punctuation.path=classpath:punctuation.txt
+2019-09-06 18:42:37  INFO WordConfTools:98 : 18、quantifier.path=classpath:quantifier.txt
+2019-09-06 18:42:37  INFO WordConfTools:98 : 19、recognition.tool.enabled=true
+2019-09-06 18:42:37  INFO WordConfTools:98 : 20、redis.host=localhost
+2019-09-06 18:42:37  INFO WordConfTools:98 : 21、redis.port=6379
+2019-09-06 18:42:37  INFO WordConfTools:98 : 22、stopwords.path=classpath:stopwords.txt,classpath:custom_stopwords_dic.txt
+2019-09-06 18:42:37  INFO WordConfTools:98 : 23、surname.path=classpath:surname.txt
+2019-09-06 18:42:37  INFO WordConfTools:98 : 24、tagging.antonym=false
+2019-09-06 18:42:37  INFO WordConfTools:98 : 25、tagging.pinyin.acronym=false
+2019-09-06 18:42:37  INFO WordConfTools:98 : 26、tagging.pinyin.full=false
+2019-09-06 18:42:37  INFO WordConfTools:98 : 27、tagging.synonym=false
+2019-09-06 18:42:37  INFO WordConfTools:98 : 28、trigram.double.array.trie.size=9800000
+2019-09-06 18:42:37  INFO WordConfTools:98 : 29、trigram.path=classpath:trigram.txt
+2019-09-06 18:42:37  INFO WordConfTools:98 : 30、word.antonym.path=classpath:word_antonym.txt
+2019-09-06 18:42:37  INFO WordConfTools:98 : 31、word.refine.combine.max.length=3
+2019-09-06 18:42:37  INFO WordConfTools:98 : 32、word.refine.path=classpath:word_refine.txt
+2019-09-06 18:42:37  INFO WordConfTools:98 : 33、word.synonym.path=classpath:word_synonym.txt
+2019-09-06 18:42:37  INFO DictionaryFactory:72 : dic.class=org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-06 18:42:37  INFO DoubleArrayDictionaryTrie:69 : 初始化词典：org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-06 18:42:37  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:42:37  INFO AutoDetector:79 : classpath:dic.txt,classpath:custom_dic.txt,classpath:punctuation.txt,classpath:part_of_speech_dic.txt,classpath:word_synonym.txt,classpath:word_antonym.txt
+2019-09-06 18:42:37  INFO AutoDetector:116 : 类路径资源：dic.txt
+2019-09-06 18:42:37  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/dic.txt
+2019-09-06 18:42:37  INFO AutoDetector:350 : 加载资源：classpath:dic.txt
+2019-09-06 18:42:37  INFO AutoDetector:116 : 类路径资源：custom_dic.txt
+2019-09-06 18:42:37  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/custom_dic.txt
+2019-09-06 18:42:37  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\custom_dic.txt
+2019-09-06 18:42:37  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\custom_dic.txt
+2019-09-06 18:42:37  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-06 18:42:37  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-06 18:42:37  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-06 18:42:37  INFO AutoDetector:116 : 类路径资源：punctuation.txt
+2019-09-06 18:42:37  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/punctuation.txt
+2019-09-06 18:42:37  INFO AutoDetector:350 : 加载资源：classpath:punctuation.txt
+2019-09-06 18:42:37  INFO AutoDetector:116 : 类路径资源：part_of_speech_dic.txt
+2019-09-06 18:42:37  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/part_of_speech_dic.txt
+2019-09-06 18:42:37  INFO AutoDetector:350 : 加载资源：classpath:part_of_speech_dic.txt
+2019-09-06 18:42:37  INFO AutoDetector:116 : 类路径资源：word_synonym.txt
+2019-09-06 18:42:37  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_synonym.txt
+2019-09-06 18:42:37  INFO AutoDetector:350 : 加载资源：classpath:word_synonym.txt
+2019-09-06 18:42:37  INFO AutoDetector:116 : 类路径资源：word_antonym.txt
+2019-09-06 18:42:37  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_antonym.txt
+2019-09-06 18:42:37  INFO AutoDetector:350 : 加载资源：classpath:word_antonym.txt
+2019-09-06 18:42:37  INFO AutoDetector:99 : 加载资源 1091314 行
+2019-09-06 18:42:37  INFO DictionaryFactory:92 : 初始化词典
+2019-09-06 18:42:37  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:42:37  INFO AutoDetector:79 : classpath:surname.txt
+2019-09-06 18:42:37  INFO AutoDetector:116 : 类路径资源：surname.txt
+2019-09-06 18:42:37  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/surname.txt
+2019-09-06 18:42:37  INFO AutoDetector:350 : 加载资源：classpath:surname.txt
+2019-09-06 18:42:37  INFO AutoDetector:99 : 加载资源 508 行
+2019-09-06 18:42:37  INFO PersonName:61 : 初始化百家姓
+2019-09-06 18:42:37  INFO PersonName:74 : 百家姓初始化完毕，单姓个数：446，复姓个数：60
+2019-09-06 18:42:37  INFO AutoDetector:104 : 完成加载资源，耗时2 毫秒
+2019-09-06 18:42:37  INFO DictionaryFactory:101 : 将 60 个复姓加入词典
+2019-09-06 18:42:48  INFO DictionaryFactory:139 : 词数目：677848，词典最大词长：16
+2019-09-06 18:42:48  INFO DictionaryFactory:142 : 词长  1 的词数为：47
+2019-09-06 18:42:48  INFO DictionaryFactory:142 : 词长  2 的词数为：213335
+2019-09-06 18:42:48  INFO DictionaryFactory:142 : 词长  3 的词数为：289751
+2019-09-06 18:42:48  INFO DictionaryFactory:142 : 词长  4 的词数为：158965
+2019-09-06 18:42:48  INFO DictionaryFactory:142 : 词长  5 的词数为：6139
+2019-09-06 18:42:48  INFO DictionaryFactory:142 : 词长  6 的词数为：3746
+2019-09-06 18:42:48  INFO DictionaryFactory:142 : 词长  7 的词数为：2205
+2019-09-06 18:42:48  INFO DictionaryFactory:142 : 词长  8 的词数为：1321
+2019-09-06 18:42:48  INFO DictionaryFactory:142 : 词长  9 的词数为：797
+2019-09-06 18:42:48  INFO DictionaryFactory:144 : 词长 10 的词数为：632
+2019-09-06 18:42:48  INFO DictionaryFactory:144 : 词长 11 的词数为：312
+2019-09-06 18:42:48  INFO DictionaryFactory:144 : 词长 12 的词数为：282
+2019-09-06 18:42:48  INFO DictionaryFactory:144 : 词长 13 的词数为：124
+2019-09-06 18:42:48  INFO DictionaryFactory:144 : 词长 14 的词数为：116
+2019-09-06 18:42:48  INFO DictionaryFactory:144 : 词长 15 的词数为：51
+2019-09-06 18:42:48  INFO DictionaryFactory:144 : 词长 16 的词数为：25
+2019-09-06 18:42:48  INFO DictionaryFactory:147 : 词典平均词长：3.0032012
+2019-09-06 18:42:48  INFO DictionaryFactory:122 : 词典初始化完毕，耗时：10760 毫秒
+2019-09-06 18:42:48  INFO AutoDetector:104 : 完成加载资源，耗时11077 毫秒
+2019-09-06 18:42:48  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.MaximumMatching
+2019-09-06 18:42:48  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.ReverseMaximumMatching
+2019-09-06 18:42:48  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:42:48  INFO AutoDetector:79 : classpath:punctuation.txt
+2019-09-06 18:42:48  INFO AutoDetector:116 : 类路径资源：punctuation.txt
+2019-09-06 18:42:48  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/punctuation.txt
+2019-09-06 18:42:48  INFO AutoDetector:350 : 加载资源：classpath:punctuation.txt
+2019-09-06 18:42:48  INFO AutoDetector:99 : 加载资源 48 行
+2019-09-06 18:42:48  INFO Punctuation:55 : 初始化标点符号
+2019-09-06 18:42:48  INFO Punctuation:80 : 标点符号初始化完毕，标点符号个数：52
+2019-09-06 18:42:48  INFO AutoDetector:104 : 完成加载资源，耗时1 毫秒
+2019-09-06 18:42:48  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:42:48  INFO AutoDetector:79 : classpath:quantifier.txt
+2019-09-06 18:42:48  INFO AutoDetector:116 : 类路径资源：quantifier.txt
+2019-09-06 18:42:48  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/quantifier.txt
+2019-09-06 18:42:48  INFO AutoDetector:350 : 加载资源：classpath:quantifier.txt
+2019-09-06 18:42:48  INFO AutoDetector:99 : 加载资源 164 行
+2019-09-06 18:42:48  INFO Quantifier:52 : 初始化数量词
+2019-09-06 18:42:48  INFO Quantifier:65 : 数量词初始化完毕，数量词个数：164
+2019-09-06 18:42:48  INFO AutoDetector:104 : 完成加载资源，耗时1 毫秒
+2019-09-06 18:42:48  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:42:48  INFO AutoDetector:79 : classpath:bigram.txt
+2019-09-06 18:42:48  INFO AutoDetector:116 : 类路径资源：bigram.txt
+2019-09-06 18:42:48  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/bigram.txt
+2019-09-06 18:42:48  INFO AutoDetector:350 : 加载资源：classpath:bigram.txt
+2019-09-06 18:42:48  INFO AutoDetector:99 : 加载资源 1519443 行
+2019-09-06 18:42:48  INFO Bigram:52 : 初始化bigram
+2019-09-06 18:43:13  INFO Bigram:63 : bigram初始化完毕，bigram数据条数：1519443
+2019-09-06 18:43:13  INFO AutoDetector:104 : 完成加载资源，耗时24440 毫秒
+2019-09-06 18:43:13  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:43:13  INFO AutoDetector:79 : classpath:stopwords.txt,classpath:custom_stopwords_dic.txt
+2019-09-06 18:43:13  INFO AutoDetector:116 : 类路径资源：stopwords.txt
+2019-09-06 18:43:13  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/stopwords.txt
+2019-09-06 18:43:13  INFO AutoDetector:350 : 加载资源：classpath:stopwords.txt
+2019-09-06 18:43:13  INFO AutoDetector:116 : 类路径资源：custom_stopwords_dic.txt
+2019-09-06 18:43:13  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/custom_stopwords_dic.txt
+2019-09-06 18:43:13  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\custom_stopwords_dic.txt
+2019-09-06 18:43:13  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\custom_stopwords_dic.txt
+2019-09-06 18:43:13  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-06 18:43:13  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-06 18:43:13  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-06 18:43:13  INFO AutoDetector:99 : 加载资源 1482 行
+2019-09-06 18:43:13  INFO StopWord:64 : 初始化停用词
+2019-09-06 18:43:13  INFO StopWord:70 : 停用词初始化完毕，停用词个数：1482
+2019-09-06 18:43:13  INFO AutoDetector:104 : 完成加载资源，耗时4 毫秒
+2019-09-06 18:43:13  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:43:13  INFO AutoDetector:79 : classpath:word_refine.txt
+2019-09-06 18:43:13  INFO AutoDetector:116 : 类路径资源：word_refine.txt
+2019-09-06 18:43:13  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/word_refine.txt
+2019-09-06 18:43:13  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\word_refine.txt
+2019-09-06 18:43:13  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\word_refine.txt
+2019-09-06 18:43:13  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-06 18:43:13  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-06 18:43:13  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-06 18:43:13  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_refine.txt
+2019-09-06 18:43:13  INFO AutoDetector:350 : 加载资源：classpath:word_refine.txt
+2019-09-06 18:43:13  INFO AutoDetector:99 : 加载资源 2 行
+2019-09-06 18:43:13  INFO WordRefiner:55 : 初始化WordRefiner
+2019-09-06 18:43:13  INFO WordRefiner:66 : WordRefiner初始化完毕，数据条数：2
+2019-09-06 18:43:13  INFO AutoDetector:104 : 完成加载资源，耗时2 毫秒
+2019-09-06 18:48:51  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.BidirectionalMaximumMatching
+2019-09-06 18:48:51  INFO WordConfTools:88 : 开始加载配置文件
+2019-09-06 18:48:51  INFO WordConfTools:128 : 加载配置文件：word.conf
+2019-09-06 18:48:51  INFO WordConfTools:128 : 加载配置文件：word.local.conf
+2019-09-06 18:48:51  INFO WordConfTools:94 : 配置文件加载完毕，耗时2 毫秒，配置项数目：33
+2019-09-06 18:48:51  INFO WordConfTools:95 : 配置信息：
+2019-09-06 18:48:51  INFO WordConfTools:98 : 1、auto.detect=true
+2019-09-06 18:48:51  INFO WordConfTools:98 : 2、bigram.double.array.trie.size=5300000
+2019-09-06 18:48:51  INFO WordConfTools:98 : 3、bigram.path=classpath:bigram.txt
+2019-09-06 18:48:51  INFO WordConfTools:98 : 4、dic.class=org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-06 18:48:51  INFO WordConfTools:98 : 5、dic.dump.path=
+2019-09-06 18:48:51  INFO WordConfTools:98 : 6、dic.path=classpath:dic.txt,classpath:custom_dic.txt
+2019-09-06 18:48:51  INFO WordConfTools:98 : 7、dictionary.trie.index.size=24000
+2019-09-06 18:48:51  INFO WordConfTools:98 : 8、double.array.dictionary.trie.size=2600000
+2019-09-06 18:48:51  INFO WordConfTools:98 : 9、intercept.length=16
+2019-09-06 18:48:51  INFO WordConfTools:98 : 10、keep.punctuation=false
+2019-09-06 18:48:51  INFO WordConfTools:98 : 11、keep.whitespace=false
+2019-09-06 18:48:51  INFO WordConfTools:98 : 12、ngram=bigram
+2019-09-06 18:48:51  INFO WordConfTools:98 : 13、parallel.seg=true
+2019-09-06 18:48:51  INFO WordConfTools:98 : 14、part.of.speech.des.path=classpath:part_of_speech_des.txt
+2019-09-06 18:48:51  INFO WordConfTools:98 : 15、part.of.speech.dic.path=classpath:part_of_speech_dic.txt
+2019-09-06 18:48:51  INFO WordConfTools:98 : 16、person.name.recognize=true
+2019-09-06 18:48:51  INFO WordConfTools:98 : 17、punctuation.path=classpath:punctuation.txt
+2019-09-06 18:48:51  INFO WordConfTools:98 : 18、quantifier.path=classpath:quantifier.txt
+2019-09-06 18:48:51  INFO WordConfTools:98 : 19、recognition.tool.enabled=true
+2019-09-06 18:48:51  INFO WordConfTools:98 : 20、redis.host=localhost
+2019-09-06 18:48:51  INFO WordConfTools:98 : 21、redis.port=6379
+2019-09-06 18:48:51  INFO WordConfTools:98 : 22、stopwords.path=classpath:stopwords.txt,classpath:custom_stopwords_dic.txt
+2019-09-06 18:48:51  INFO WordConfTools:98 : 23、surname.path=classpath:surname.txt
+2019-09-06 18:48:51  INFO WordConfTools:98 : 24、tagging.antonym=false
+2019-09-06 18:48:51  INFO WordConfTools:98 : 25、tagging.pinyin.acronym=false
+2019-09-06 18:48:51  INFO WordConfTools:98 : 26、tagging.pinyin.full=false
+2019-09-06 18:48:51  INFO WordConfTools:98 : 27、tagging.synonym=false
+2019-09-06 18:48:51  INFO WordConfTools:98 : 28、trigram.double.array.trie.size=9800000
+2019-09-06 18:48:51  INFO WordConfTools:98 : 29、trigram.path=classpath:trigram.txt
+2019-09-06 18:48:51  INFO WordConfTools:98 : 30、word.antonym.path=classpath:word_antonym.txt
+2019-09-06 18:48:51  INFO WordConfTools:98 : 31、word.refine.combine.max.length=3
+2019-09-06 18:48:51  INFO WordConfTools:98 : 32、word.refine.path=classpath:word_refine.txt
+2019-09-06 18:48:51  INFO WordConfTools:98 : 33、word.synonym.path=classpath:word_synonym.txt
+2019-09-06 18:48:51  INFO DictionaryFactory:72 : dic.class=org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-06 18:48:51  INFO DoubleArrayDictionaryTrie:69 : 初始化词典：org.apdplat.word.dictionary.impl.DoubleArrayDictionaryTrie
+2019-09-06 18:48:51  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:48:51  INFO AutoDetector:79 : classpath:dic.txt,classpath:custom_dic.txt,classpath:punctuation.txt,classpath:part_of_speech_dic.txt,classpath:word_synonym.txt,classpath:word_antonym.txt
+2019-09-06 18:48:51  INFO AutoDetector:116 : 类路径资源：dic.txt
+2019-09-06 18:48:51  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/dic.txt
+2019-09-06 18:48:51  INFO AutoDetector:350 : 加载资源：classpath:dic.txt
+2019-09-06 18:48:51  INFO AutoDetector:116 : 类路径资源：custom_dic.txt
+2019-09-06 18:48:51  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/custom_dic.txt
+2019-09-06 18:48:51  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\custom_dic.txt
+2019-09-06 18:48:51  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\custom_dic.txt
+2019-09-06 18:48:51  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-06 18:48:51  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-06 18:48:51  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-06 18:48:51  INFO AutoDetector:116 : 类路径资源：punctuation.txt
+2019-09-06 18:48:51  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/punctuation.txt
+2019-09-06 18:48:51  INFO AutoDetector:350 : 加载资源：classpath:punctuation.txt
+2019-09-06 18:48:51  INFO AutoDetector:116 : 类路径资源：part_of_speech_dic.txt
+2019-09-06 18:48:51  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/part_of_speech_dic.txt
+2019-09-06 18:48:51  INFO AutoDetector:350 : 加载资源：classpath:part_of_speech_dic.txt
+2019-09-06 18:48:51  INFO AutoDetector:116 : 类路径资源：word_synonym.txt
+2019-09-06 18:48:51  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_synonym.txt
+2019-09-06 18:48:51  INFO AutoDetector:350 : 加载资源：classpath:word_synonym.txt
+2019-09-06 18:48:52  INFO AutoDetector:116 : 类路径资源：word_antonym.txt
+2019-09-06 18:48:52  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_antonym.txt
+2019-09-06 18:48:52  INFO AutoDetector:350 : 加载资源：classpath:word_antonym.txt
+2019-09-06 18:48:52  INFO AutoDetector:99 : 加载资源 1091314 行
+2019-09-06 18:48:52  INFO DictionaryFactory:92 : 初始化词典
+2019-09-06 18:48:52  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:48:52  INFO AutoDetector:79 : classpath:surname.txt
+2019-09-06 18:48:52  INFO AutoDetector:116 : 类路径资源：surname.txt
+2019-09-06 18:48:52  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/surname.txt
+2019-09-06 18:48:52  INFO AutoDetector:350 : 加载资源：classpath:surname.txt
+2019-09-06 18:48:52  INFO AutoDetector:99 : 加载资源 508 行
+2019-09-06 18:48:52  INFO PersonName:61 : 初始化百家姓
+2019-09-06 18:48:52  INFO PersonName:74 : 百家姓初始化完毕，单姓个数：446，复姓个数：60
+2019-09-06 18:48:52  INFO AutoDetector:104 : 完成加载资源，耗时2 毫秒
+2019-09-06 18:48:52  INFO DictionaryFactory:101 : 将 60 个复姓加入词典
+2019-09-06 18:49:02  INFO DictionaryFactory:139 : 词数目：677848，词典最大词长：16
+2019-09-06 18:49:02  INFO DictionaryFactory:142 : 词长  1 的词数为：47
+2019-09-06 18:49:02  INFO DictionaryFactory:142 : 词长  2 的词数为：213335
+2019-09-06 18:49:02  INFO DictionaryFactory:142 : 词长  3 的词数为：289751
+2019-09-06 18:49:02  INFO DictionaryFactory:142 : 词长  4 的词数为：158965
+2019-09-06 18:49:02  INFO DictionaryFactory:142 : 词长  5 的词数为：6139
+2019-09-06 18:49:02  INFO DictionaryFactory:142 : 词长  6 的词数为：3746
+2019-09-06 18:49:02  INFO DictionaryFactory:142 : 词长  7 的词数为：2205
+2019-09-06 18:49:02  INFO DictionaryFactory:142 : 词长  8 的词数为：1321
+2019-09-06 18:49:02  INFO DictionaryFactory:142 : 词长  9 的词数为：797
+2019-09-06 18:49:02  INFO DictionaryFactory:144 : 词长 10 的词数为：632
+2019-09-06 18:49:02  INFO DictionaryFactory:144 : 词长 11 的词数为：312
+2019-09-06 18:49:02  INFO DictionaryFactory:144 : 词长 12 的词数为：282
+2019-09-06 18:49:02  INFO DictionaryFactory:144 : 词长 13 的词数为：124
+2019-09-06 18:49:02  INFO DictionaryFactory:144 : 词长 14 的词数为：116
+2019-09-06 18:49:02  INFO DictionaryFactory:144 : 词长 15 的词数为：51
+2019-09-06 18:49:02  INFO DictionaryFactory:144 : 词长 16 的词数为：25
+2019-09-06 18:49:02  INFO DictionaryFactory:147 : 词典平均词长：3.0032012
+2019-09-06 18:49:02  INFO DictionaryFactory:122 : 词典初始化完毕，耗时：10607 毫秒
+2019-09-06 18:49:02  INFO AutoDetector:104 : 完成加载资源，耗时10916 毫秒
+2019-09-06 18:49:02  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.MaximumMatching
+2019-09-06 18:49:02  INFO SegmentationFactory:43 : 构造分词实现类：org.apdplat.word.segmentation.impl.ReverseMaximumMatching
+2019-09-06 18:49:02  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:49:02  INFO AutoDetector:79 : classpath:punctuation.txt
+2019-09-06 18:49:02  INFO AutoDetector:116 : 类路径资源：punctuation.txt
+2019-09-06 18:49:02  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/punctuation.txt
+2019-09-06 18:49:02  INFO AutoDetector:350 : 加载资源：classpath:punctuation.txt
+2019-09-06 18:49:02  INFO AutoDetector:99 : 加载资源 48 行
+2019-09-06 18:49:02  INFO Punctuation:55 : 初始化标点符号
+2019-09-06 18:49:02  INFO Punctuation:80 : 标点符号初始化完毕，标点符号个数：52
+2019-09-06 18:49:02  INFO AutoDetector:104 : 完成加载资源，耗时1 毫秒
+2019-09-06 18:49:02  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:49:02  INFO AutoDetector:79 : classpath:quantifier.txt
+2019-09-06 18:49:02  INFO AutoDetector:116 : 类路径资源：quantifier.txt
+2019-09-06 18:49:02  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/quantifier.txt
+2019-09-06 18:49:02  INFO AutoDetector:350 : 加载资源：classpath:quantifier.txt
+2019-09-06 18:49:02  INFO AutoDetector:99 : 加载资源 164 行
+2019-09-06 18:49:02  INFO Quantifier:52 : 初始化数量词
+2019-09-06 18:49:02  INFO Quantifier:65 : 数量词初始化完毕，数量词个数：164
+2019-09-06 18:49:02  INFO AutoDetector:104 : 完成加载资源，耗时2 毫秒
+2019-09-06 18:49:02  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:49:02  INFO AutoDetector:79 : classpath:bigram.txt
+2019-09-06 18:49:02  INFO AutoDetector:116 : 类路径资源：bigram.txt
+2019-09-06 18:49:02  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/bigram.txt
+2019-09-06 18:49:02  INFO AutoDetector:350 : 加载资源：classpath:bigram.txt
+2019-09-06 18:49:02  INFO AutoDetector:99 : 加载资源 1519443 行
+2019-09-06 18:49:02  INFO Bigram:52 : 初始化bigram
+2019-09-06 18:49:27  INFO Bigram:63 : bigram初始化完毕，bigram数据条数：1519443
+2019-09-06 18:49:27  INFO AutoDetector:104 : 完成加载资源，耗时24540 毫秒
+2019-09-06 18:49:27  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:49:27  INFO AutoDetector:79 : classpath:stopwords.txt,classpath:custom_stopwords_dic.txt
+2019-09-06 18:49:27  INFO AutoDetector:116 : 类路径资源：stopwords.txt
+2019-09-06 18:49:27  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/stopwords.txt
+2019-09-06 18:49:27  INFO AutoDetector:350 : 加载资源：classpath:stopwords.txt
+2019-09-06 18:49:27  INFO AutoDetector:116 : 类路径资源：custom_stopwords_dic.txt
+2019-09-06 18:49:27  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/custom_stopwords_dic.txt
+2019-09-06 18:49:27  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\custom_stopwords_dic.txt
+2019-09-06 18:49:27  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\custom_stopwords_dic.txt
+2019-09-06 18:49:27  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-06 18:49:27  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-06 18:49:27  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-06 18:49:27  INFO AutoDetector:99 : 加载资源 1482 行
+2019-09-06 18:49:27  INFO StopWord:64 : 初始化停用词
+2019-09-06 18:49:27  INFO StopWord:70 : 停用词初始化完毕，停用词个数：1482
+2019-09-06 18:49:27  INFO AutoDetector:104 : 完成加载资源，耗时4 毫秒
+2019-09-06 18:49:27  INFO AutoDetector:78 : 开始加载资源
+2019-09-06 18:49:27  INFO AutoDetector:79 : classpath:word_refine.txt
+2019-09-06 18:49:27  INFO AutoDetector:116 : 类路径资源：word_refine.txt
+2019-09-06 18:49:27  INFO AutoDetector:120 : 类路径资源URL：file:/D:/D08_pay/digital-x/target/classes/word_refine.txt
+2019-09-06 18:49:27  INFO AutoDetector:350 : 加载资源：D:\D08_pay\digital-x\target\classes\word_refine.txt
+2019-09-06 18:49:27  INFO AutoDetector:381 : 监控文件：D:\D08_pay\digital-x\target\classes\word_refine.txt
+2019-09-06 18:49:27  INFO DirectoryWatcher:88 : 注册事件：ENTRY_MODIFY
+2019-09-06 18:49:27  INFO DirectoryWatcher:88 : 注册事件：ENTRY_DELETE
+2019-09-06 18:49:27  INFO DirectoryWatcher:230 : 监控目录:D:\D08_pay\digital-x\target\classes
+2019-09-06 18:49:27  INFO AutoDetector:120 : 类路径资源URL：jar:file:/C:/Users/pjli/.m2/repository/org/apdplat/word/1.3.1/word-1.3.1.jar!/word_refine.txt
+2019-09-06 18:49:27  INFO AutoDetector:350 : 加载资源：classpath:word_refine.txt
+2019-09-06 18:49:27  INFO AutoDetector:99 : 加载资源 2 行
+2019-09-06 18:49:27  INFO WordRefiner:55 : 初始化WordRefiner
+2019-09-06 18:49:27  INFO WordRefiner:66 : WordRefiner初始化完毕，数据条数：2
+2019-09-06 18:49:27  INFO AutoDetector:104 : 完成加载资源，耗时4 毫秒
