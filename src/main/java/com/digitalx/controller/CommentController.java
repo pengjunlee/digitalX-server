@@ -1,19 +1,15 @@
 package com.digitalx.controller;
 
-import com.digitalx.domain.BaseResponse;
-import com.digitalx.domain.CommentEntity;
-import com.digitalx.domain.CommentGoodsEntity;
-import com.digitalx.domain.Keyword;
+import com.digitalx.domain.*;
 import com.digitalx.service.CommentService;
+import com.digitalx.utils.CommentUtil;
+import com.digitalx.utils.PageUtil;
 import com.digitalx.utils.RedisUtil;
 import org.apdplat.word.WordSegmenter;
 import org.apdplat.word.segmentation.Word;
 import org.apdplat.word.segmentation.WordRefiner;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
 
@@ -31,79 +27,81 @@ public class CommentController {
     @Autowired
     private RedisUtil redisUtil;
 
-    private static final String KEYWORD_PREFIX = "KEYWORD_";
+    private static final String RATEWORD_PREFIX = "RATEWORD_";
 
 
-    @GetMapping(value = "/goods/list")
-    public Object listGoods() {
-        List<CommentGoodsEntity> goodsList = commentService.listCommentGoods();
-        BaseResponse<Object> ret = new BaseResponse<Object>();
-
-        Map<String, Object> data = new HashMap<>();
-        data.put("goods", goodsList);
-        ret.setData(data);
+    @GetMapping(value = "/goods")
+    public Object listGoods(@RequestParam("page") int page) {
+        PageUtil pageUtil = commentService.pageCommentGoods(page);
+        BaseResponse<Object> ret = new BaseResponse<Object>(pageUtil);
         ret.setCode(0);
         ret.setMsg("数据加载成功");
         return ret;
     }
 
-    @GetMapping(value = "/list/{goodsId}")
-    public Object lisComments(@PathVariable(name = "goodsId") String goodsId) {
-        List<CommentEntity> CommentsList = commentService.listCommentByGoods(goodsId);
-        BaseResponse<Object> ret = new BaseResponse<Object>();
-
-        Map<String, Object> data = new HashMap<>();
-        data.put("comments", CommentsList);
-        ret.setData(data);
+    @GetMapping(value = "/{goodsId}")
+    public Object lisComments(@PathVariable(name = "goodsId") String goodsId, @RequestParam("page") int page) {
+        PageUtil pageUtil = commentService.pageCommentByGoods(goodsId, page);
+        BaseResponse<Object> ret = new BaseResponse<Object>(pageUtil);
         ret.setCode(0);
         ret.setMsg("数据加载成功");
         return ret;
     }
 
 
-    @GetMapping(value = "/keyword/{goodsId}")
-    public Object lisKeywords(@PathVariable(name = "goodsId") String goodsId) {
+    @GetMapping(value = "/rateword/{goodsId}")
+    public Object lisRatewords(@PathVariable(name = "goodsId") String goodsId) {
 
-        String key = KEYWORD_PREFIX + goodsId;
+        String key = RATEWORD_PREFIX + goodsId;
 
 
-        List<Keyword> values = null;
+        List<RateWord> values = null;
         if (redisUtil.hasKey(key)) {
             Object o = redisUtil.get(key);
             if (o != null) {
-                values = (List<Keyword>) o;
+                values = (List<RateWord>) o;
             }
         } else {
             List<CommentEntity> CommentsList = commentService.listCommentByGoods(goodsId);
-            List<Word> words = null;
-            Map<String, Keyword> map = new HashMap<String, Keyword>();
+            Map<String, RateWord> map = new HashMap<String, RateWord>();
             for (CommentEntity comment : CommentsList) {
-                words = WordSegmenter.seg(comment.getRateContent());
-                words = WordRefiner.refine(words);
-                for (Word word : words) {
-                    Keyword keyword = map.get(word.getText());
-                    if (keyword == null) {
-                        keyword = new Keyword(word.getText());
-                    } else {
-                        keyword.addWeight(1);
-                    }
-                    map.put(word.getText(), keyword);
+                String rateContent = comment.getRateContent();
+                if (CommentUtil.isValidComment(rateContent)) {
+                    processRateword(rateContent, map);
+                }
+                CommentAppendEntity appendComment = comment.getAppendComment();
+                if (null != appendComment) {
+                    processRateword(appendComment.getContent(), map);
                 }
             }
-            List<Keyword> list = new ArrayList<>(map.values());
+            List<RateWord> list = new ArrayList<>(map.values());
             Collections.sort(list);
             if (list.size() > 100) {
-                values = new ArrayList<Keyword>(list.subList(0, 100));
+                values = new ArrayList<RateWord>(list.subList(0, 100));
             }
             redisUtil.set(key, values);
         }
         BaseResponse<Object> ret = new BaseResponse<Object>();
 
         Map<String, Object> data = new HashMap<>();
-        data.put("keywords", values);
+        data.put("ratewords", values);
         ret.setData(data);
         ret.setCode(0);
         ret.setMsg("数据加载成功");
         return ret;
+    }
+
+    private void processRateword(String rateContent, Map<String, RateWord> map) {
+        List<Word> words = WordSegmenter.seg(rateContent);
+        words = WordRefiner.refine(words);
+        for (Word word : words) {
+            RateWord rateWord = map.get(word.getText());
+            if (rateWord == null) {
+                rateWord = new RateWord(word.getText());
+            } else {
+                rateWord.addWeight(1);
+            }
+            map.put(word.getText(), rateWord);
+        }
     }
 }

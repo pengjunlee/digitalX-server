@@ -30,6 +30,11 @@ public class BaseResponse<T> implements Serializable {
         super();
     }
 
+    public BaseResponse(T data) {
+        super();
+        this.data = data;
+    }
+
     public BaseResponse(int code, String msg, T data) {
         super();
         this.code = code;

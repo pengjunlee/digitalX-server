@@ -11,7 +11,7 @@
     <groupId>com.digitalx</groupId>
     <artifactId>digital-x</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <name>digital-x</name>
     <description>Demo project for Spring Boot</description>
 
@@ -121,6 +121,13 @@
             <groupId>net.sf.dozer</groupId>
             <artifactId>dozer</artifactId>
             <version>5.5.1</version>
+        </dependency>
+
+        <!-- 引入fastdfs客户端依赖 -->
+        <dependency>
+            <groupId>org.csource</groupId>
+            <artifactId>fastdfs-client-java</artifactId>
+            <version>1.27-SNAPSHOT</version>
         </dependency>
 
     </dependencies>

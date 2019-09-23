@@ -2,6 +2,7 @@ package com.digitalx.service.mapper;
 
 import com.digitalx.domain.CommentGoodsEntity;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -12,5 +13,7 @@ import java.util.List;
 @Mapper
 public interface CommentMapper {
 
-    List<CommentGoodsEntity> listCommentGoods();
+    List<CommentGoodsEntity> pageCommentGoods(@Param("offset") Integer offset, @Param("limit") Integer limit);
+
+    int countCommentGoods();
 }

@@ -9,18 +9,20 @@ import java.util.Objects;
  * @author pengjunlee
  * @create 2019-09-03 14:44
  */
-public class Keyword implements Comparable, Serializable {
+public class RateWord implements Comparable, Serializable {
+
     private static final long serialVersionUID = 1L;
+    
     private String name;
 
     private int weight;
 
 
-    public Keyword() {
+    public RateWord() {
         super();
     }
 
-    public Keyword(String name) {
+    public RateWord(String name) {
         this.name = name;
         this.weight = 1;
     }
@@ -54,7 +56,7 @@ public class Keyword implements Comparable, Serializable {
         if (this == that) {
             return 0;
         } else {
-            int thatWeight = ((Keyword) that).getWeight();
+            int thatWeight = ((RateWord) that).getWeight();
             return thatWeight - this.getWeight();
         }
     }
@@ -65,7 +67,7 @@ public class Keyword implements Comparable, Serializable {
         } else if (this.getClass() != that.getClass()) {
             return false;
         } else {
-            Keyword thatWord = (Keyword) that;
+            RateWord thatWord = (RateWord) that;
             return Objects.equals(this.name, thatWord.name);
         }
     }

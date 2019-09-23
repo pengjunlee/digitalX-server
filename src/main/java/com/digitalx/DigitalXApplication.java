@@ -1,5 +1,6 @@
 package com.digitalx;
 
+import com.digitalx.listener.EliminateCommentListener;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
@@ -16,7 +17,12 @@ public class DigitalXApplication extends SpringBootServletInitializer {
 
     public static void main(String[] args) {
 
-        SpringApplication.run(DigitalXApplication.class, args);
+        SpringApplication application = new SpringApplication(DigitalXApplication.class);
+        // 添加一个初始化监听器，对映射地址配置进行加载
+        application.addListeners(new EliminateCommentListener());
+        application.run(args);
+
+
     }
 
 }
